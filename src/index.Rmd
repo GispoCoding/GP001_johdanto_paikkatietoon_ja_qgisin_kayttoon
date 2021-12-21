@@ -1,9 +1,9 @@
 ---
-title: "Introduction to QGIS"
+title: "Johdanto paikkatietoon ja QGISin käyttöön"
 author: "Gispo Ltd."
 date: "`r Sys.Date()`"
 site: "bookdown::bookdown_site"
-abstract: "A course covering advanced GeoServer topics."
+abstract: "Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin"
 output:
     bookdown::html_book:
         toc: true
