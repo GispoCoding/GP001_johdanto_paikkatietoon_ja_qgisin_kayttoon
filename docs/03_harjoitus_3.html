@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<!-- Based on TemplateMo 553 Xtra Blog: https://templatemo.com/tm-553-xtra-blog -->
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="5 Harjoitus 3: Paikkatietopalvelut | Johdanto paikkatietoon ja QGISin käyttöön" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="Gispo Ltd." />
+
+<meta name="date" content="2022-01-25" />
+
+
+<meta name="description" content="5 Harjoitus 3: Paikkatietopalvelut | Johdanto paikkatietoon ja QGISin käyttöön">
+
+<title>5 Harjoitus 3: Paikkatietopalvelut | Johdanto paikkatietoon ja QGISin käyttöön</title>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/hamburgers.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<div class="main-content">
+<!-- special comment to mark beginning of title section for bookdown -->
+<!-- bookdown comments must be in this order: title, toc, body -->
+
+<div class="main-content-wrapper">
+
+<div class="row">
+<div class="col-sm-12">
+<header class="main-toc sidebar" id="sidebar">
+<div class="sidebar-wrapper">
+
+<button class="navbar-toggle hamburger hamburger--collapse" id="navbar-toggle"
+type="button" onclick="navToggle()" aria-label="Toggle navigation">
+<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+</button>
+
+<div class="sidebar-title-wrapper">
+<img alt="Logo" width="100" src="img/gispo_white_sm.png" class="sidebar-logo">
+<div class="sidebar-title"><h1>Johdanto paikkatietoon ja QGISin käyttöön</h1></div>
+<div class="abstract-sidebar"><p>Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin</p></div>
+</div>
+
+<nav class="sidebar-nav">
+<div id="TOC" class="toc">
+<ul>
+<li><a href="index.html#introduction-to-qgis"><span class="toc-section-number">1</span> Introduction to QGIS</a>
+<ul>
+<li><a href="index.html#about"><span class="toc-section-number">1.1</span> About</a></li>
+<li><a href="index.html#license-and-permissions"><span class="toc-section-number">1.2</span> License and permissions</a></li>
+</ul></li>
+<li><a href="01_harjoitus_1.html#harjoitus-1-koulutusympäristön-valmistaminen"><span class="toc-section-number">2</span> Harjoitus 1: Koulutusympäristön valmistaminen</a>
+<ul>
+<li><a href="01_harjoitus_1.html#harjoituksen-sisältö"><span class="toc-section-number">2.1</span> Harjoituksen sisältö</a></li>
+<li><a href="01_harjoitus_1.html#arvioitu-kesto"><span class="toc-section-number">2.2</span> Arvioitu kesto</a></li>
+<li><a href="01_harjoitus_1.html#valmistautuminen"><span class="toc-section-number">2.3</span> Valmistautuminen</a></li>
+<li><a href="01_harjoitus_1.html#qgisin-lataus-ja-asennus"><span class="toc-section-number">2.4</span> QGISin lataus ja asennus</a></li>
+<li><a href="01_harjoitus_1.html#kurssimateriaalien-lataus"><span class="toc-section-number">2.5</span> Kurssimateriaalien lataus</a></li>
+</ul></li>
+<li><a href="02_env.html#training-environment"><span class="toc-section-number">3</span> Training environment</a></li>
+<li><a href="02_harjoitus_2.html#harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä"><span class="toc-section-number">4</span> Harjoitus 2: Paikkatietoaineistot ja QGISin käyttöliittymä</a>
+<ul>
+<li><a href="02_harjoitus_2.html#harjoituksen-sisältö-1"><span class="toc-section-number">4.1</span> Harjoituksen sisältö</a></li>
+<li><a href="02_harjoitus_2.html#harjoituksen-tavoite"><span class="toc-section-number">4.2</span> Harjoituksen tavoite</a></li>
+<li><a href="02_harjoitus_2.html#arvioitu-kesto-1"><span class="toc-section-number">4.3</span> Arvioitu kesto</a></li>
+<li><a href="02_harjoitus_2.html#paikkatietoaineiston-tiedostot"><span class="toc-section-number">4.4</span> Paikkatietoaineiston tiedostot</a></li>
+<li><a href="02_harjoitus_2.html#qgisin-käyttöliittymä"><span class="toc-section-number">4.5</span> QGISin käyttöliittymä</a></li>
+<li><a href="02_harjoitus_2.html#työkalupalkit"><span class="toc-section-number">4.6</span> 1. Työkalupalkit</a></li>
+<li><a href="02_harjoitus_2.html#karttaikkuna"><span class="toc-section-number">4.7</span> 2. Karttaikkuna</a></li>
+<li><a href="02_harjoitus_2.html#selain-paneeli"><span class="toc-section-number">4.8</span> 3. Selain-paneeli</a></li>
+<li><a href="02_harjoitus_2.html#tasoluettelo"><span class="toc-section-number">4.9</span> 4. Tasoluettelo</a></li>
+<li><a href="02_harjoitus_2.html#hakutoiminto"><span class="toc-section-number">4.10</span> 5. Hakutoiminto</a></li>
+<li><a href="02_harjoitus_2.html#tilapalkki"><span class="toc-section-number">4.11</span> 6. Tilapalkki</a></li>
+<li><a href="02_harjoitus_2.html#kokeile-itse"><span class="toc-section-number">4.12</span> Kokeile itse</a></li>
+<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-valinta"><span class="toc-section-number">4.13</span> Paikkatietoaineiston kohteiden valinta</a></li>
+<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-suodatus"><span class="toc-section-number">4.14</span> Paikkatietoaineiston kohteiden suodatus</a></li>
+</ul></li>
+<li><a href="03_harjoitus_3.html#harjoitus-3-paikkatietopalvelut"><span class="toc-section-number">5</span> Harjoitus 3: Paikkatietopalvelut</a>
+<ul>
+<li><a href="03_harjoitus_3.html#harjoituksen-sisältö-2"><span class="toc-section-number">5.1</span> Harjoituksen sisältö</a></li>
+<li><a href="03_harjoitus_3.html#harjoituksen-tavoite-1"><span class="toc-section-number">5.2</span> Harjoituksen tavoite</a></li>
+<li><a href="03_harjoitus_3.html#arvioitu-kesto-2"><span class="toc-section-number">5.3</span> Arvioitu kesto</a></li>
+<li><a href="03_harjoitus_3.html#valmistautuminen-1"><span class="toc-section-number">5.4</span> Valmistautuminen</a></li>
+<li><a href="03_harjoitus_3.html#wms-palvelun-lisääminen"><span class="toc-section-number">5.5</span> WMS-palvelun lisääminen</a></li>
+<li><a href="03_harjoitus_3.html#wfs-palvelun-lisääminen"><span class="toc-section-number">5.6</span> WFS-palvelun lisääminen</a></li>
+<li><a href="03_harjoitus_3.html#paikkatietopalvelujen-tallentaminen"><span class="toc-section-number">5.7</span> Paikkatietopalvelujen tallentaminen</a></li>
+</ul></li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="harjoitus-3-paikkatietopalvelut" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Harjoitus 3: Paikkatietopalvelut</h1>
+<div id="harjoituksen-sisältö-2" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa lisätään erilaisia paikkatietopalveluita QGISiin.</p>
+</div>
+<div id="harjoituksen-tavoite-1" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Harjoituksen tavoite</h2>
+<p>Harjoituksen jälkeen koulutettava osaa lisätä erilaisia paikkatietopalveluita QGISiin.</p>
+</div>
+<div id="arvioitu-kesto-2" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Arvioitu kesto</h2>
+<p>30 minuuttia.</p>
+</div>
+<div id="valmistautuminen-1" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Valmistautuminen</h2>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 3</strong>”. Tässä harjoituksessa muodostetaan yhteyksiä erilaisiin paikkatietopalveluihin, jonka kautta lisätään rasteri- ja vektoriaineistoja QGIS-projektiin.</p>
+</div>
+<div id="wms-palvelun-lisääminen" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> WMS-palvelun lisääminen</h2>
+<p>Luodaan ensimmäiseksi yhteys WMS (Web Map Service)-paikkatietopalveluun, josta saadaan ensimmäiset rasteriaineistot projektiin. Avaa <strong>Tietolähteiden hallinta</strong> ja valitse <strong>WMS/WMTS-välilehti</strong>.</p>
+<p><img src="img/harjoitus_3/image1.png" /></p>
+<p>Tämä työkalu avaa WMS-palvelujen käyttö- ja määrityslomakkeen. QGISissäsi saattaa olla jo määriteltynä joitakin WMS-palveluja. Saat ne auki alasvetovalikosta. Lisätään uusi WMS-palvelu klikkaamalla <strong>Uusi</strong>. Määrittele avautuvassa <strong>Luo uusi WMS/WMTS-yhteys</strong> -ikkunassa haluamasi nimi WMS-palvelulle.</p>
+<blockquote>
+<p>Psst! Nimeä paikkatietopalveluyhteydet esimerkiksi aineiston tuottajan (kuten kaupungin) mukaan. Tarkentavana lisätietona voi tarvittaessa olla esimerkiksi aineiston teema.</p>
+</blockquote>
+<p>Lisää <strong>URL-kenttään</strong> Helsingin kaupungin WMS-palvelun osoite: <a href="http://kartta.hel.fi/ws/geoserver/avoindata/wms" class="uri">http://kartta.hel.fi/ws/geoserver/avoindata/wms</a>. Jotkin paikkatietopalvelut voivat vaatia kirjautumisen palveluun, mutta avoimet aineistot eivät – jätä siis <strong>No Authentication</strong> aktiiviseksi.</p>
+<p><img src="img/harjoitus_3/image2.png" /></p>
+<p>Kun yhteyden tiedot on määritelty, paina <strong>OK</strong>. Paina vielä <strong>Tietolähteiden hallinta</strong> -ikkunassa <strong>Yhdistä</strong>. Nyt QGIS muodostaa yhteyden määriteltyyn paikkatietopalveluun ja ikkunaan ilmestyy listaus palvelun paikkatietoaineistoista. Huomaa, että listauksessa on alatasoja. Jatkossa QGIS muistaa tallennetut yhteydet.</p>
+<p><img src="img/harjoitus_3/image3.png" /></p>
+<p>Valitse saatavilla olevista aineistoista <strong>Ajantasa_asemakaava_maanpaallinen_varillinen</strong>. Voit vaihtaa QGIS-projektiin lisättävän tason nimen haluamaksesi kohdassa Tason nimi. Paina lopuksi <strong>Lisää</strong>, niin QGIS lisää tason projektiisi.</p>
+<p>Huomaa, että voit joutua odottamaan hetken, kun karttatasoa ladataan palvelimelta. Voit nyt sulkea <strong>Tietolähteiden hallinta</strong> -ikkunan ja palata karttaikkunaan. Karttaikkunassasi pitäisi nyt näkyä Helsingin kaupungin värillinen asemakaava-aineisto rasteritasona.</p>
+<p><img src="img/harjoitus_3/image4.png" /></p>
+<p>Luo nyt muutama WMS-paikkatietopalveluyhteys lisää. Voit käyttää hyväksesi Gispon ylläpitämää listausta avoimista paikkatietopalveluista osoitteessa <a href="https://gispohelp.zendesk.com/hc/fi/articles/208159815" class="uri">https://gispohelp.zendesk.com/hc/fi/articles/208159815</a>. Lisää esimerkiksi seuraavat yleishyödylliset WMS-palvelut QGIS-projektiisi:</p>
+<p>Tilastokeskus (väestöruutuaineisto): <a href="http://geo.stat.fi/geoserver/vaestoruutu/wms" class="uri">http://geo.stat.fi/geoserver/vaestoruutu/wms</a>
+Väylävirasto: <a href="https://julkinen.vayla.fi/inspirepalvelu/avoin/wms" class="uri">https://julkinen.vayla.fi/inspirepalvelu/avoin/wms</a>
+SYKE: <a href="http://paikkatieto.ymparisto.fi/ArcGIS/services/INSPIRE/SYKE_Maanpeite/MapServer/WMSServer" class="uri">http://paikkatieto.ymparisto.fi/ArcGIS/services/INSPIRE/SYKE_Maanpeite/MapServer/WMSServer</a></p>
+<p>Voit navigoida lisäämiesi WMS-paikkatietopalveluiden välillä Tietolähteiden hallinta -ikkunan WMS/WMTS-välilehden ensimmäisen alasvetovalikon avulla.</p>
+<p><img src="img/harjoitus_3/image5.png" /></p>
+<p>Kun olet valinnut haluamasi paikkatietopalvelun, muista klikata <strong>Yhdistä</strong> alasvetovalikon alapuolelta. Paikkatietopalveluiden aineistot eivät tule automaattisesti näkyviin pelkän palveluvalinnan kautta, vaan siihen on erikseen luotava vielä yhteys.</p>
+</div>
+<div id="wfs-palvelun-lisääminen" class="section level2" number="5.6">
+<h2><span class="header-section-number">5.6</span> WFS-palvelun lisääminen</h2>
+<p>Luodaan seuraavaksi yhteys WFS (Web Feature Service)-paikkatietopalveluun, jonka kautta QGIS-projektiin saadaan lisättyä erilaisia vektoriaineistoja. WFS-palveluihin yhdistäminen tapahtuu muuten samalla tavalla kuin WMS-palveluihin yhdistäminen, mutta WMS/WMTS-välilehden sijaan on valittava WFS-välilehti. Avaa siis jälleen <strong>Tietolähteiden hallinta &gt; WFS-välilehti</strong> tai klikkaa suoraan <strong>Tasojen hallinnan työkalupalkista</strong> löytyvää <strong>Lisää WFS-taso</strong> -painiketta <img src="img/harjoitus_3/image6.png" />.</p>
+<p><img src="img/harjoitus_3/image7.png" /></p>
+<blockquote>
+<p>Psst! WFS-paikkatietopalvelussa pystyt lataamaan aineiston tai osan aineistosta erilaisten lausekkeiden avulla.</p>
+</blockquote>
+<p>Luo uusi yhteys alla listattuihin WFS-paikkatietopalveluihin tai valitse haluamasi palvelut aikaisemmin mainitusta Gispon ylläpitämästä listauksesta.</p>
+<p><strong>Tilastokeskus (väestöruutuaineisto)</strong>: <a href="http://geo.stat.fi/geoserver/vaestoruutu/wfs" class="uri">http://geo.stat.fi/geoserver/vaestoruutu/wfs</a>
+<strong>Väylävirasto</strong>: <a href="https://julkinen.vayla.fi/inspirepalvelu/avoin/wfs" class="uri">https://julkinen.vayla.fi/inspirepalvelu/avoin/wfs</a>
+<strong>Jyväskylän yliopisto (liikuntapaikat)</strong>: <a href="http://lipas.cc.jyu.fi/geoserver/lipas/ows" class="uri">http://lipas.cc.jyu.fi/geoserver/lipas/ows</a>?</p>
+<p>Kun olet lisännyt WFS-paikkatietopalvelun tiedot QGISiin, voit ottaa siihen yhteyden samalla tavalla kuin WMS-palveluiden yhteydessä. Kun lisäät aineistoja WFS-palveluista QGIS-projektiisi, voit huomata, että aineistot ovat vektorimuotoisia. Jos haluat käsitellä WFS-palvelun kautta lisäämääsi aineistoa (esimerkiksi editoida kohteita), täytyy se tallentaa lokaalisti omalle tietokoneellesi.</p>
+</div>
+<div id="paikkatietopalvelujen-tallentaminen" class="section level2" number="5.7">
+<h2><span class="header-section-number">5.7</span> Paikkatietopalvelujen tallentaminen</h2>
+<p>QGIS tallentaa automaattisesti siihen lisätyt paikkatietopalvelut käyttämääsi QGIS-profiiliin. Eli kun seuraavan kerran avaat QGISin samalla käyttäjäprofiililla, paikkatietopalvelut löytyvät valmiiksi Tietolähteiden hallinnan WMS/WMTS- ja WFS-välilehdiltä. Paikkatietopalvelut on kuitenkin myös mahdollista tallentaa erilliseksi XML-tiedostoksi, jonka voit ladata toiseen QGIS-käyttäjäprofiiliin tai jakaa eteenpäin muille kollegoille käytettäväksi. Avaa <strong>Tietolähteiden hallinta</strong> ja valitse <strong>WFS-välilehti</strong>. Klikkaa <strong>Tallenna</strong>-painiketta.</p>
+<p><img src="img/harjoitus_3/image8.png" /></p>
+<p>QGISiin avautuu <strong>Hallitse yhteyksiä</strong> -ikkuna, jossa on listaus kaikista QGISiin lisätyistä WFS-palveluista. Voit tallentaa palveluita yksitellen tai viedä kaikki yhteydet yhteen XML-tiedostoon. Haluamme nyt tallentaa kaikki yhteydet samaan tiedostoon, joten klikkaa <strong>Valitse kaikki</strong> ja tämän jälkeen paina <strong>Vie</strong>.</p>
+<p><img src="img/harjoitus_3/image9.png" /></p>
+<p>Tallenna yhteydet haluamaasi sijaintiin omalla tietokoneellasi. Koita tämän jälkeen ladata tämä XML-tiedosto klikkaamalla <strong>Lataa Tietolähteiden hallinta</strong> -ikkunassa.</p>
+<p><img src="img/harjoitus_3/image10.png" /></p>
+<p>Voit valita aukeavassa <strong>Hallitse yhteyksiä</strong> -ikkunassa erikseen yhteydet, jotka haluat lisätä käyttämääsi QGIS-profiiliin ja QGIS-projektiin.</p>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<blockquote>
+<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
+</blockquote>
+
+</div>
+</div>
+<p style="text-align: center;">
+<a href="02_harjoitus_2.html"><button class="btn btn-default">Previous</button></a>
+</p>
+</div>
+</div>
+
+<footer class="footer text-center">
+
+<div class="footer-container text-center">
+
+<div class="footer-info">
+<h5 class="footer-title">Johdanto paikkatietoon ja QGISin käyttöön</h5>
+<span class="footer-version">v2022-01-25</span>
+<div class="license"><img src="img/by-nd.svg" width="80px" alt="CC-BY-ND"></div>
+</div>
+
+<div class="footer-info">
+<h5 class="footer-title footer-company">Gispo Ltd.
+<span class="footer-copyright-year">© 2021</span></h5>
+<span class="footer-contact-info">Kalevankatu 31
+<br>00100 Helsinki, Finland
+<br>info@gispo.fi
+</span>
+</div>
+
+</div>
+</div>
+</footer>
+</div>
+
+
+<script src="js/nav-script.js"></script>
+
+</body>
+</html>

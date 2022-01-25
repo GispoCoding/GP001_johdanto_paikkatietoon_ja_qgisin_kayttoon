@@ -23,3 +23,11 @@ tilapalkki
 kokeile-itse
 paikkatietoaineiston-kohteiden-valinta
 paikkatietoaineiston-kohteiden-suodatus
+harjoitus-3-paikkatietopalvelut
+harjoituksen-sisältö-2
+harjoituksen-tavoite-1
+arvioitu-kesto-2
+valmistautuminen-1
+wms-palvelun-lisääminen
+wfs-palvelun-lisääminen
+paikkatietopalvelujen-tallentaminen
