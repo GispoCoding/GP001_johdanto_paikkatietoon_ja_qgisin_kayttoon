@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="3 Training environment | Johdanto paikkatietoon ja QGISin käyttöön" />
+<meta property="og:title" content="2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön" />
 <meta property="og:type" content="book" />
 
 
@@ -19,9 +19,9 @@
 <meta name="date" content="2022-01-25" />
 
 
-<meta name="description" content="3 Training environment | Johdanto paikkatietoon ja QGISin käyttöön">
+<meta name="description" content="2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön">
 
-<title>3 Training environment | Johdanto paikkatietoon ja QGISin käyttöön</title>
+<title>2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön</title>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
@@ -86,20 +86,40 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div class="row">
 <div class="col-sm-12">
-<div id="training-environment" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Training environment</h1>
-<p>QGIS is a free open-source desktop GIS that can be easily installed on Linux, Windows, and Mac.
-You can use QGIS as a WMS/WFS client to see how the different services provided by GS work.
-Download and install the latest version of QGIS at <a href="https://qgis.org">qgis.org</a>.</p>
-<p>GDAL and OGR are libraries that provide useful tools for processing raster and vector spatial data, respectively.
-The easiest way to install GDAL/OGR on Windows is to simply install QGIS.
-A standard QGIS installation should also install the OSGeo4W Shell.
-Opening the OSGeo4W shell from the Start menu brings up a new terminal window where GDAL and OGR commands are available to be used.</p>
-<p>TODO: Keep adding more materials here…</p>
+<div id="harjoitus-1-koulutusympäristön-valmistaminen" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Harjoitus 1: Koulutusympäristön valmistaminen</h1>
+<div id="harjoituksen-sisältö" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa ladataan QGIS ja tallennetaan kurssimateriaalit käytettävälle tietokoneelle.</p>
+<p>##Harjoituksen tavoite</p>
+<p>Harjoituksen jälkeen koulutettava osaa asentaa QGISin ja tietää oman kurssihakemistonsa sijainnin.</p>
+</div>
+<div id="arvioitu-kesto" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Arvioitu kesto</h2>
+<p>10 minuuttia.</p>
+</div>
+<div id="valmistautuminen" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Valmistautuminen</h2>
+<p>Avaa web-selain ja mene QGISin suomenkielisille verkkosivuille:
+<a href="http://www.qgis.org/fi/site/" class="uri">http://www.qgis.org/fi/site/</a></p>
+</div>
+<div id="qgisin-lataus-ja-asennus" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> QGISin lataus ja asennus</h2>
+<p>Löydät QGISin verkkosivujen etusivulta linkin, jonka avulla pääset lataamaan QGIS-työpöytäohjelmiston. Lataa sivustolta viimeisin <strong>QGIS LTR</strong> (long term release eli pitkäaikaisversio). Pitkäaikaisversio sopii parhaiten ammattikäyttöön, sillä se on vakain QGIS-versio – siitä voi kuitenkin puuttua joitakin uudempien versioiden ominaisuuksia. QGISin voi asentaa Windows-, Linux- tai Mac-käyttöjärjestelmään. Eri järjestelmien QGIS-versioiden välillä huomattavimmat erot ovat väriskeemoissa ja tiedostopoluissa – muuten erot ovat hyvin pieniä.
+<img src="img/harjoitus_1/image1.png" /></p>
+<p>Avaa tietokoneeltasi sijainti, jonne asennuspaketti latautui ja tuplaklikkaa asennuspaketin kuvaketta asentaaksesi QGIS-paketin tietokoneellesi. Kun asennus on suoritettu, kurkista työpöydälle ilmestyneeseen <strong>QGIS 3.16 -kansioon</strong> ja tarkastele sieltä löytyviä pikakuvakkeita.
+[](img(harjoitus_1(image2.png)</p>
+<p>QGISin perusasennuspaketin mukana tietokoneellesi asennetaan <strong>QGIS Desktop -perusohjelmiston</strong> lisäksi mm. <strong>QGIS Desktop with GRASS</strong> sekä <strong>SAGA GIS</strong>. Nämä QGISin perusversion mukana tulevat ohjelmistot tuovat QGISin käyttöön lisää erilaisia prosessointi- ja analysointityökaluja.</p>
+</div>
+<div id="kurssimateriaalien-lataus" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Kurssimateriaalien lataus</h2>
+<p>Kouluttaja ohjeistaa sinua lataamaan kurssimateriaalit joko muistitikulta, Google Drivestä tai AWS-palvelimelta. Kopioi kurssimateriaalit omalle tietokoneellesi tai koulutuskoneelle haluamaasi kansioon niin, että löydät ne helposti harjoituksia tehdessä. Kun kurssimateriaalissa viitataan <strong>../kurssihakemisto/</strong>, tarkoitetaan itse määrittelemääsi kurssihakemiston polkua.</p>
 
 </div>
+</div>
 <p style="text-align: center;">
-<a href="01_harjoitus_1.html"><button class="btn btn-default">Previous</button></a>
+<a href="index.html"><button class="btn btn-default">Previous</button></a>
+<a href="02_env.html"><button class="btn btn-default">Next</button></a>
 </p>
 </div>
 </div>

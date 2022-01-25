@@ -1,4 +1,10 @@
 introduction-to-qgis
 about
 license-and-permissions
+harjoitus-1-koulutusympäristön-valmistaminen
+harjoituksen-sisältö
+arvioitu-kesto
+valmistautuminen
+qgisin-lataus-ja-asennus
+kurssimateriaalien-lataus
 training-environment
