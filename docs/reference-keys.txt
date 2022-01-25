@@ -31,3 +31,13 @@ valmistautuminen-1
 wms-palvelun-lisääminen
 wfs-palvelun-lisääminen
 paikkatietopalvelujen-tallentaminen
+harjoitus-4-koordinaattijärjestelmät
+harjoituksen-sisältö-3
+harjoituksen-tavoite-2
+arvioitu-kesto-3
+valmistautuminen-2
+projektin-koordinaattijärjestelmä
+paikkatietoaineiston-koordinaattijärjestelmä
+paikkatietoaineiston-uudelleenprojisointi
+tapa-1-projisoi-taso--prosessityökalu
+tapa-2-tallennus-tasot-paneelissa
