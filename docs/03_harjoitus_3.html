@@ -144,20 +144,21 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <p>Kun yhteyden tiedot on määritelty, paina <strong>OK</strong>. Paina vielä <strong>Tietolähteiden hallinta</strong> -ikkunassa <strong>Yhdistä</strong>. Nyt QGIS muodostaa yhteyden määriteltyyn paikkatietopalveluun ja ikkunaan ilmestyy listaus palvelun paikkatietoaineistoista. Huomaa, että listauksessa on alatasoja. Jatkossa QGIS muistaa tallennetut yhteydet.</p>
 <p><img src="img/harjoitus_3/image3.png" /></p>
 <p>Valitse saatavilla olevista aineistoista <strong>Ajantasa_asemakaava_maanpaallinen_varillinen</strong>. Voit vaihtaa QGIS-projektiin lisättävän tason nimen haluamaksesi kohdassa Tason nimi. Paina lopuksi <strong>Lisää</strong>, niin QGIS lisää tason projektiisi.</p>
-<p>Huomaa, että voit joutua odottamaan hetken, kun karttatasoa ladataan palvelimelta. Voit nyt sulkea <strong>Tietolähteiden hallinta</strong> -ikkunan ja palata karttaikkunaan. Karttaikkunassasi pitäisi nyt näkyä Helsingin kaupungin värillinen asemakaava-aineisto rasteritasona.</p>
 <p><img src="img/harjoitus_3/image4.png" /></p>
+<p>Huomaa, että voit joutua odottamaan hetken, kun karttatasoa ladataan palvelimelta. Voit nyt sulkea <strong>Tietolähteiden hallinta</strong> -ikkunan ja palata karttaikkunaan. Karttaikkunassasi pitäisi nyt näkyä Helsingin kaupungin värillinen asemakaava-aineisto rasteritasona.</p>
+<p><img src="img/harjoitus_3/image5.png" /></p>
 <p>Luo nyt muutama WMS-paikkatietopalveluyhteys lisää. Voit käyttää hyväksesi Gispon ylläpitämää listausta avoimista paikkatietopalveluista osoitteessa <a href="https://gispohelp.zendesk.com/hc/fi/articles/208159815" class="uri">https://gispohelp.zendesk.com/hc/fi/articles/208159815</a>. Lisää esimerkiksi seuraavat yleishyödylliset WMS-palvelut QGIS-projektiisi:</p>
 <p>Tilastokeskus (väestöruutuaineisto): <a href="http://geo.stat.fi/geoserver/vaestoruutu/wms" class="uri">http://geo.stat.fi/geoserver/vaestoruutu/wms</a>
 Väylävirasto: <a href="https://julkinen.vayla.fi/inspirepalvelu/avoin/wms" class="uri">https://julkinen.vayla.fi/inspirepalvelu/avoin/wms</a>
 SYKE: <a href="http://paikkatieto.ymparisto.fi/ArcGIS/services/INSPIRE/SYKE_Maanpeite/MapServer/WMSServer" class="uri">http://paikkatieto.ymparisto.fi/ArcGIS/services/INSPIRE/SYKE_Maanpeite/MapServer/WMSServer</a></p>
 <p>Voit navigoida lisäämiesi WMS-paikkatietopalveluiden välillä Tietolähteiden hallinta -ikkunan WMS/WMTS-välilehden ensimmäisen alasvetovalikon avulla.</p>
-<p><img src="img/harjoitus_3/image5.png" /></p>
+<p><img src="img/harjoitus_3/image6.png" /></p>
 <p>Kun olet valinnut haluamasi paikkatietopalvelun, muista klikata <strong>Yhdistä</strong> alasvetovalikon alapuolelta. Paikkatietopalveluiden aineistot eivät tule automaattisesti näkyviin pelkän palveluvalinnan kautta, vaan siihen on erikseen luotava vielä yhteys.</p>
 </div>
 <div id="wfs-palvelun-lisääminen" class="section level2" number="5.6">
 <h2><span class="header-section-number">5.6</span> WFS-palvelun lisääminen</h2>
-<p>Luodaan seuraavaksi yhteys WFS (Web Feature Service)-paikkatietopalveluun, jonka kautta QGIS-projektiin saadaan lisättyä erilaisia vektoriaineistoja. WFS-palveluihin yhdistäminen tapahtuu muuten samalla tavalla kuin WMS-palveluihin yhdistäminen, mutta WMS/WMTS-välilehden sijaan on valittava WFS-välilehti. Avaa siis jälleen <strong>Tietolähteiden hallinta &gt; WFS-välilehti</strong> tai klikkaa suoraan <strong>Tasojen hallinnan työkalupalkista</strong> löytyvää <strong>Lisää WFS-taso</strong> -painiketta <img src="img/harjoitus_3/image6.png" />.</p>
-<p><img src="img/harjoitus_3/image7.png" /></p>
+<p>Luodaan seuraavaksi yhteys WFS (Web Feature Service)-paikkatietopalveluun, jonka kautta QGIS-projektiin saadaan lisättyä erilaisia vektoriaineistoja. WFS-palveluihin yhdistäminen tapahtuu muuten samalla tavalla kuin WMS-palveluihin yhdistäminen, mutta WMS/WMTS-välilehden sijaan on valittava WFS-välilehti. Avaa siis jälleen <strong>Tietolähteiden hallinta &gt; WFS-välilehti</strong> tai klikkaa suoraan <strong>Tasojen hallinnan työkalupalkista</strong> löytyvää <strong>Lisää WFS-taso</strong> -painiketta <img src="img/harjoitus_3/image7.png" />.</p>
+<p><img src="img/harjoitus_3/image8.png" /></p>
 <blockquote>
 <p>Psst! WFS-paikkatietopalvelussa pystyt lataamaan aineiston tai osan aineistosta erilaisten lausekkeiden avulla.</p>
 </blockquote>
@@ -170,11 +171,11 @@ SYKE: <a href="http://paikkatieto.ymparisto.fi/ArcGIS/services/INSPIRE/SYKE_Maan
 <div id="paikkatietopalvelujen-tallentaminen" class="section level2" number="5.7">
 <h2><span class="header-section-number">5.7</span> Paikkatietopalvelujen tallentaminen</h2>
 <p>QGIS tallentaa automaattisesti siihen lisätyt paikkatietopalvelut käyttämääsi QGIS-profiiliin. Eli kun seuraavan kerran avaat QGISin samalla käyttäjäprofiililla, paikkatietopalvelut löytyvät valmiiksi Tietolähteiden hallinnan WMS/WMTS- ja WFS-välilehdiltä. Paikkatietopalvelut on kuitenkin myös mahdollista tallentaa erilliseksi XML-tiedostoksi, jonka voit ladata toiseen QGIS-käyttäjäprofiiliin tai jakaa eteenpäin muille kollegoille käytettäväksi. Avaa <strong>Tietolähteiden hallinta</strong> ja valitse <strong>WFS-välilehti</strong>. Klikkaa <strong>Tallenna</strong>-painiketta.</p>
-<p><img src="img/harjoitus_3/image8.png" /></p>
-<p>QGISiin avautuu <strong>Hallitse yhteyksiä</strong> -ikkuna, jossa on listaus kaikista QGISiin lisätyistä WFS-palveluista. Voit tallentaa palveluita yksitellen tai viedä kaikki yhteydet yhteen XML-tiedostoon. Haluamme nyt tallentaa kaikki yhteydet samaan tiedostoon, joten klikkaa <strong>Valitse kaikki</strong> ja tämän jälkeen paina <strong>Vie</strong>.</p>
 <p><img src="img/harjoitus_3/image9.png" /></p>
-<p>Tallenna yhteydet haluamaasi sijaintiin omalla tietokoneellasi. Koita tämän jälkeen ladata tämä XML-tiedosto klikkaamalla <strong>Lataa Tietolähteiden hallinta</strong> -ikkunassa.</p>
+<p>QGISiin avautuu <strong>Hallitse yhteyksiä</strong> -ikkuna, jossa on listaus kaikista QGISiin lisätyistä WFS-palveluista. Voit tallentaa palveluita yksitellen tai viedä kaikki yhteydet yhteen XML-tiedostoon. Haluamme nyt tallentaa kaikki yhteydet samaan tiedostoon, joten klikkaa <strong>Valitse kaikki</strong> ja tämän jälkeen paina <strong>Vie</strong>.</p>
 <p><img src="img/harjoitus_3/image10.png" /></p>
+<p>Tallenna yhteydet haluamaasi sijaintiin omalla tietokoneellasi. Koita tämän jälkeen ladata tämä XML-tiedosto klikkaamalla <strong>Lataa Tietolähteiden hallinta</strong> -ikkunassa.</p>
+<p><img src="img/harjoitus_3/image11.png" /></p>
 <p>Voit valita aukeavassa <strong>Hallitse yhteyksiä</strong> -ikkunassa erikseen yhteydet, jotka haluat lisätä käyttämääsi QGIS-profiiliin ja QGIS-projektiin.</p>
 <p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
 <blockquote>
