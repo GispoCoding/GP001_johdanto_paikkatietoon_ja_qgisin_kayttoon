@@ -63,7 +63,7 @@ Lisää nyt TieViiva-paikkatietoaineisto QGIS-projektiisi joko tuplaklikkaamalla
 
 QGISin karttaikkunassa pitäisi nyt näkyä Maanmittauslaitoksen vektorimuotoinen tieaineisto. Viivan väri saattaa vaihdella, sillä kuvaustekniikka ei ole kiinteä osa paikkatietoaineistoa – QGIS luo satunnaisen värityksen aineistolle kunnes sille luodaan erillinen kuvaustekniikka.
 
-
+![]img/harjoitus2/image6.png
 
 ## 1. Työkalupalkit
 Työkalupalkit sisältävät nimensä mukaisesti erilaisia työkaluja. QGIS-työtilassasi saattaa olla näkyvissä enemmän tai vähemmän työkalupalkkeja, kuin yllä olevassa kuvankaappauksessa. Napauttamalla hiiren oikea näppäintä työkalupalkkien päällä, voit piilottaa tai ottaa esiin työkalupalkkeja. Voit myös raahata työkalupalkkeja eri kohtiin.
@@ -86,54 +86,54 @@ Tilapalkista löydät hiiren kursorin koordinaatit (joko metreinä tai leveys- j
 ## Kokeile itse
 Kokeile nyt vapaasti QGIS-työkaluja. Tarkastele ainakin **Karttanavigoinnin työkalupalkkien** sekä **Ominaisuustietojen työkalupalkkien** toiminnallisuuksia:
 
-![]img/harjoitus2/image6.png
+![]img/harjoitus2/image7.png
 
 Paikanna edellä näkyneestä työkalurivistä seuraavat työkalut ja tunnista niiden tarkoitukset:
 
-Zoomaa täydeksi  ![]img/harjoitus2/image7.png
+Zoomaa täydeksi  ![]img/harjoitus2/image8.png
 
-Zoomaa tasoon  ![]img/harjoitus2/image8.png
+Zoomaa tasoon  ![]img/harjoitus2/image9.png
 
-Näytä kohteen tiedot  ![]img/harjoitus2/image9.png
+Näytä kohteen tiedot  ![]img/harjoitus2/image10.png
 
-Avaa attribuuttitaulu  ![]img/harjoitus2/image10.png
+Avaa attribuuttitaulu  ![]img/harjoitus2/image11.png
 
-Mittaa viivan pituus  ![]img/harjoitus2/image11.png
+Mittaa viivan pituus  ![]img/harjoitus2/image12.png
 
 
 
 Kokeile myös **tilapalkin** ja **tasoluettelon** toimintoja.
 
-![]img/harjoitus2/image12.png
-
 ![]img/harjoitus2/image13.png
+
+![]img/harjoitus2/image14.png
 
 
 ## Paikkatietoaineiston kohteiden valinta
-Kokeile työkalua **Valitse kohteet** ![]img/harjoitus2/image14.png . Klikkaa työkalu aktiiviseksi ja piirrä kartalle suorakaide. Kaikki Tieviiva-tason elementit, jotka osuvat edes osittain valintarajauksesi sisään, korostuvat keltaisella.
+Kokeile työkalua **Valitse kohteet** ![]img/harjoitus2/image15.png . Klikkaa työkalu aktiiviseksi ja piirrä kartalle suorakaide. Kaikki Tieviiva-tason elementit, jotka osuvat edes osittain valintarajauksesi sisään, korostuvat keltaisella.
 
-![]img/harjoitus2/image15.png
+![]img/harjoitus2/image16.png
 
-Avaa nyt **tason attribuuttitaulu** joko ![]img/harjoitus2/image16.png -painikkeella tai klikkaamalla tasoluettelossa tasoa hiiren oikealla napilla ja valitsemalla **Avaa attribuuttitaulu**. Kaikki ne tie-elementit, jotka tulivat kartalta valituksi, ovat korostuneet taulussa sinisellä. Voit suodattaa attribuuttitaulun näkymää sen vasemmasta alanurkasta ja näyttää vain valitut kohteet:
+Avaa nyt **tason attribuuttitaulu** joko ![]img/harjoitus2/image17.png -painikkeella tai klikkaamalla tasoluettelossa tasoa hiiren oikealla napilla ja valitsemalla **Avaa attribuuttitaulu**. Kaikki ne tie-elementit, jotka tulivat kartalta valituksi, ovat korostuneet taulussa sinisellä. Voit suodattaa attribuuttitaulun näkymää sen vasemmasta alanurkasta ja näyttää vain valitut kohteet:
 
-![]img/harjoitus2/image17.png
+![]img/harjoitus2/image18.png
 
-Poista aineiston valinta klikkaamalla **Poista valinnat kaikilta tasoilta -painiketta** ![]img/harjoitus2/image18.png , joka löytyy attribuuttitaulun työkalupalkista.
+Poista aineiston valinta klikkaamalla **Poista valinnat kaikilta tasoilta -painiketta** ![]img/harjoitus2/image19.png , joka löytyy attribuuttitaulun työkalupalkista.
 
 ## Paikkatietoaineiston kohteiden suodatus
 Suuria aineistoja käsiteltäessä on joskus hyödyllistä suodattaa karttaikkunassa näkyvän aineiston määrää – tämä voidaan tehdä suodattamalla aineistoa sen ominaisuustietojen perusteella. Klikkaa hiiren oikealla painikkeella **TieViiva-tasoa** ja valitse **Suodata…**
 
-![]img/harjoitus2/image19.png
+![]img/harjoitus2/image20.png
 
 QGISiin aukeaa **Kyselyn muodostaja** -ikkuna, jossa voit muodostaa erilaisia suodatuslausekkeita. Kaikki kohteet, jotka täyttävät lausekkeen ehdon, jäävät näkyviin kartalle – muut kohteet suodattuvat pois. **Tietokentät**-kohdassa listataan käytettävissä olevat ominaisuustiedot (kentät/sarakkeet). Tuplaklikkaamalla riviä se siirtyy **Suodattimena käytettävä lauseke** -kenttään. Kentän arvoja voit etsiä oikealta **Otos**- tai **Kaikki**-painikkeella. Suodatetaan nyt aineistoa niin, että vain tieluokan 1 tieviivat jäävät näkyviin.
 
-![]img/harjoitus2/image20.png
+![]img/harjoitus2/image21.png
 
 Jos suodatinlausekkeesi on muodostettu oikein, klikkaa **OK**-painiketta. Nyt suurin osa tieviivoista katoaa kartalta ja attribuuttitaulukin näyttää vain lausekkeen läpäisevät kohteet. Alkuperäinen koneellesi tallennettu aineisto on edelleen kokonainen: QGIS vain suodattaa, mitä osia näet siitä.
 
-Suodatusehtoina voit käyttää esim. suurempi kuin -, pienempi tai yhtä suuri kuin -, tai erisuuri kuin -operaattoreita. Voit myös yhdistellä eri kenttien ehtoja AND- ja OR-operaattoreilla. Muistutuksena siitä, että aineistoa on suodatettu, tasoluettelossa näkyy pieni suppilokuvake ![]img/harjoitus2/image21.png . Tätä kuvaketta klikkaamalla voit milloin tahansa palata suodatinlausekkeeseen, muokata sitä tai poistaa sen. 
+Suodatusehtoina voit käyttää esim. suurempi kuin -, pienempi tai yhtä suuri kuin -, tai erisuuri kuin -operaattoreita. Voit myös yhdistellä eri kenttien ehtoja AND- ja OR-operaattoreilla. Muistutuksena siitä, että aineistoa on suodatettu, tasoluettelossa näkyy pieni suppilokuvake ![]img/harjoitus2/image22.png . Tätä kuvaketta klikkaamalla voit milloin tahansa palata suodatinlausekkeeseen, muokata sitä tai poistaa sen. 
 
-![]img/harjoitus2/image22.png
+![]img/harjoitus2/image23.png
 
 Kokeile vielä toista suodatusehtoa: poista edellinen ehto ja anna uudeksi ehdoksi “Tienumeron on oltava pienempi kuin 100”. Huomaat, että myös numeroimattomat pikkutiet tulevat mukaan suodatukseen, koska niiden tienumero on 0. Millä ehdoilla saat nämä numeroimattomat tiet pois näkymästä?
 
