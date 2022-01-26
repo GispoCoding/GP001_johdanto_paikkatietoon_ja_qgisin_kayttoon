@@ -13,7 +13,7 @@ Opiskelija osaa laatia karttatulosteen halutussa mittakaavassa sekä tehdä tulo
 40 minuuttia.
 
 
-##Valmistautuminen
+## Valmistautuminen
 Avaa uusi QGIS-projekti (**Projekti > Uusi**) ja tallenna se nimellä “**QGIS-harjoitus 7**”. Lisää projektiin seuraavat aineistot:
 
 ../kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019
