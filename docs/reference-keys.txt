@@ -12,6 +12,7 @@ harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä
 harjoituksen-sisältö-1
 harjoituksen-tavoite
 arvioitu-kesto-1
+valmistautuminen-1
 paikkatietoaineiston-tiedostot
 qgisin-käyttöliittymä
 työkalupalkit
@@ -27,7 +28,7 @@ harjoitus-3-paikkatietopalvelut
 harjoituksen-sisältö-2
 harjoituksen-tavoite-1
 arvioitu-kesto-2
-valmistautuminen-1
+valmistautuminen-2
 wms-palvelun-lisääminen
 wfs-palvelun-lisääminen
 paikkatietopalvelujen-tallentaminen
@@ -35,7 +36,7 @@ harjoitus-4-koordinaattijärjestelmät
 harjoituksen-sisältö-3
 harjoituksen-tavoite-2
 arvioitu-kesto-3
-valmistautuminen-2
+valmistautuminen-3
 projektin-koordinaattijärjestelmä
 paikkatietoaineiston-koordinaattijärjestelmä
 paikkatietoaineiston-uudelleenprojisointi
@@ -45,7 +46,7 @@ harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys
 harjoituksen-sisältö-4
 harjoituksen-tavoite-3
 arvioitu-kesto-4
-valmistautuminen-3
+valmistautuminen-4
 rasteriaineistojen-visualisointi
 vektoriaineistojen-visualisointi
 pisteaineiston-visualisointi
@@ -63,6 +64,6 @@ harjoitus-6-paikkatietoaineiston-luokittelu
 harjoituksen-sisältö-5
 harjoituksen-tavoite-4
 arvioitu-kesto-5
-valmistautuminen-4
+valmistautuminen-5
 vektoriaineiston-luokittelut
 rasteriaineiston-luokittelut
