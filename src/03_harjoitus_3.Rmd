@@ -65,7 +65,9 @@ Luodaan seuraavaksi yhteys WFS (Web Feature Service)-paikkatietopalveluun, jonka
 Luo uusi yhteys alla listattuihin WFS-paikkatietopalveluihin tai valitse haluamasi palvelut aikaisemmin mainitusta Gispon ylläpitämästä listauksesta.
 
 **Tilastokeskus (väestöruutuaineisto)**: http://geo.stat.fi/geoserver/vaestoruutu/wfs
+
 **Väylävirasto**: https://julkinen.vayla.fi/inspirepalvelu/avoin/wfs
+
 **Jyväskylän yliopisto (liikuntapaikat)**: http://lipas.cc.jyu.fi/geoserver/lipas/ows?
 
 Kun olet lisännyt WFS-paikkatietopalvelun tiedot QGISiin, voit ottaa siihen yhteyden samalla tavalla kuin WMS-palveluiden yhteydessä. Kun lisäät aineistoja WFS-palveluista QGIS-projektiisi, voit huomata, että aineistot ovat vektorimuotoisia. Jos haluat käsitellä WFS-palvelun kautta lisäämääsi aineistoa (esimerkiksi editoida kohteita), täytyy se tallentaa lokaalisti omalle tietokoneellesi.
