@@ -67,3 +67,9 @@ arvioitu-kesto-5
 valmistautuminen-5
 vektoriaineiston-luokittelut
 rasteriaineiston-luokittelut
+harjoitus-7-karttatuloste-ja-kartta-atlas
+harjoituksen-sisältö-6
+harjoituksen-tavoite-5
+arvioitu-kesto-6
+karttatuloste
+kartta-atlas

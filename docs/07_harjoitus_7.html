@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<!-- Based on TemplateMo 553 Xtra Blog: https://templatemo.com/tm-553-xtra-blog -->
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="9 Harjoitus 7: Karttatuloste ja kartta-atlas | Johdanto paikkatietoon ja QGISin käyttöön" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="Gispo Ltd." />
+
+<meta name="date" content="2022-01-26" />
+
+
+<meta name="description" content="9 Harjoitus 7: Karttatuloste ja kartta-atlas | Johdanto paikkatietoon ja QGISin käyttöön">
+
+<title>9 Harjoitus 7: Karttatuloste ja kartta-atlas | Johdanto paikkatietoon ja QGISin käyttöön</title>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/hamburgers.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<div class="main-content">
+<!-- special comment to mark beginning of title section for bookdown -->
+<!-- bookdown comments must be in this order: title, toc, body -->
+
+<div class="main-content-wrapper">
+
+<div class="row">
+<div class="col-sm-12">
+<header class="main-toc sidebar" id="sidebar">
+<div class="sidebar-wrapper">
+
+<button class="navbar-toggle hamburger hamburger--collapse" id="navbar-toggle"
+type="button" onclick="navToggle()" aria-label="Toggle navigation">
+<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+</button>
+
+<div class="sidebar-title-wrapper">
+<img alt="Logo" width="100" src="img/gispo_white_sm.png" class="sidebar-logo">
+<div class="sidebar-title"><h1>Johdanto paikkatietoon ja QGISin käyttöön</h1></div>
+<div class="abstract-sidebar"><p>Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin</p></div>
+</div>
+
+<nav class="sidebar-nav">
+<div id="TOC" class="toc">
+<ul>
+<li><a href="index.html#introduction-to-qgis"><span class="toc-section-number">1</span> Introduction to QGIS</a>
+<ul>
+<li><a href="index.html#about"><span class="toc-section-number">1.1</span> About</a></li>
+<li><a href="index.html#license-and-permissions"><span class="toc-section-number">1.2</span> License and permissions</a></li>
+</ul></li>
+<li><a href="01_harjoitus_1.html#harjoitus-1-koulutusympäristön-valmistaminen"><span class="toc-section-number">2</span> Harjoitus 1: Koulutusympäristön valmistaminen</a>
+<ul>
+<li><a href="01_harjoitus_1.html#harjoituksen-sisältö"><span class="toc-section-number">2.1</span> Harjoituksen sisältö</a></li>
+<li><a href="01_harjoitus_1.html#arvioitu-kesto"><span class="toc-section-number">2.2</span> Arvioitu kesto</a></li>
+<li><a href="01_harjoitus_1.html#valmistautuminen"><span class="toc-section-number">2.3</span> Valmistautuminen</a></li>
+<li><a href="01_harjoitus_1.html#qgisin-lataus-ja-asennus"><span class="toc-section-number">2.4</span> QGISin lataus ja asennus</a></li>
+<li><a href="01_harjoitus_1.html#kurssimateriaalien-lataus"><span class="toc-section-number">2.5</span> Kurssimateriaalien lataus</a></li>
+</ul></li>
+<li><a href="02_env.html#training-environment"><span class="toc-section-number">3</span> Training environment</a></li>
+<li><a href="02_harjoitus_2.html#harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä"><span class="toc-section-number">4</span> Harjoitus 2: Paikkatietoaineistot ja QGISin käyttöliittymä</a>
+<ul>
+<li><a href="02_harjoitus_2.html#harjoituksen-sisältö-1"><span class="toc-section-number">4.1</span> Harjoituksen sisältö</a></li>
+<li><a href="02_harjoitus_2.html#harjoituksen-tavoite"><span class="toc-section-number">4.2</span> Harjoituksen tavoite</a></li>
+<li><a href="02_harjoitus_2.html#arvioitu-kesto-1"><span class="toc-section-number">4.3</span> Arvioitu kesto</a></li>
+<li><a href="02_harjoitus_2.html#valmistautuminen-1"><span class="toc-section-number">4.4</span> Valmistautuminen</a></li>
+<li><a href="02_harjoitus_2.html#paikkatietoaineiston-tiedostot"><span class="toc-section-number">4.5</span> Paikkatietoaineiston tiedostot</a></li>
+<li><a href="02_harjoitus_2.html#qgisin-käyttöliittymä"><span class="toc-section-number">4.6</span> QGISin käyttöliittymä</a></li>
+<li><a href="02_harjoitus_2.html#työkalupalkit"><span class="toc-section-number">4.7</span> 1. Työkalupalkit</a></li>
+<li><a href="02_harjoitus_2.html#karttaikkuna"><span class="toc-section-number">4.8</span> 2. Karttaikkuna</a></li>
+<li><a href="02_harjoitus_2.html#selain-paneeli"><span class="toc-section-number">4.9</span> 3. Selain-paneeli</a></li>
+<li><a href="02_harjoitus_2.html#tasoluettelo"><span class="toc-section-number">4.10</span> 4. Tasoluettelo</a></li>
+<li><a href="02_harjoitus_2.html#hakutoiminto"><span class="toc-section-number">4.11</span> 5. Hakutoiminto</a></li>
+<li><a href="02_harjoitus_2.html#tilapalkki"><span class="toc-section-number">4.12</span> 6. Tilapalkki</a></li>
+<li><a href="02_harjoitus_2.html#kokeile-itse"><span class="toc-section-number">4.13</span> Kokeile itse</a></li>
+<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-valinta"><span class="toc-section-number">4.14</span> Paikkatietoaineiston kohteiden valinta</a></li>
+<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-suodatus"><span class="toc-section-number">4.15</span> Paikkatietoaineiston kohteiden suodatus</a></li>
+</ul></li>
+<li><a href="03_harjoitus_3.html#harjoitus-3-paikkatietopalvelut"><span class="toc-section-number">5</span> Harjoitus 3: Paikkatietopalvelut</a>
+<ul>
+<li><a href="03_harjoitus_3.html#harjoituksen-sisältö-2"><span class="toc-section-number">5.1</span> Harjoituksen sisältö</a></li>
+<li><a href="03_harjoitus_3.html#harjoituksen-tavoite-1"><span class="toc-section-number">5.2</span> Harjoituksen tavoite</a></li>
+<li><a href="03_harjoitus_3.html#arvioitu-kesto-2"><span class="toc-section-number">5.3</span> Arvioitu kesto</a></li>
+<li><a href="03_harjoitus_3.html#valmistautuminen-2"><span class="toc-section-number">5.4</span> Valmistautuminen</a></li>
+<li><a href="03_harjoitus_3.html#wms-palvelun-lisääminen"><span class="toc-section-number">5.5</span> WMS-palvelun lisääminen</a></li>
+<li><a href="03_harjoitus_3.html#wfs-palvelun-lisääminen"><span class="toc-section-number">5.6</span> WFS-palvelun lisääminen</a></li>
+<li><a href="03_harjoitus_3.html#paikkatietopalvelujen-tallentaminen"><span class="toc-section-number">5.7</span> Paikkatietopalvelujen tallentaminen</a></li>
+</ul></li>
+<li><a href="04_harjoitus_4.html#harjoitus-4-koordinaattijärjestelmät"><span class="toc-section-number">6</span> Harjoitus 4: Koordinaattijärjestelmät</a>
+<ul>
+<li><a href="04_harjoitus_4.html#harjoituksen-sisältö-3"><span class="toc-section-number">6.1</span> Harjoituksen sisältö</a></li>
+<li><a href="04_harjoitus_4.html#harjoituksen-tavoite-2"><span class="toc-section-number">6.2</span> Harjoituksen tavoite</a></li>
+<li><a href="04_harjoitus_4.html#arvioitu-kesto-3"><span class="toc-section-number">6.3</span> Arvioitu kesto</a></li>
+<li><a href="04_harjoitus_4.html#valmistautuminen-3"><span class="toc-section-number">6.4</span> Valmistautuminen</a></li>
+<li><a href="04_harjoitus_4.html#projektin-koordinaattijärjestelmä"><span class="toc-section-number">6.5</span> Projektin koordinaattijärjestelmä</a></li>
+<li><a href="04_harjoitus_4.html#paikkatietoaineiston-koordinaattijärjestelmä"><span class="toc-section-number">6.6</span> Paikkatietoaineiston koordinaattijärjestelmä</a></li>
+<li><a href="04_harjoitus_4.html#paikkatietoaineiston-uudelleenprojisointi"><span class="toc-section-number">6.7</span> Paikkatietoaineiston uudelleenprojisointi</a>
+<ul>
+<li><a href="04_harjoitus_4.html#tapa-1-projisoi-taso--prosessityökalu"><span class="toc-section-number">6.7.1</span> Tapa 1: Projisoi taso -prosessityökalu</a></li>
+<li><a href="04_harjoitus_4.html#tapa-2-tallennus-tasot-paneelissa"><span class="toc-section-number">6.7.2</span> Tapa 2: Tallennus Tasot-paneelissa</a></li>
+</ul></li>
+</ul></li>
+<li><a href="05_harjoitus_5.html#harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys"><span class="toc-section-number">7</span> Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys</a>
+<ul>
+<li><a href="05_harjoitus_5.html#harjoituksen-sisältö-4"><span class="toc-section-number">7.1</span> Harjoituksen sisältö</a></li>
+<li><a href="05_harjoitus_5.html#harjoituksen-tavoite-3"><span class="toc-section-number">7.2</span> Harjoituksen tavoite</a></li>
+<li><a href="05_harjoitus_5.html#arvioitu-kesto-4"><span class="toc-section-number">7.3</span> Arvioitu kesto</a></li>
+<li><a href="05_harjoitus_5.html#valmistautuminen-4"><span class="toc-section-number">7.4</span> Valmistautuminen</a></li>
+<li><a href="05_harjoitus_5.html#rasteriaineistojen-visualisointi"><span class="toc-section-number">7.5</span> Rasteriaineistojen visualisointi</a></li>
+<li><a href="05_harjoitus_5.html#vektoriaineistojen-visualisointi"><span class="toc-section-number">7.6</span> Vektoriaineistojen visualisointi</a></li>
+<li><a href="05_harjoitus_5.html#pisteaineiston-visualisointi"><span class="toc-section-number">7.7</span> Pisteaineiston visualisointi</a></li>
+<li><a href="05_harjoitus_5.html#polygoniaineiston-visualisointi"><span class="toc-section-number">7.8</span> Polygoniaineiston visualisointi</a></li>
+<li><a href="05_harjoitus_5.html#symbolien-muuttaminen"><span class="toc-section-number">7.9</span> Symbolien muuttaminen</a></li>
+<li><a href="05_harjoitus_5.html#mittakaavan-käyttö-symboleissa"><span class="toc-section-number">7.10</span> Mittakaavan käyttö symboleissa</a></li>
+<li><a href="05_harjoitus_5.html#symbolitasojen-muokkaaminen"><span class="toc-section-number">7.11</span> Symbolitasojen muokkaaminen</a></li>
+<li><a href="05_harjoitus_5.html#tekstitys-eli-nimiöinti"><span class="toc-section-number">7.12</span> Tekstitys eli nimiöinti</a></li>
+<li><a href="05_harjoitus_5.html#nimiöiden-tyyli--ja-yleisasetukset"><span class="toc-section-number">7.13</span> Nimiöiden tyyli- ja yleisasetukset</a></li>
+<li><a href="05_harjoitus_5.html#teksti"><span class="toc-section-number">7.14</span> Teksti</a></li>
+<li><a href="05_harjoitus_5.html#nimiöinnit-viivatasoilla"><span class="toc-section-number">7.15</span> Nimiöinnit viivatasoilla</a></li>
+<li><a href="05_harjoitus_5.html#nimiöiden-piirtäminen"><span class="toc-section-number">7.16</span> Nimiöiden piirtäminen</a></li>
+<li><a href="05_harjoitus_5.html#edistyneet-ominaisuudet"><span class="toc-section-number">7.17</span> Edistyneet ominaisuudet</a></li>
+</ul></li>
+<li><a href="06_harjoitus_6.html#harjoitus-6-paikkatietoaineiston-luokittelu"><span class="toc-section-number">8</span> Harjoitus 6: Paikkatietoaineiston luokittelu</a>
+<ul>
+<li><a href="06_harjoitus_6.html#harjoituksen-sisältö-5"><span class="toc-section-number">8.1</span> Harjoituksen sisältö</a></li>
+<li><a href="06_harjoitus_6.html#harjoituksen-tavoite-4"><span class="toc-section-number">8.2</span> Harjoituksen tavoite</a></li>
+<li><a href="06_harjoitus_6.html#arvioitu-kesto-5"><span class="toc-section-number">8.3</span> Arvioitu kesto</a></li>
+<li><a href="06_harjoitus_6.html#valmistautuminen-5"><span class="toc-section-number">8.4</span> Valmistautuminen</a></li>
+<li><a href="06_harjoitus_6.html#vektoriaineiston-luokittelut"><span class="toc-section-number">8.5</span> Vektoriaineiston luokittelut</a></li>
+<li><a href="06_harjoitus_6.html#rasteriaineiston-luokittelut"><span class="toc-section-number">8.6</span> Rasteriaineiston luokittelut</a></li>
+</ul></li>
+<li><a href="07_harjoitus_7.html#harjoitus-7-karttatuloste-ja-kartta-atlas"><span class="toc-section-number">9</span> Harjoitus 7: Karttatuloste ja kartta-atlas</a>
+<ul>
+<li><a href="07_harjoitus_7.html#harjoituksen-sisältö-6"><span class="toc-section-number">9.1</span> Harjoituksen sisältö</a></li>
+<li><a href="07_harjoitus_7.html#harjoituksen-tavoite-5"><span class="toc-section-number">9.2</span> Harjoituksen tavoite</a></li>
+<li><a href="07_harjoitus_7.html#arvioitu-kesto-6"><span class="toc-section-number">9.3</span> Arvioitu kesto</a></li>
+<li><a href="07_harjoitus_7.html#karttatuloste"><span class="toc-section-number">9.4</span> Karttatuloste</a></li>
+<li><a href="07_harjoitus_7.html#kartta-atlas"><span class="toc-section-number">9.5</span> Kartta-atlas</a></li>
+</ul></li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="harjoitus-7-karttatuloste-ja-kartta-atlas" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> Harjoitus 7: Karttatuloste ja kartta-atlas</h1>
+<div id="harjoituksen-sisältö-6" class="section level2" number="9.1">
+<h2><span class="header-section-number">9.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa tehdään karttatuloste sekä kartta-atlas.</p>
+</div>
+<div id="harjoituksen-tavoite-5" class="section level2" number="9.2">
+<h2><span class="header-section-number">9.2</span> Harjoituksen tavoite</h2>
+<p>Opiskelija osaa laatia karttatulosteen halutussa mittakaavassa sekä tehdä tulosteesta PDF-tiedoston.</p>
+</div>
+<div id="arvioitu-kesto-6" class="section level2" number="9.3">
+<h2><span class="header-section-number">9.3</span> Arvioitu kesto</h2>
+<p>40 minuuttia.</p>
+<p>##Valmistautuminen
+Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 7</strong>”. Lisää projektiin seuraavat aineistot:</p>
+<p>../kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019</p>
+<p>../kurssihakemisto/muuta/HSY_postinumeroalueet/HSY_postinumeroalueet_2019</p>
+<p>Haluamasi taustakartta, esimerkiksi Selain &gt; XYZ Tiles &gt; OpenStreetMap</p>
+<p><img src="img/harjoitus_7/image1.png" /></p>
+</div>
+<div id="karttatuloste" class="section level2" number="9.4">
+<h2><span class="header-section-number">9.4</span> Karttatuloste</h2>
+<p>Piilota HSY_postinumeroalueet_2019-aineisto karttaikkunastasi ja jätä <strong>HSY_vaestotietoruudukko_2019</strong>-aineisto ja <strong>OpenStreetMap</strong>-aineisto näkyviin. Visualisoi HSY_vaestotietoruudukko_2019-aineisto haluamallasi tavalla - voit esimerkiksi luokitella aineiston asvaljyys-kentän mukaisesti. Voit visualisoida myös OpenStreetMap-rasteriaineistoa halutessasi. Karttasi voi näyttää esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image2.png" /></p>
+<p>Uuden tulosteen muodostaminen voidaan aloittaa kahdella tavalla, joko valitsemalla <strong>Projekti &gt; Uusi taitto</strong> tai klikkaamalla <strong>Uusi taitto</strong> -työkalua <img src="img/harjoitus_7/image3.png" /> . Kaikkia taittoja voidaan hallinnoida <strong>Näytä taittojen hallinta</strong> -työkalulla <img src="img/harjoitus_7/image4.png" />. Luo uusi taitto ja anna taitolle jokin sitä kuvaava nimi, jonka jälkeen uusi taitto avautuu <strong>Tulosteen muodostaja</strong> -ikkunaan. Tästä ikkunasta löytyy hieman erilaisia työkaluja kuin QGISin normaalista työtilasta. Klikkaa ensimmäiseksi tulostusalueella hiiren oikealla painikkeella ja valitse <strong>Sivun ominaisuudet</strong>. Valitse oikealta <strong>Elementin ominaisuudet</strong> -välilehti ja aseta <strong>sivun kooksi A4 ja suunnaksi Vaaka</strong>. Valitse sitten <strong>Taitto</strong>-välilehti ja tarkista, että viennin <strong>resoluutio on 300 dpi</strong>.</p>
+<p><img src="img/harjoitus_7/image5.png" />
+<img src="img/harjoitus_7/image6.png" /></p>
+<p>Nyt taiton pohjatyöt on tehty ja varsinainen taittotyö voidaan aloittaa. Lisätään taittoon ensimmäiseksi karttaikkuna. Klikkaa vasemmasta työkalupalkista <strong>Lisää Kartta -työkalua</strong> <img src="img/harjoitus_7/image7.png" /> . Vedä tulosalueelle haluamasi kokoinen suorakulmio, minkä jälkeen kartta piirtyy suorakulmion sisään.</p>
+<p><img src="img/harjoitus_7/image8.png" /></p>
+<p>Valitse sitten <strong>Valitse/siirrä elementtiä -työkalu</strong> <img src="img/harjoitus_7/image9.png" /> vasemmasta työkalupalkista ja klikkaa karttaelementti aktiiviseksi. Valitse <strong>Elementin ominaisuudet -välilehti</strong>. Muuta kartan parametrejä seuraavasti:</p>
+<p>Kartan mittakaava 1:250 000</p>
+<p>Valitse <strong>Kehys</strong> aktiiviseksi, jolloin karttaelementille piirtyy reunat</p>
+<p><img src="img/harjoitus_7/image10.png" />
+<img src="img/harjoitus_7/image11.png" /></p>
+<p>Siirrä karttaelementin sisältöä <strong>Siirrä elementtiä -työkalulla</strong> <img src="img/harjoitus_7/image12.png" /> . Karttaelementin tulee olla aktiivinen, jotta Siirrä elementtiä -työkalu toimii. Karttatuloste voi näyttää tällä hetkellä esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image13.png" /></p>
+<p>Myös muut alla listatut työkalut ovat hyödyllisiä.</p>
+<p><img src="img/harjoitus_7/image9.png" /> Valitse/siirrä elementtiä.</p>
+<p><img src="img/harjoitus_7/image12.png" /> Siirrä elementin sisältöä (esimerkiksi kartan sisältöä).</p>
+<p><img src="img/harjoitus_7/image14.png" /> Zoomaa taiton näkymässä.</p>
+<p>Lisää taittoosi nyt otsikko <strong>Lisää Otsikko -työkalulla</strong> <img src="img/harjoitus_7/image15.png" /> . <strong>Elementin ominaisuudet</strong> -välilehdeltä voit muokata otsikon ominaisuuksia tekstinkäsittelyohjelmista tutuilla työkaluilla. Aseta tekstin vaaka- ja pystykohdistukseksi <strong>Keskellä</strong>. Voit visualisoida nimiöelementtiä halutessasi.</p>
+<p><img src="img/harjoitus_7/image16.png" />
+<img src="img/harjoitus_7/image17.png" /></p>
+<p>Lisää seuraavaksi taittoon selite <strong>Lisää Selite -työkalulla</strong> <img src="img/harjoitus_7/image18.png" /> . Voit huomata, että selitteeseen tulee kaikki QGIS-työtilan puolella olevat tasot sekä tasojen ei-niin-silmää-miellyttävät nimet.</p>
+<p><img src="img/harjoitus_7/image19.png" /></p>
+<p>Klikkaa selite aktiiviseksi ja mene <strong>Elementin ominaisuudet &gt; Selitteen merkinnät</strong> -kohtaan. Ota ensimmäiseksi rasti pois <strong>Päivitä automaattisesti</strong> -kohdasta, sillä tämän valinnan ollessa aktiivinen, QGIS-projektin tasot tuodaan automaattisesti selitteeseen sellaisenaan eikä niitä ole mahdollista muokata. Aseta rasti kohtaan <strong>Only show items inside linked map</strong>, jolloin selitteessä näytetään vain ne aineistot, jotka näkyvät karttaelementissä. Klikkaa hiiren oikealla painikkeella <strong>HSY_vaestotietoruudukko_2019</strong>-aineistoa ja aktivoi kohta <strong>Piilotettu</strong>. Tämä asetus piilottaa tason nimen. Tee sama <strong>OpenStreetMap</strong>-aineiston kohdalla.</p>
+<p><img src="img/harjoitus_7/image20.png" />
+<img src="img/harjoitus_7/image21.png" /></p>
+<blockquote>
+<p>Psst! Mikäli aineiston piilotus selitteestä ei onnistu, aineistoja voi poistaa selitteestä myös miinus-merkistä.</p>
+</blockquote>
+<p>Nyt selitteen pitäisi näyttää miellyttävämmältä. Lisätään selitteelle otsikko <strong>Tärkeimmät ominaisuudet</strong> -kohdasta. Voit lisäksi muotoilla selitettä haluamasi näköiseksi kohdista <strong>Fontit ja tekstin muotoilu, Symboli</strong> sekä <strong>Jaottelu</strong>. Aseta selitteelle samanlainen reunamuotoilu kuin karttaelementille.</p>
+<p><img src="img/harjoitus_7/image22.png" /></p>
+<p>Lisää taittoosi mittakaava <strong>Lisää Mittakaavajana -työkalulla</strong> <img src="img/harjoitus_7/image23.png" /> . Mene jälleen <strong>Elementin ominaisuudet</strong> -välilehdelle ja tarkastele eri ominaisuuksia. Vaihda <strong>Tyyli</strong>-kohtaan <strong>Jana, jakoviivat yläpuolella</strong>. Muuta visualisointia haluamaksesi.</p>
+<p>Lisätään karttatulosteeseen lopuksi myös pohjoisnuoli työkalulla <img src="img/harjoitus_7/image24.png" />. Pohjoisnuolta ei enää nykypäivänä käytetä, ellei pohjoinen ole jossakin muualla kuin ylhäällä. Aseta <strong>Elementin ominaisuudet</strong> -välilehdellä pohjoisnuolesi kierto ruksimalla kohta <strong>Synkronoi kartan kanssa</strong>. Jos nyt kierrät karttaelementtiä, pohjoisnuoli kiertyy mukana.</p>
+<p>Voit lisätä pohjoisnuolen (tai minkä tahansa muun symbolin/kuvan) myös <strong>Lisää uusi kuva taittoon -työkalulla</strong> <img src="img/harjoitus_7/image25.png" /> . Vedä taittoon kohta, johon haluat pohjoisnuolen sijoittuvan. Valitse sen jälkeen <strong>Elementin ominaisuudet</strong> -välilehdeltä <strong>Hakemistopolut</strong>-kohdasta haluamasi pohjoisnuoli (selaa sisältöä alaspäin, jos et heti näe nuolia). Tyylittele nuoli haluamallasi tavalla.</p>
+<p><img src="img/harjoitus_7/image26.png" /></p>
+<p>Valmis karttatuloste voi näyttää esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image27.png" /></p>
+<p>Halutessasi voit tallentaa käyttämäsi taittomallin <strong>Tallenna malliksi</strong> -työkalulla <img src="img/harjoitus_7/image28.png" /> ja hyödyntää sitä jatkossa seuraavien karttatulosteiden tekemiseen. Voit esimerkiksi muotoilla karttatulostemallin organisaatiollesi (logot, värit, tekstin paikka…). Karttatulosteen voi viedä kuvaksi (PNG/JPEG), muodoksi (SVG), digitulosteeksi (PDF) tai lähettää fyysiseen tulostimeen tulostettavaksi.</p>
+<p><img src="img/harjoitus_7/image29.png" /></p>
+<p>Voit halutessasi tallentaa karttatulosteesi kuvatiedostoksi esimerkiksi kurssihakemistoon. Sopiva resoluutio karttatulosteellesi riippuu kartan käyttötarkoituksesta, mutta oletusarvoinen 300 dpi tallentaa resoluutioltaan hyvinkin tarkkoja kuvia.</p>
+</div>
+<div id="kartta-atlas" class="section level2" number="9.5">
+<h2><span class="header-section-number">9.5</span> Kartta-atlas</h2>
+<p>QGIS mahdollistaa myös kartta-atlaksen tekemisen. Kartta-atlas on ns. karttakirja, jonka avulla voidaan tuottaa automatisoidusti paljon karttoja samasta teemasta. Seuraavassa esimerkissä tuotetaan kartta-atlas Helsingin postinumeroalueista tutkien niitä väestön jakautumisen näkökulmasta. Tavoitteenamme on tuottaa 173 karttaa, jotka kattavat kaikki pääkaupunkiseudun postinumeroalueet. Aseta nyt <strong>HSY_postinumeroalueet_2019-aineisto</strong> näkyväksi yhdessä HSY_vaestotietoruudukko_2019-aineiston sekä OpenStreetMapin kanssa. Visualisoi postinumeroaineisto niin, että polygonin täyttö on läpinäkyvä ja reunat näkyvät hyvin.</p>
+<p><img src="img/harjoitus_7/image30.png" /></p>
+<p>Luo uusi taitto. Lisää taittoon karttaelementti, johon piirtyvät karttaikkunassa näkyvät projektin tasot. Lisää taittoon otsikko, selite, mittakaava ja muita haluamiasi graafisia tai kartografisia elementtejä (kuten logo tai pohjoisnuoli). Karttaelementin mittakaava kannattaa asettaa yhden postinumeroalueen laajuiseksi (esimerkiksi 1:25 000), sillä lopputuloksessa kartta-atlaksen karttalehdet kohdentuvat automaattisesti postinumeroalueiden kokoon. Karttatuloste voi tässä vaiheessa näyttää esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image31.png" /></p>
+<p>Sitten aloitetaan kartta-atlaksen tuottaminen. Kartta-atlas-ominaisuus on aktivoitava, ennen kuin sitä voidaan hyödyntää QGISin tulosteen muodostajassa. Valitse ylävalikosta <strong>Atlas &gt; Atlaksen asetukset</strong>. Oikealle ilmestyy uusi <strong>Atlas-välilehti</strong>, josta aktivoidaan kohta <strong>Luo atlas</strong>. Aseta <strong>Coverage layer</strong> -kohtaan se taso, jonka alueisiin kartta-atlas perustuu - tässä tapauksessa se on <strong>HSY_postinumeroalueet_2019</strong>.</p>
+<p><img src="img/harjoitus_7/image32.png" /></p>
+<p>Varmista, että karttakomponentti on valittuna: valitse <strong>Valitse/Siirrä elementtiä -työkalu</strong> vasemmasta työkalupalkista ja klikkaa kartta aktiiviseksi. Muokkaa kartta-atlasasetuksia oikean puolen sivupalkissa <strong>Elementin ominaisuudet &gt; Atlas ohjaa tätä</strong>.</p>
+<p><img src="img/harjoitus_7/image33.png" /></p>
+<p>Painikkeella <img src="img/harjoitus_7/image0.png" /> saat auki leikkausasetukset. Voit leikata joko osan karttasi tasoista tai kaikki tasot atlaksen kulloisenkin kohteen mukaisesti.</p>
+<p><img src="img/harjoitus_7/image34.png" />
+<img src="img/harjoitus_7/image35.png" /></p>
+<p>Tämän jälkeen voimme esikatsella kartta-atlastamme valitsemalla ylävalikosta <strong>Atlas &gt; Esikatsele Atlasta</strong>. Esikatselun avulla voit vilkaista, miltä kartta-atlas näyttää tulostaessa. Käytä nuolia esikatselu-työkalupalkista. Huomaa, että voit tehdä samanaikaisesti muutoksia karttatulosteen tyyliasetuksiin tai vaikkapa tason luokitteluväreihin.</p>
+<p><img src="img/harjoitus_7/image36.png" /></p>
+<p>Lisää karttatulosteeseen yleiskatsauskarttanäkymä eli indeksikartta valitsemalla <strong>Lisää uusi kartta taittoon</strong> -työkalu ja lisäämällä pienempi karttaelementti isomman viereen. Indeksikartta näyttää, millä alueella liikutaan. Valitse indeksikarttaelementti aktiiviseksi ja mene <strong>Elementin omaisuudet &gt; Yleiskatsaukset</strong> ja lisää yleiskatsaus plussasta. Määritä asetukset kuvan mukaisesti:</p>
+<p><img src="img/harjoitus_7/image37.png" /></p>
+<p>Voit halutessasi myös muuttaa yleiskatsauskartan kehyksen tyylin. Kokeile atlaksen esikatselua niin huomaat, että yleiskatsauskartan kehys liikkuu pääkartan mukana. Kun olet valmis, voit tulostaa kartta-atlaksen halutessasi <strong>Vie atlas</strong> -työkalulla. Huomaa, että jokaisesta kartta-atlaksen sivusta syntyy kuva, joten tallentaminen voi viedä aikaa.</p>
+<p><img src="img/harjoitus_7/image38.png" /></p>
+<p>Voit tulostaa atlaksen yksittäisinä kuvina tai yhteen tiedostoon PDF-formaatissa. Yhteen tiedostoon tallentaminen onnistuu aktivoimalla <strong>Yhden tiedoston vienti, jos mahdollista</strong> -asetuksen Atlas-välilehdellä.</p>
+<p><img src="img/harjoitus_7/image39.png" /></p>
+<p>valmiin kartta-atlaksen sivu voi näyttää esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image40.png" /></p>
+<p>Huomaa, kuinka yleiskarttanäkymän neliö vaihtaa paikkaa kun kohdennetun kartan alue vaihtuu.</p>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> (englanninkielisessä QGISissä CTRL + S) tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<blockquote>
+<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
+</blockquote>
+
+</div>
+</div>
+<p style="text-align: center;">
+<a href="06_harjoitus_6.html"><button class="btn btn-default">Previous</button></a>
+</p>
+</div>
+</div>
+
+<footer class="footer text-center">
+
+<div class="footer-container text-center">
+
+<div class="footer-info">
+<h5 class="footer-title">Johdanto paikkatietoon ja QGISin käyttöön</h5>
+<span class="footer-version">v2022-01-26</span>
+<div class="license"><img src="img/by-nd.svg" width="80px" alt="CC-BY-ND"></div>
+</div>
+
+<div class="footer-info">
+<h5 class="footer-title footer-company">Gispo Ltd.
+<span class="footer-copyright-year">© 2021</span></h5>
+<span class="footer-contact-info">Kalevankatu 31
+<br>00100 Helsinki, Finland
+<br>info@gispo.fi
+</span>
+</div>
+
+</div>
+</div>
+</footer>
+</div>
+
+
+<script src="js/nav-script.js"></script>
+
+</body>
+</html>
