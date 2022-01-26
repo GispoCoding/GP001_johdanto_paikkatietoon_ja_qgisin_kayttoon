@@ -89,3 +89,13 @@ harjoitus-9-paikkatietoanalyysit
 harjoituksen-sisältö-8
 valmistautuminen-8
 vektorianalyysit
+harjoitus-10-qgisin-lisäosat
+harjoituksen-sisältö-9
+harjoituksen-tavoite-7
+arvioitu-kesto-8
+valmistautuminen-9
+lisäosien-hallinta
+quickmapservices
+qgis2threejs
+qgis2web
+prosessointityökalut
