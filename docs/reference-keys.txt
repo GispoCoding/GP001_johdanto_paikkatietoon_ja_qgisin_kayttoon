@@ -85,3 +85,7 @@ vektoriaineiston-editointi
 muokkauksen-yleisasetukset
 geometrioiden-lisääminen
 ominaisuustietojen-lisääminen
+harjoitus-9-paikkatietoanalyysit
+harjoituksen-sisältö-8
+valmistautuminen-8
+vektorianalyysit
