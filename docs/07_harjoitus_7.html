@@ -153,8 +153,9 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <li><a href="07_harjoitus_7.html#harjoituksen-sisältö-6"><span class="toc-section-number">9.1</span> Harjoituksen sisältö</a></li>
 <li><a href="07_harjoitus_7.html#harjoituksen-tavoite-5"><span class="toc-section-number">9.2</span> Harjoituksen tavoite</a></li>
 <li><a href="07_harjoitus_7.html#arvioitu-kesto-6"><span class="toc-section-number">9.3</span> Arvioitu kesto</a></li>
-<li><a href="07_harjoitus_7.html#karttatuloste"><span class="toc-section-number">9.4</span> Karttatuloste</a></li>
-<li><a href="07_harjoitus_7.html#kartta-atlas"><span class="toc-section-number">9.5</span> Kartta-atlas</a></li>
+<li><a href="07_harjoitus_7.html#valmistautuminen-6"><span class="toc-section-number">9.4</span> Valmistautuminen</a></li>
+<li><a href="07_harjoitus_7.html#karttatuloste"><span class="toc-section-number">9.5</span> Karttatuloste</a></li>
+<li><a href="07_harjoitus_7.html#kartta-atlas"><span class="toc-section-number">9.6</span> Kartta-atlas</a></li>
 </ul></li>
 </ul>
 </div>
@@ -178,15 +179,17 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <div id="arvioitu-kesto-6" class="section level2" number="9.3">
 <h2><span class="header-section-number">9.3</span> Arvioitu kesto</h2>
 <p>40 minuuttia.</p>
-<p>##Valmistautuminen
-Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 7</strong>”. Lisää projektiin seuraavat aineistot:</p>
+</div>
+<div id="valmistautuminen-6" class="section level2" number="9.4">
+<h2><span class="header-section-number">9.4</span> Valmistautuminen</h2>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 7</strong>”. Lisää projektiin seuraavat aineistot:</p>
 <p>../kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019</p>
 <p>../kurssihakemisto/muuta/HSY_postinumeroalueet/HSY_postinumeroalueet_2019</p>
 <p>Haluamasi taustakartta, esimerkiksi Selain &gt; XYZ Tiles &gt; OpenStreetMap</p>
 <p><img src="img/harjoitus_7/image1.png" /></p>
 </div>
-<div id="karttatuloste" class="section level2" number="9.4">
-<h2><span class="header-section-number">9.4</span> Karttatuloste</h2>
+<div id="karttatuloste" class="section level2" number="9.5">
+<h2><span class="header-section-number">9.5</span> Karttatuloste</h2>
 <p>Piilota HSY_postinumeroalueet_2019-aineisto karttaikkunastasi ja jätä <strong>HSY_vaestotietoruudukko_2019</strong>-aineisto ja <strong>OpenStreetMap</strong>-aineisto näkyviin. Visualisoi HSY_vaestotietoruudukko_2019-aineisto haluamallasi tavalla - voit esimerkiksi luokitella aineiston asvaljyys-kentän mukaisesti. Voit visualisoida myös OpenStreetMap-rasteriaineistoa halutessasi. Karttasi voi näyttää esimerkiksi tältä:</p>
 <p><img src="img/harjoitus_7/image2.png" /></p>
 <p>Uuden tulosteen muodostaminen voidaan aloittaa kahdella tavalla, joko valitsemalla <strong>Projekti &gt; Uusi taitto</strong> tai klikkaamalla <strong>Uusi taitto</strong> -työkalua <img src="img/harjoitus_7/image3.png" /> . Kaikkia taittoja voidaan hallinnoida <strong>Näytä taittojen hallinta</strong> -työkalulla <img src="img/harjoitus_7/image4.png" />. Luo uusi taitto ja anna taitolle jokin sitä kuvaava nimi, jonka jälkeen uusi taitto avautuu <strong>Tulosteen muodostaja</strong> -ikkunaan. Tästä ikkunasta löytyy hieman erilaisia työkaluja kuin QGISin normaalista työtilasta. Klikkaa ensimmäiseksi tulostusalueella hiiren oikealla painikkeella ja valitse <strong>Sivun ominaisuudet</strong>. Valitse oikealta <strong>Elementin ominaisuudet</strong> -välilehti ja aseta <strong>sivun kooksi A4 ja suunnaksi Vaaka</strong>. Valitse sitten <strong>Taitto</strong>-välilehti ja tarkista, että viennin <strong>resoluutio on 300 dpi</strong>.</p>
@@ -228,8 +231,8 @@ Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nim
 <p><img src="img/harjoitus_7/image29.png" /></p>
 <p>Voit halutessasi tallentaa karttatulosteesi kuvatiedostoksi esimerkiksi kurssihakemistoon. Sopiva resoluutio karttatulosteellesi riippuu kartan käyttötarkoituksesta, mutta oletusarvoinen 300 dpi tallentaa resoluutioltaan hyvinkin tarkkoja kuvia.</p>
 </div>
-<div id="kartta-atlas" class="section level2" number="9.5">
-<h2><span class="header-section-number">9.5</span> Kartta-atlas</h2>
+<div id="kartta-atlas" class="section level2" number="9.6">
+<h2><span class="header-section-number">9.6</span> Kartta-atlas</h2>
 <p>QGIS mahdollistaa myös kartta-atlaksen tekemisen. Kartta-atlas on ns. karttakirja, jonka avulla voidaan tuottaa automatisoidusti paljon karttoja samasta teemasta. Seuraavassa esimerkissä tuotetaan kartta-atlas Helsingin postinumeroalueista tutkien niitä väestön jakautumisen näkökulmasta. Tavoitteenamme on tuottaa 173 karttaa, jotka kattavat kaikki pääkaupunkiseudun postinumeroalueet. Aseta nyt <strong>HSY_postinumeroalueet_2019-aineisto</strong> näkyväksi yhdessä HSY_vaestotietoruudukko_2019-aineiston sekä OpenStreetMapin kanssa. Visualisoi postinumeroaineisto niin, että polygonin täyttö on läpinäkyvä ja reunat näkyvät hyvin.</p>
 <p><img src="img/harjoitus_7/image30.png" /></p>
 <p>Luo uusi taitto. Lisää taittoon karttaelementti, johon piirtyvät karttaikkunassa näkyvät projektin tasot. Lisää taittoon otsikko, selite, mittakaava ja muita haluamiasi graafisia tai kartografisia elementtejä (kuten logo tai pohjoisnuoli). Karttaelementin mittakaava kannattaa asettaa yhden postinumeroalueen laajuiseksi (esimerkiksi 1:25 000), sillä lopputuloksessa kartta-atlaksen karttalehdet kohdentuvat automaattisesti postinumeroalueiden kokoon. Karttatuloste voi tässä vaiheessa näyttää esimerkiksi tältä:</p>
