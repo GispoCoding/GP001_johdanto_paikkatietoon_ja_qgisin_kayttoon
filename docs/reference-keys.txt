@@ -74,3 +74,14 @@ arvioitu-kesto-6
 valmistautuminen-6
 karttatuloste
 kartta-atlas
+harjoitus-8-paikkatietoaineiston-digitointieditointi
+harjoituksen-sisältö-7
+harjoituksen-tavoite-6
+arvioitu-kesto-7
+valmistautuminen-7
+vektoriaineiston-luominen
+tietorakenteen-valmistelu-ja-editointiasetukset
+vektoriaineiston-editointi
+muokkauksen-yleisasetukset
+geometrioiden-lisääminen
+ominaisuustietojen-lisääminen

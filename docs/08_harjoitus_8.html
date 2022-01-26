@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön" />
+<meta property="og:title" content="10 Harjoitus 8: Paikkatietoaineiston digitointi/editointi | Johdanto paikkatietoon ja QGISin käyttöön" />
 <meta property="og:type" content="book" />
 
 
@@ -19,9 +19,9 @@
 <meta name="date" content="2022-01-26" />
 
 
-<meta name="description" content="2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön">
+<meta name="description" content="10 Harjoitus 8: Paikkatietoaineiston digitointi/editointi | Johdanto paikkatietoon ja QGISin käyttöön">
 
-<title>2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön</title>
+<title>10 Harjoitus 8: Paikkatietoaineiston digitointi/editointi | Johdanto paikkatietoon ja QGISin käyttöön</title>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
@@ -179,40 +179,107 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div class="row">
 <div class="col-sm-12">
-<div id="harjoitus-1-koulutusympäristön-valmistaminen" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Harjoitus 1: Koulutusympäristön valmistaminen</h1>
-<div id="harjoituksen-sisältö" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Harjoituksen sisältö</h2>
-<p>Harjoituksessa ladataan QGIS ja tallennetaan kurssimateriaalit käytettävälle tietokoneelle.</p>
-<p>##Harjoituksen tavoite</p>
-<p>Harjoituksen jälkeen koulutettava osaa asentaa QGISin ja tietää oman kurssihakemistonsa sijainnin.</p>
+<div id="harjoitus-8-paikkatietoaineiston-digitointieditointi" class="section level1" number="10">
+<h1><span class="header-section-number">10</span> Harjoitus 8: Paikkatietoaineiston digitointi/editointi</h1>
+<div id="harjoituksen-sisältö-7" class="section level2" number="10.1">
+<h2><span class="header-section-number">10.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa muodostetaan uusi paikkatietoaineisto ja digitoidaan ilmakuvalta uutta tietoa.</p>
 </div>
-<div id="arvioitu-kesto" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Arvioitu kesto</h2>
-<p>10 minuuttia.</p>
+<div id="harjoituksen-tavoite-6" class="section level2" number="10.2">
+<h2><span class="header-section-number">10.2</span> Harjoituksen tavoite</h2>
+<p>Opiskelija osaa muodostaa paikkatietoaineiston ja muokata sitä.</p>
 </div>
-<div id="valmistautuminen" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Valmistautuminen</h2>
-<p>Avaa web-selain ja mene QGISin suomenkielisille verkkosivuille:
-<a href="http://www.qgis.org/fi/site/" class="uri">http://www.qgis.org/fi/site/</a></p>
+<div id="arvioitu-kesto-7" class="section level2" number="10.3">
+<h2><span class="header-section-number">10.3</span> Arvioitu kesto</h2>
+<p>40 minuuttia.</p>
 </div>
-<div id="qgisin-lataus-ja-asennus" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> QGISin lataus ja asennus</h2>
-<p>Löydät QGISin verkkosivujen etusivulta linkin, jonka avulla pääset lataamaan QGIS-työpöytäohjelmiston. Lataa sivustolta viimeisin <strong>QGIS LTR</strong> (long term release eli pitkäaikaisversio). Pitkäaikaisversio sopii parhaiten ammattikäyttöön, sillä se on vakain QGIS-versio – siitä voi kuitenkin puuttua joitakin uudempien versioiden ominaisuuksia. QGISin voi asentaa Windows-, Linux- tai Mac-käyttöjärjestelmään. Eri järjestelmien QGIS-versioiden välillä huomattavimmat erot ovat väriskeemoissa ja tiedostopoluissa – muuten erot ovat hyvin pieniä.
-<img src="img/harjoitus_1/image1.png" /></p>
-<p>Avaa tietokoneeltasi sijainti, jonne asennuspaketti latautui ja tuplaklikkaa asennuspaketin kuvaketta asentaaksesi QGIS-paketin tietokoneellesi. Kun asennus on suoritettu, kurkista työpöydälle ilmestyneeseen <strong>QGIS 3.16 -kansioon</strong> ja tarkastele sieltä löytyviä pikakuvakkeita.
-[](img(harjoitus_1(image2.png)</p>
-<p>QGISin perusasennuspaketin mukana tietokoneellesi asennetaan <strong>QGIS Desktop -perusohjelmiston</strong> lisäksi mm. <strong>QGIS Desktop with GRASS</strong> sekä <strong>SAGA GIS</strong>. Nämä QGISin perusversion mukana tulevat ohjelmistot tuovat QGISin käyttöön lisää erilaisia prosessointi- ja analysointityökaluja.</p>
+<div id="valmistautuminen-7" class="section level2" number="10.4">
+<h2><span class="header-section-number">10.4</span> Valmistautuminen</h2>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 8</strong>”. Lisää projektiin seuraavat aineistot:</p>
+<p>..kurssihakemisto/MML/Ortoilmakuvat/L4131F.tif</p>
+<blockquote>
+<p>Psst! Muista aina varmistaa että aineistolla ja projektilla on oikea koordinaattijärjestelmä!</p>
+</blockquote>
 </div>
-<div id="kurssimateriaalien-lataus" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Kurssimateriaalien lataus</h2>
-<p>Kouluttaja ohjeistaa sinua lataamaan kurssimateriaalit joko muistitikulta, Google Drivestä tai AWS-palvelimelta. Kopioi kurssimateriaalit omalle tietokoneellesi tai koulutuskoneelle haluamaasi kansioon niin, että löydät ne helposti harjoituksia tehdessä. Kun kurssimateriaalissa viitataan <strong>../kurssihakemisto/</strong>, tarkoitetaan itse määrittelemääsi kurssihakemiston polkua.</p>
+<div id="vektoriaineiston-luominen" class="section level2" number="10.5">
+<h2><span class="header-section-number">10.5</span> Vektoriaineiston luominen</h2>
+<p>Luodaan editointia/digitointia varten uusi GeoPackage-aineisto valitsemalla <strong>Tasot &gt; Luo taso &gt; Uusi GeoPackage -taso</strong>. Avautuvassa ikkunassa huomaat, että <strong>Tietokanta</strong>-kentälle avautuu mahdollisesti jokin toinen GeoPackage-aineisto. Olisi siis mahdollista lisätä olemassa olevaan GeoPackage-pakettiin myös uusi taso. Luodaan tällä kertaa kuitenkin kokonaan uusi GeoPackage. Paina Tietokanta-kentän vieressä olevaa “<strong>…</strong>”-näppäintä ja tallenna uusi GeoPackage kurssihakemistoon nimellä “<strong>Alueet</strong>”. Anna sen jälkeen uudelle tasolle nimi, esimerkiksi “<strong>Alueet</strong>” ja varmista, että olet luomassa geometriatyypiltään polygoniaineistoa. Määrittele koordinaattijärjestelmäksi <strong>ETRS-TM35FIN (EPSG:3067)</strong>.</p>
+<p>[]/img/harjoitus_8/image1.png)</p>
+<p>Lisätään samassa ikkunassa uudelle Alueet-aineistolle muutama kenttä attribuuttitauluun <strong>Uusi kenttä</strong>-kohdassa. Kun aineistolle luodaan uusi tietokenttä, sille tulee määrittää nimi ja tyyppi. Tietokentälle voi määrittää myös maksimipituuden (= kuinka monta merkkiä kenttä voi sisältää). Lisätään aluksi tietokenttä “<strong>Nimi</strong>”, jonka tyyppi on <strong>Teksti</strong>. Paina sitten <strong>Lisää kenttälistaan</strong>, jolloin Alueet-aineistoon lisätään uusi tietokenttä. Alla olevaan Kenttälista-kohtaan pitäisi ilmestyä uusi tietokenttä näillä määrityksillä.</p>
+<p>[]/img/harjoitus_8/image2.png)
+[]/img/harjoitus_8/image3.png)</p>
+<p>Paina sitten <strong>OK</strong>. GeoPackageen muodostuu uusi tyhjä <strong>Alueet-taulu</strong> ja QGIS-työtilan <strong>Tasot</strong>*-paneeliin ilmestyy myös uusi <strong>Alueet-vektoritaso</strong>. Avaa uuden tason attribuuttitaulu ja tarkista, että se on tyhjä. Attribuuttitaulussa tulee olla vain kaksi kenttää: <strong>fid ja Nimi</strong>. QGIS luo Fid-kentän automaattisesti ja se toimii uniikkina id-kenttänä kohteille. Nimi-kenttä taas määriteltiin tason luomisen yhteydessä.</p>
+<p>[]/img/harjoitus_8/image4.png)</p>
+<p>Klikkaa seuraavaksi <strong>Alueet-tasoa</strong> hiiren oikealla painikkeella ja valitse <strong>Ominaisuudet…</strong>. Valitse avautuvasta ikkunasta <strong>Tietokentät-välilehti</strong>. Täältä löydät tiedon aineiston tietokenttien tyypeistä ja muista määrittelyistä.</p>
+<p>[]/img/harjoitus_8/image5.png)</p>
+<p>Tässä ikkunassa voit myös muokata attribuuttitaulun perusrakennetta. Laita muokkaustila päälle lyijykynä-symbolista ja lisää attribuuttitauluun uusi kenttä []/img/harjoitus_8/image6.png) . Anna kentälle nimeksi “<strong>Tyyppi</strong>” ja määrittele se tekstikentäksi kuvan mukaisesti.</p>
+<p>[]/img/harjoitus_8/image7.png)</p>
+<p>Paina sitten <strong>OK</strong>, niin uusi kenttä tulee listalle. Klikkaa kynäikonista uudelleen poistuaksesi muokkaustilasta ja valitse <strong>Tallenna</strong>. Älä vielä poistu <strong>Tason ominaisuudet</strong> -ikkunasta.</p>
+</div>
+<div id="tietorakenteen-valmistelu-ja-editointiasetukset" class="section level2" number="10.6">
+<h2><span class="header-section-number">10.6</span> Tietorakenteen valmistelu ja editointiasetukset</h2>
+<p>QGISin automaattisesti luoma id-kenttä fid luo jokaiselle digitoitavalle kohteelle oman uniikin id:n. Digitoijan ei tule kajota tähän kenttään lainkaan, joten estetään sen muokkaus. Mene <strong>Tason ominaisuudet</strong> -ikkunassa <strong>Attribuuttilomake-välilehdelle</strong> ja valitse <strong>Fields-listasta</strong> fid. Mene oikealle puolelle <strong>Yleistä</strong>-kohtaan ja poista valinta kohdasta <strong>Muokattava</strong>. Nyt kyseistä kenttää ei voi vahingossakaan muokata.</p>
+<p>[]/img/harjoitus_8/image8.png)</p>
+<p>Valitse seuraavaksi listalta äsken luomasi <strong>Tyyppi</strong>-kenttä. Jos kenttä ei ole listassa, paina <strong>OK</strong> sulkeaksesi <strong>Tason ominaisuudet</strong> -ikkunan ja avaa se uudelleen. <strong>Tyyppi</strong>-kentän pitäisi nyt näkyä listauksessa. Attribuuttitietojen täyttöä varten voidaan määritellä erilaisia sääntöjä. Säännöillä helpotetaan editointia ja tietojen hallintaa. Valitse <strong>Muokkauksen tyyppi</strong> -kohdan alasvetovalikosta <strong>Arvoluettelo</strong>. Arvoluettelon avulla voit rajoittaa sitä, mitä arvoja kenttään voidaan täyttää. Nopeutat myös editointia, sillä jatkossa voit valita attribuutit alavetolaatikostosta, joka sisältää arvoluetteloon määritellyt arvot. Luo nyt kolme arvoa: Metsä, Pelto ja Rakennus.</p>
+<p>[]/img/harjoitus_8/image9.png)</p>
+<p>Kun olet valmis, paina <strong>OK</strong> sulkeaksesi <strong>Tason ominaisuudet</strong> -ikkunan.</p>
+</div>
+<div id="vektoriaineiston-editointi" class="section level2" number="10.7">
+<h2><span class="header-section-number">10.7</span> Vektoriaineiston editointi</h2>
+<p>Ennen editoinnin/digitoinnin aloitusta kannattaa määrittää mittakaava (= tarkkuus), jolla editointia tehdään. Aseta QGIS-työtilan <strong>Tilapalkin Mittakaava</strong>-kohtaan 1:2000 ja lukitse mittakaava viereisestä kuvakkeesta. Nyt mittakaava ei muutu, vain suurennustaso muuttuu.</p>
+<p>[]/img/harjoitus_8/image10.png)</p>
+<p>Etsi ilmakuvasta haluamasi alue editoitavaksi. Valittavassa alueessa olisi hyvä olla metsiä, peltoja ja rakennuksia.</p>
+<p>[]/img/harjoitus_8/image11.png)</p>
+<p>Valitse seuraavaksi valikosta <strong>Näytä &gt; Työkalut &gt; Tarttumisen työkalut</strong>. Tarttumisen työkalut ilmestyvät työkalupaneeliin:</p>
+<p>[]/img/harjoitus_8/image12.png)</p>
+<p>Klikkaa magneetti-ikonia ottaaksesi tarttumisen käyttöön. Klikkaa tämän jälkeen magneetti-ikonin oikealla puolella olevaa painiketta ja valitse <strong>Tarttumisen asetukset</strong>. Määritä tarttumisasetukset kuvan mukaisesti. Tartutaan vain aktiiviseen tasoon, tartutaan sekä kulmapisteisiin että segmentteihin 5 metrin säteellä, ja laitetaan päälle myös topologinen muokkaus. Asetusten määrittämisen jälkeen voit sulkea <strong>Tarttumisen asetukset</strong> -ikkunan.</p>
+<p>[]/img/harjoitus_8/image13.png)</p>
+<p>Seuraavaksi aloitamme aineiston muokkaamisen klikkaamalla <strong>Tason muokkaus päälle/pois</strong> -työkalua []/img/harjoitus_8/image14.png). Huomaat, että <strong>Digitointi</strong>-työkalupalkin muutkin työkalut aktivoituvat.</p>
+<p>[]/img/harjoitus_8/image15.png)</p>
+<p>Valitse työkaluksi <strong>Lisää kohde</strong> []/img/harjoitus_8/image16.png) ja aloita digitointi. Hiiren vasemmalla näppäimellä voit klikata kartalla kohteen kulmapisteet. Kun polygoni on valmis, napauta hiiren oikeaa näppäintä, jolloin QGIS luo uuden polygonin. Digitoi/editoi esimerkiksi peltoalue:</p>
+<p>[]/img/harjoitus_8/image17.png)</p>
+<p>Uuden kohteen luomisen yhteydessä voit täyttää sen attribuuttitiedot automaattisesti avautuvaan lomakkeeseen. Täydennä <strong>Nimi</strong>- ja <strong>Tyyppi</strong>-kentät (esimerkiksi Peltosen pelto ja Pellot) ja paina <strong>OK</strong>.</p>
+<p>[]/img/harjoitus_8/image18.png)</p>
+<p>Ensimmäinen kohde on nyt digitoitu!</p>
+</div>
+<div id="muokkauksen-yleisasetukset" class="section level2" number="10.8">
+<h2><span class="header-section-number">10.8</span> Muokkauksen yleisasetukset</h2>
+<p>Muokkauksen toimintoa ja muita yleisiä muokkaustyöasetuksia voit muuttaa päävalikon ikkunassa <strong>Asetukset &gt; Valinnat &gt; Digitointi</strong>. Jos et esimerkiksi halua, että ominaisuustietojen muokkaus tulee esiin jokaisen polygonin piirtämisen jälkeen, ruksi <strong>Älä näytä ominaisuustietojen pop-up lomaketta kohteen luonnin jälkeen</strong>. Jätä se kuitenkin päälle tällä kertaa. Kokeile myös vaihtaa kohteiden muokkausväri siniseksi (<strong>Kuminauha</strong>) ja <strong>Taitepisteen symbolin</strong> tyyli ja koko. Paina <strong>OK</strong>, niin asetukset tulevat voimaan.</p>
+<p>[]/img/harjoitus_8/image19.png)</p>
+</div>
+<div id="geometrioiden-lisääminen" class="section level2" number="10.9">
+<h2><span class="header-section-number">10.9</span> Geometrioiden lisääminen</h2>
+<p>Aloita seuraavan polygonin digitointi. Huomaa, että kun viet hiiren viisi metriä lähemmäksi jo digitoitua viivaa tai kulmapistettä, niin QGIS ehdottaa uutta kulmapistettä. Digitoi toinen alue ensimmäisen alueen vierestä. Yhteistä reunaa on ehkä hieman hankala seurata. Sitä varten on asetus, joka helpottaa huomattavasti editointia, jotta ei synny vahingossakaan päällekkäisiä polygoneja. Paina magneetti-ikonin viereistä painiketta ja valitse <strong>Avaa tarttumisen asetukset…</strong>.</p>
+<p>[]/img/harjoitus_8/image20.png)</p>
+<p>Täytä asetukset alla olevan kuvan mukaisesti.</p>
+<p>[]/img/harjoitus_8/image21.png)</p>
+<p>Digitoi nyt uusia polygoneja. Aina kun haluat yhteisen rajan, voit digitoida toisen polygonin sisälle, sillä QGIS leikkaa pois päällekkäisiä alueita. Alla esimerkki, jossa digitoitavan polygonin yksi seinusta menee toisen polygonin päälle. Kun digitoitu polygoni on luotu, QGIS poistaa automaattisesti päällekkäisyyden.</p>
+<p>[]/img/harjoitus_8/image22.png)
+[]/img/harjoitus_8/image23.png)</p>
+<p>Digitoi muutama alue ja muista tallentaa digitoinnin tulokset aina välillä <strong>Nykyiset muokkaukset -työkalun</strong> []/img/harjoitus_8/image24.png) avulla.</p>
+<p>[]/img/harjoitus_8/image25.png)</p>
+<p>Kun olet digitoinut 5-8 uutta kohdetta poistu muokkaustilasta painamalla uudelleen lyijykynä-työkalua. Tallenna muutokset ja määrittele kuvaustekniikka polygoneille. Luokittelu tyypin mukaan voisi olla järkevä visualisointikeino arvoluettelokohteille. Alempana on esimerkkikuva digitoiduista alueilta, mutta voit valita vapaasti digitoitavat kohteesi:</p>
+<p>[]/img/harjoitus_8/image26
+.png)</p>
+</div>
+<div id="ominaisuustietojen-lisääminen" class="section level2" number="10.10">
+<h2><span class="header-section-number">10.10</span> Ominaisuustietojen lisääminen</h2>
+<p>Seuraavaksi laskemme pinta-alan ominaisuustietoja edellä muodostettuun paikkatietoaineistoon. Avaa <strong>Alueet-tason</strong> attribuuttitaulu. Laita muokkaustila päälle ja muokkaa muutamaa <strong>Nimi</strong>-kentän alueen nimeä samalla tavalla kun tekisit laskentataulussa (tuplaklikkaamalla). Huomaa, että muokkaaminen on mahdollista vain jos muokkaustila on päällä. Avaa nyt <strong>Kentän arvojen laskin -työkalu</strong> []/img/harjoitus_8/image27
+.png) . Tällä toiminnolla voidaan luoda uusia tai päivittää jo olemassa olevia attribuuttitaulun kenttiä. Täydennä pinta-alan laskentaa varten seuraavat tiedot:</p>
+<p>[]/img/harjoitus_8/image28.png)</p>
+<p>Lauseke käyttää automaattista pinta-alafunktiota <strong>$area</strong>, joka palauttaa alueen pinta-alan neliömetreinä. Jos digitoimasi alueet ovat isoja, voit jakaa tuloksen miljoonalla, jolloin saadaan pinta-ala neliökilometreinä. Painamalla <strong>OK</strong> saat laskettua kunkin alueen pinta-alan omaan kenttäänsä:</p>
+<p>[]/img/harjoitus_8/image29.png)</p>
+<p>Samaa lauseketta voi vielä muokata käyttämällä funktiota <strong>round</strong>, joka pyöristää luvun haluttuun tarkkuuteen. Parametrina annettu luku kertoo, montako desimaalia round jättää näkyviin.</p>
+<p>[]/img/harjoitus_8/image30.png)</p>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> (englanninkielisessä QGISissä CTRL + S) tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<blockquote>
+<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
+</blockquote>
 
 </div>
 </div>
 <p style="text-align: center;">
-<a href="index.html"><button class="btn btn-default">Previous</button></a>
-<a href="02_env.html"><button class="btn btn-default">Next</button></a>
+<a href="07_harjoitus_7.html"><button class="btn btn-default">Previous</button></a>
 </p>
 </div>
 </div>
