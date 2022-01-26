@@ -113,9 +113,11 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <li><a href="04_harjoitus_4.html#valmistautuminen-3"><span class="toc-section-number">6.4</span> Valmistautuminen</a></li>
 <li><a href="04_harjoitus_4.html#projektin-koordinaattijärjestelmä"><span class="toc-section-number">6.5</span> Projektin koordinaattijärjestelmä</a></li>
 <li><a href="04_harjoitus_4.html#paikkatietoaineiston-koordinaattijärjestelmä"><span class="toc-section-number">6.6</span> Paikkatietoaineiston koordinaattijärjestelmä</a></li>
-<li><a href="04_harjoitus_4.html#paikkatietoaineiston-uudelleenprojisointi"><span class="toc-section-number">6.7</span> Paikkatietoaineiston uudelleenprojisointi</a></li>
-<li><a href="04_harjoitus_4.html#tapa-1-projisoi-taso--prosessityökalu"><span class="toc-section-number">6.8</span> Tapa 1: Projisoi taso -prosessityökalu</a></li>
-<li><a href="04_harjoitus_4.html#tapa-2-tallennus-tasot-paneelissa"><span class="toc-section-number">6.9</span> Tapa 2: Tallennus Tasot-paneelissa</a></li>
+<li><a href="04_harjoitus_4.html#paikkatietoaineiston-uudelleenprojisointi"><span class="toc-section-number">6.7</span> Paikkatietoaineiston uudelleenprojisointi</a>
+<ul>
+<li><a href="04_harjoitus_4.html#tapa-1-projisoi-taso--prosessityökalu"><span class="toc-section-number">6.7.1</span> Tapa 1: Projisoi taso -prosessityökalu</a></li>
+<li><a href="04_harjoitus_4.html#tapa-2-tallennus-tasot-paneelissa"><span class="toc-section-number">6.7.2</span> Tapa 2: Tallennus Tasot-paneelissa</a></li>
+</ul></li>
 </ul></li>
 <li><a href="05_harjoitus_5.html#harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys"><span class="toc-section-number">7</span> Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys</a>
 <ul>
@@ -198,22 +200,21 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <div id="paikkatietoaineiston-koordinaattijärjestelmä" class="section level2" number="6.6">
 <h2><span class="header-section-number">6.6</span> Paikkatietoaineiston koordinaattijärjestelmä</h2>
 <p>Tarkastele nyt tason <strong>ne_10m_populated_places_suomi</strong> koordinaattijärjestelmää klikkaamalla tasoa hiiren oikealla painikkeella <strong>Tasot</strong>-paneelissa ja valitsemalla <strong>Ominaisuudet…</strong>. QGISiin avautuu <strong>Tason ominaisuudet</strong> -ikkuna, josta löytyy paljon tietoa kyseisestä paikkatietoaineistosta. <strong>Informaatio-välilehdeltä</strong> löydät tietoa mm. paikkatietoaineiston koodauksesta, geometriatyypistä, koordinaattijärjestelmästä ja kohteiden lukumäärästä. Huomaa, että tämän kyseisen tason koordinaattijärjestelmä on todellisuudessa eri kuin <strong>TieViiva-aineiston</strong> tai projektin koordinaattijärjestelmä. Silti QGIS esittää aineiston karttaikkunassa ETRS89/TM35FIN-koordinaattijärjestelmässä, sillä projektin koordinaattijärjestelmä on dominoiva.</p>
-<p><img src="img/harjoitus_4/image10png" /></p>
+<p><img src="img/harjoitus_4/image10.png" /></p>
 <p>Avaa seuraavaksi <strong>Tason ominaisuudet</strong> -ikkunan vasemmasta palkista <strong>Lähde-välilehti</strong>. Huomaa, että voisit vaihtaa järjestelmää <strong>Koordinaattijärjestelmä</strong>-alasvetolaatikon avulla. Älä kuitenkaan tee sitä nyt. Koordinaattijärjestelmän muuttaminen <strong>Lähde</strong>-välilehdellä muuttaa vain aineiston koordinaattijärjestelmämääritystä. Aineiston koordinaatit eivät muutu, ja väärällä määrityksellä aineisto ei piirry oikeaan paikkaan. Jos haluaisit muuttaa aineiston koordinaattijärjestelmää, aineisto tulee uudelleenprojisoida eli sen koordinaatit on laskettava uudelleen. Sulje <strong>Tason ominaisuudet</strong> -ikkuna klikkaamalla <strong>OK</strong>.</p>
 <p><img src="img/harjoitus_4/image11.png" /></p>
 </div>
 <div id="paikkatietoaineiston-uudelleenprojisointi" class="section level2" number="6.7">
 <h2><span class="header-section-number">6.7</span> Paikkatietoaineiston uudelleenprojisointi</h2>
 <p>Toisinaan on tärkeää, että paikkatietoaineistot ovat samassa koordinaattijärjestelmässä – esimerkiksi osa QGISin prosessityökaluista ei tuota oikeaa tulosta jos aineistot ovat eri koordinaattijärjestelmissä. Näin ollen paikkatietoaineisto on uudelleenprojisoitava ja tallennettava uutena paikkatietoaineistona. Uudelleenprojisoidaan nyt <strong>ne_10m_populated_places_suomi-taso</strong> WGS 84 -koordinaattijärjestelmästä ETRS89/TM35FIN-koordinaattijärjestelmään.</p>
-</div>
-<div id="tapa-1-projisoi-taso--prosessityökalu" class="section level2" number="6.8">
-<h2><span class="header-section-number">6.8</span> Tapa 1: Projisoi taso -prosessityökalu</h2>
+<div id="tapa-1-projisoi-taso--prosessityökalu" class="section level3" number="6.7.1">
+<h3><span class="header-section-number">6.7.1</span> Tapa 1: Projisoi taso -prosessityökalu</h3>
 <p>Uudelleenprojisoinnin voi tehdä suoraan QGIS-prosessointityökalun avulla valitsemalla ylävalikosta <strong>Vektori &gt; Tiedonhallinta &gt; Projisoi taso…</strong> Aseta syötetasoksi <strong>ne_10m_populated_places_suomi</strong> ja valitse halutuksi koordinaattijärjestelmäksi <strong>ETRS89/TM35FIN (EPSG: 3067)</strong>. Klikkaa <strong>Projisoitu-</strong> kentän kohdalla … &gt; <strong>Tallenna tiedostoon</strong> ja valitse sijainti, minne haluat tallentaa uudelleenprojisoidun aineiston. Anna tasolle nimeksi <strong>ne_10m_populated_places_suomi_3067</strong> ja tarkista, että aineisto tallentuu <strong>GeoPackage-formaattiin</strong>. Klikkaa lopuksi <strong>Suorita</strong>.</p>
 <p><img src="img/harjoitus_4/image12.png" /></p>
 <p>QGISin <strong>Tasot-paneeliin</strong> ilmestyy uudelleenprojisoitu paikkatietoaineisto. Voit tarkistaa koordinaattijärjestelmän tason ominaisuuksista.</p>
 </div>
-<div id="tapa-2-tallennus-tasot-paneelissa" class="section level2" number="6.9">
-<h2><span class="header-section-number">6.9</span> Tapa 2: Tallennus Tasot-paneelissa</h2>
+<div id="tapa-2-tallennus-tasot-paneelissa" class="section level3" number="6.7.2">
+<h3><span class="header-section-number">6.7.2</span> Tapa 2: Tallennus Tasot-paneelissa</h3>
 <p>Klikkaa tasoa <strong>Tasot</strong>-paneelissa hiiren oikealla painikkeella ja valitse <strong>Vie &gt; Tallenna kohteet nimellä…</strong> Tällä työkalulla voit tallentaa paikkatietoaineiston uudella nimellä ja samanaikaisesti suorittaa niille erilaisia toimenpiteitä. Voisit esimerkiksi vaihtaa tiedostomuodon ja/tai tallentaa vain osan aineistosta.</p>
 <p><img src="img/harjoitus_4/image13.png" /></p>
 <p>Vaihdetaan ensin tiedostomuoto <strong>Shape-tiedostostaGeoPackageen</strong>. Valitse tämän jälkeen <strong>Tiedoston nimi</strong> -kohdassa uudelleenprojisoidun aineiston sijainti ja anna sille nimeksi n<strong>e_10m_populated_places_suomi_3067</strong>. Aseta koordinaattijärjestelmäksi <strong>ETRS89/TM35FIN (EPSG: 3067)</strong> ja rastita <strong>Lisää tallennettu tiedosto kartalle</strong>. Paina sitten <strong>OK</strong>.</p>
@@ -224,6 +225,7 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
 </blockquote>
 
+</div>
 </div>
 </div>
 <p style="text-align: center;">
