@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön" />
+<meta property="og:title" content="8 Harjoitus 6: Paikkatietoaineiston luokittelu | Johdanto paikkatietoon ja QGISin käyttöön" />
 <meta property="og:type" content="book" />
 
 
@@ -19,9 +19,9 @@
 <meta name="date" content="2022-01-26" />
 
 
-<meta name="description" content="2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön">
+<meta name="description" content="8 Harjoitus 6: Paikkatietoaineiston luokittelu | Johdanto paikkatietoon ja QGISin käyttöön">
 
-<title>2 Harjoitus 1: Koulutusympäristön valmistaminen | Johdanto paikkatietoon ja QGISin käyttöön</title>
+<title>8 Harjoitus 6: Paikkatietoaineiston luokittelu | Johdanto paikkatietoon ja QGISin käyttöön</title>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
@@ -154,40 +154,69 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div class="row">
 <div class="col-sm-12">
-<div id="harjoitus-1-koulutusympäristön-valmistaminen" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Harjoitus 1: Koulutusympäristön valmistaminen</h1>
-<div id="harjoituksen-sisältö" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Harjoituksen sisältö</h2>
-<p>Harjoituksessa ladataan QGIS ja tallennetaan kurssimateriaalit käytettävälle tietokoneelle.</p>
-<p>##Harjoituksen tavoite</p>
-<p>Harjoituksen jälkeen koulutettava osaa asentaa QGISin ja tietää oman kurssihakemistonsa sijainnin.</p>
+<div id="harjoitus-6-paikkatietoaineiston-luokittelu" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Harjoitus 6: Paikkatietoaineiston luokittelu</h1>
+<div id="harjoituksen-sisältö-5" class="section level2" number="8.1">
+<h2><span class="header-section-number">8.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa tutustutaan QGISin visualisointi- ja luokittelutoimintoihin.</p>
 </div>
-<div id="arvioitu-kesto" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Arvioitu kesto</h2>
-<p>10 minuuttia.</p>
+<div id="harjoituksen-tavoite-4" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> Harjoituksen tavoite</h2>
+<p>Opiskelija osaa luokitella ja visualisoida paikkatietoaineistoja QGISin työkaluilla.</p>
 </div>
-<div id="valmistautuminen" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Valmistautuminen</h2>
-<p>Avaa web-selain ja mene QGISin suomenkielisille verkkosivuille:
-<a href="http://www.qgis.org/fi/site/" class="uri">http://www.qgis.org/fi/site/</a></p>
+<div id="arvioitu-kesto-5" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> Arvioitu kesto</h2>
+<p>35 minuuttia.</p>
 </div>
-<div id="qgisin-lataus-ja-asennus" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> QGISin lataus ja asennus</h2>
-<p>Löydät QGISin verkkosivujen etusivulta linkin, jonka avulla pääset lataamaan QGIS-työpöytäohjelmiston. Lataa sivustolta viimeisin <strong>QGIS LTR</strong> (long term release eli pitkäaikaisversio). Pitkäaikaisversio sopii parhaiten ammattikäyttöön, sillä se on vakain QGIS-versio – siitä voi kuitenkin puuttua joitakin uudempien versioiden ominaisuuksia. QGISin voi asentaa Windows-, Linux- tai Mac-käyttöjärjestelmään. Eri järjestelmien QGIS-versioiden välillä huomattavimmat erot ovat väriskeemoissa ja tiedostopoluissa – muuten erot ovat hyvin pieniä.
-<img src="img/harjoitus_1/image1.png" /></p>
-<p>Avaa tietokoneeltasi sijainti, jonne asennuspaketti latautui ja tuplaklikkaa asennuspaketin kuvaketta asentaaksesi QGIS-paketin tietokoneellesi. Kun asennus on suoritettu, kurkista työpöydälle ilmestyneeseen <strong>QGIS 3.16 -kansioon</strong> ja tarkastele sieltä löytyviä pikakuvakkeita.
-[](img(harjoitus_1(image2.png)</p>
-<p>QGISin perusasennuspaketin mukana tietokoneellesi asennetaan <strong>QGIS Desktop -perusohjelmiston</strong> lisäksi mm. <strong>QGIS Desktop with GRASS</strong> sekä <strong>SAGA GIS</strong>. Nämä QGISin perusversion mukana tulevat ohjelmistot tuovat QGISin käyttöön lisää erilaisia prosessointi- ja analysointityökaluja.</p>
+<div id="valmistautuminen-4" class="section level2" number="8.4">
+<h2><span class="header-section-number">8.4</span> Valmistautuminen</h2>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 6</strong>”. Lisää projektiin seuraavat aineistot:
+..kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019
+..kurssihakemisto/MML/Korkeusmalli_2m/L4133B.asc</p>
 </div>
-<div id="kurssimateriaalien-lataus" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Kurssimateriaalien lataus</h2>
-<p>Kouluttaja ohjeistaa sinua lataamaan kurssimateriaalit joko muistitikulta, Google Drivestä tai AWS-palvelimelta. Kopioi kurssimateriaalit omalle tietokoneellesi tai koulutuskoneelle haluamaasi kansioon niin, että löydät ne helposti harjoituksia tehdessä. Kun kurssimateriaalissa viitataan <strong>../kurssihakemisto/</strong>, tarkoitetaan itse määrittelemääsi kurssihakemiston polkua.</p>
+<div id="vektoriaineiston-luokittelut" class="section level2" number="8.5">
+<h2><span class="header-section-number">8.5</span> Vektoriaineiston luokittelut</h2>
+<p>Tarkastellaan aluksi HSY_vaestotietoruudukko_2019-vektoriaineistoa, joten piilota muut aineistot näkyvistä. HSY_vaestotietoruudukko_2019-aineisto on GeoPackage-formaatissa. Tutustu aineistoon avaamalla sen attribuuttitaulu (klikkaa hiiren oikeaa painiketta tason päällä ja valitse <strong>Avaa attribuuttitaulu</strong>). QGISiin avautuu attribuuttitauluikkuna, joka esittelee tason ominaisuuksia ja on erittäin tärkeä osa paikkatietoaineistoa. Kaikilla vektoriaineistoilla on attribuuttitaulu.</p>
+<p>[]img/harjoitus6/image1.png</p>
+<p>Attribuuttitietojen ymmärtämiseksi on hyvä tarkastella taulun sisältöä sekä tutustua samalla aineiston metatietoihin. Metatiedot löytyvät usein aineistontuottajan nettisivuilta tai paikkatietojen löytämiseen tarkoitetuista hakemistoista. Metatiedot kertovat mm. kuka aineiston on tuottanut, mihin tarkoitukseen, millä mittakaavalla ja missä koordinaattijärjestelmässä se on tehty. HSY_vaestotietoruudukko_2019-aineiston on tuottanut Helsingin seudun ympäristöpalvelut ja sen metatiedot löytyvät saman kansion <strong>HSY_vaestotietoruudukko.pdf-tiedostosta</strong>. Avaa tiedosto ja tutustu eri kenttien (= sarakkeiden) kuvauksiin.</p>
+<p>Attribuuttitauluissa sarakkeiden nimet ovat usein lyhennetyssä muodossa, minkä vuoksi sarakkeiden merkitystä on tyypillisesti vaikea päätellä lyhenteistä. HSY_vaestotietoruudukko_2019-aineistossa silmiinpistävää on myös se, että taulukossa toistuu luku 99 useaan otteeseen. Metatietojen avulla voimme kuitenkin selvittää muun muassa sen, miten asukkaita-sarakkeen tiedot on laskettu sekä millä tavalla tiedot on poistettu ruuduissa, joissa asuu 0-4 asukasta. Ika-sarakkeet sisältävät asukkaiden määrät ikäluokittain, mutta niille on annettu arvo 99 aina kun ruudukon asukasmäärä on ollut alle 100. Tarkastele aineistoa myös kartalla. Huomaatko yhden ruudun, joka näyttää sijaitsevan kaukana kaakossa keskellä merta?</p>
+<p>[]img/harjoitus6/image2.png</p>
+<p>Irralliseen ruutuun on tässä aineistossa sijoitettu kaikki ne pk-seudun asukkaat, joilla ei ole vakituista kotiosoitetta. <strong>Näytä kohteen tiedot</strong> -työkalulla []img/harjoitus6/image0.png nähdään, että tämän ruudun asukasmäärä on kymmenkertaisesti suurempi kuin minkään muun aineiston ruudun. Se siis vääristää luokittelua ja aineistosta laskettuja tilastoja (mm. keskimääräinen asukastiheys ruutua kohti). Suodatetaan tämä ruutu pois aineistosta: klikkaa tason nimeä hiiren oikealla ja valitse <strong>Suodata…</strong> Kirjoita (tai valitse tietokentistä ja operaattoreista klikkaamalla) suodatuslausekkeeksi <strong>asukkaita &lt; 5000</strong>. Voit testata suodatuksen toimivuutta klikkaamalla <strong>Testaa</strong>.</p>
+<p>[]img/harjoitus6/image3.png</p>
+<p>Nyt QGIS näyttää aineistostasi vain ne ruudut, jotka täyttävät annetun ehdon eli joiden kokonaisasukasmäärä on alle 5000. Paikkatietoineiston ymmärtäminen ennen sen käsittelyä on välttämätöntä. Voimme nyt esimerkiksi päättää, että haluamme tuottaa teemakartan asukkaita-sarakkeen tietojen pohjalta. Näin pystymme myös paremmin tulkitsemaan karttaa ja valitsemaan visualisointia varten sopivat asetukset. Avaa <strong>Tason ominaisuudet</strong> ja valitse tason kuvaustekniikaksi <strong>Porrastettu</strong>. Valitse seuraavasta pudotusvalikosta, minkä kentän arvoihin luokittelusi perustuu (tässä ‘asukkaita’). Aseta vielä oheisen kuvan mukaiset <strong>Arvo-, Liukuväri-, Tila- ja Luokat-määrittelyt</strong>.</p>
+<p>[]img/harjoitus6/image4.png</p>
+<p>Kun olet saanut ne asetettua, paina <strong>Luokittele</strong>, ja luokitus tulee näkyviin. Voit myös muokata manuaalisesti arvovälejä kaksoisklikkaamalla <strong>Arvot</strong>-saraketta tai luokkien nimiä kaksoisklikkaamalla <strong>Selite</strong>-saraketta. Luokkien nimet näkyvät <strong>Tasot</strong>-paneelissa ja myös karttatulosteen selitteessä. Paina <strong>Käytä</strong>, niin näet muutokset kartalla. Karttanäytölle pitäisi muodostua jokseenkin tämän näköinen tilastoteemakartta:</p>
+<p>[]img/harjoitus6/image5.png</p>
+<p>[]img/harjoitus6/image6.png</p>
+<p>Jos Tasot-paneelissasi ei näy selitettä, paina tason nimen vasemmalla olevaa pientä nuolta ja selitteet avautuvat tason alle kuvan mukaisesti. Palaa vielä <strong>Kuvaustekniikka</strong>-asetuksiin ja kokeile <strong>Tila &gt; Tasaväli</strong>. Voit hävittää olemassa olevat luokat painamalla <strong>Poista kaikki</strong> ja sitten uudelleen luokitella painamalla <strong>Luokittele</strong>. Kokeile myös vaihtaa luokkien lukumäärää, luokitustapoja ja värityksiä, kunnes löydät mielestäsi sopivan tuloksen. Voit vertailla eri luokittelumenetelmiä ja tutkia aineiston jakaumaa histogrammin avulla. <strong>Histogrammi</strong> löytyy omalta välilehdeltään. Paina <strong>Lataa arvot</strong> saadaksesi histogrammin ja luokkien rajat näkyviin.</p>
+<p>[]img/harjoitus6/image7.png</p>
+<p>Muuta vielä symbolin tyyliä. Avaa uudelleen tason ominaisuustiedot ja klikkaa <strong>Symboli</strong>-kohdan väripalkkia.</p>
+<p>[]img/harjoitus6/image8.png</p>
+<p><strong>Symbolin asetukset</strong> -ikkuna aukenee. Siirry <strong>Yksinkertainen täyttö</strong> -symbolitasolle ja aseta <strong>Viivan väriksi läpikuultava</strong> tai <strong>Viivan tyyliksi Ei viivaa</strong>. Paina <strong>OK</strong> ja <strong>OK</strong>. Zoomaa karttaan tutkimaan tulosta ja palaa tyyliasetuksiin, jos haluat tehdä vielä muutoksia.</p>
+<p>[]img/harjoitus6/image9.png</p>
+</div>
+<div id="rasteriaineiston-luokittelut" class="section level2" number="8.6">
+<h2><span class="header-section-number">8.6</span> Rasteriaineiston luokittelut</h2>
+<p>Aseta nyt <strong>L4133B-rasteriaineisto</strong> näkyväksi ja piilota muut aineistot. L4133B.asc on Maanmittauslaitoksen avoin korkeusmalliaineisto, joka sisältää osan Helsingistä. Jos aineisto avautuu tuntemattomassa koordinaattijärjestelmässä (= virheellisessä projektiossa), aseta tasolle koordinaattijärjestelmäksi <strong>ETRS89/TM35FIN (EPSG:3067)</strong>. Muista tarkistaa myös projektin koordinaattijärjestelmä. Oletuksena korkeusmalli näyttää tällaiselta:</p>
+<p>[]img/harjoitus6/image10.png</p>
+<p>Huomaa, että QGIS on tunnistanut, että aineisto sisältää jatkuvia arvoja ja on visualisoinut ne yksittäisenä harmaana kanavana. Oletusvärityksellä onnistut erottamaan Pasilan ratapihan oikeassa yläkulmassa.</p>
+<p>[]img/harjoitus6/image11.png</p>
+<p>Zoomaa Pasilan harmaana näkyvään alueeseen ja huomaa, että yksittäiset raiteet eivät erotu. Avaa tason <strong>Kuvaustekniikka-asetukset</strong>, kuten aiemmin teit vektoriaineiston yhteydessä. Muista, että rasteriaineistojen kuvaustekniikkatyökalut ovat erilaiset kuin vektoriaineistoilla. Voit vaihtaa harmaasävyesityksen <strong>pseudoväreiksi</strong>. Voit kokeilla myös <strong>rinnevarjostetta</strong>.</p>
+<p>[]img/harjoitus6/image12.png</p>
+<p>Luokittele aineisto uudelleen niin, että Pasilasta erottuu tarkempia yksityiskohtia. Aseta mittakaavaksi 1:5000 (QGIS-työtilan alapalkista) ja vieritä karttaa tasaisen sävyisenä näkyvään ratapihan alueeseen. Klikkaa auki <strong>Min/Max arvojen asetukset</strong> ja muokkaa asetuksia niin, että kuva käyttää Min/Max-arvoja ja <strong>Tilastojen laajuus</strong> -arvoksi on määritelty <strong>Nykyinen karttaikkuna</strong>. Katso mallia kuvasta:</p>
+<p>[]img/harjoitus6/image13.png</p>
+<p>Paina sitten <strong>Käytä</strong> ja lopuksi <strong>Luokittele</strong> arvot uudestaan.</p>
+<p>[]img/harjoitus6/image14.png []img/harjoitus6/image15.png</p>
+<p>Vasemmanpuoleisessa kuvassa on ratapihan alue pseudoväreillä esitettynä. Oikeanpuoleisessa kuvassa on sama alue sen jälkeen, kun väriliukuma on luokiteltu uudelleen näkyvän karttaikkunan alueen Min/Max-arvojen mukaisesti. Voit myös testata Tila-kohdasta eri jaottelumuotoja. Kvanttiili-valinnassa muodot näkyvät yksivärisenäkin vielä voimakkaammin.</p>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> (englanninkielisessä QGISissä CTRL + S) tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<blockquote>
+<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
+</blockquote>
 
 </div>
 </div>
 <p style="text-align: center;">
-<a href="index.html"><button class="btn btn-default">Previous</button></a>
-<a href="02_env.html"><button class="btn btn-default">Next</button></a>
+<a href="05_harjoitus_5.html"><button class="btn btn-default">Previous</button></a>
 </p>
 </div>
 </div>

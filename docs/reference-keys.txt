@@ -59,3 +59,10 @@ teksti
 nimiöinnit-viivatasoilla
 nimiöiden-piirtäminen
 edistyneet-ominaisuudet
+harjoitus-6-paikkatietoaineiston-luokittelu
+harjoituksen-sisältö-5
+harjoituksen-tavoite-4
+arvioitu-kesto-5
+valmistautuminen-4
+vektoriaineiston-luokittelut
+rasteriaineiston-luokittelut
