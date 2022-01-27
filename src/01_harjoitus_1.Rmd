@@ -23,7 +23,7 @@ Löydät QGISin verkkosivujen etusivulta linkin, jonka avulla pääset lataamaan
 ![](img/harjoitus_1/image1.png)
 
 Avaa tietokoneeltasi sijainti, jonne asennuspaketti latautui ja tuplaklikkaa asennuspaketin kuvaketta asentaaksesi QGIS-paketin tietokoneellesi. Kun asennus on suoritettu, kurkista työpöydälle ilmestyneeseen **QGIS 3.16 -kansioon** ja tarkastele sieltä löytyviä pikakuvakkeita.
-![](img(harjoitus_1(image2.png)
+![](img/harjoitus_1/image2.png)
 
 
 QGISin perusasennuspaketin mukana tietokoneellesi asennetaan **QGIS Desktop -perusohjelmiston** lisäksi mm. **QGIS Desktop with GRASS** sekä **SAGA GIS**. Nämä QGISin perusversion mukana tulevat ohjelmistot tuovat QGISin käyttöön lisää erilaisia prosessointi- ja analysointityökaluja.
