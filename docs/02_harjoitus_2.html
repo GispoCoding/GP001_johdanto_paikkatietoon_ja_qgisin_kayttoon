@@ -85,15 +85,9 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <li><a href="02_harjoitus_2.html#valmistautuminen-1"><span class="toc-section-number">4.4</span> Valmistautuminen</a></li>
 <li><a href="02_harjoitus_2.html#paikkatietoaineiston-tiedostot"><span class="toc-section-number">4.5</span> Paikkatietoaineiston tiedostot</a></li>
 <li><a href="02_harjoitus_2.html#qgisin-käyttöliittymä"><span class="toc-section-number">4.6</span> QGISin käyttöliittymä</a></li>
-<li><a href="02_harjoitus_2.html#työkalupalkit"><span class="toc-section-number">4.7</span> 1. Työkalupalkit</a></li>
-<li><a href="02_harjoitus_2.html#karttaikkuna"><span class="toc-section-number">4.8</span> 2. Karttaikkuna</a></li>
-<li><a href="02_harjoitus_2.html#selain-paneeli"><span class="toc-section-number">4.9</span> 3. Selain-paneeli</a></li>
-<li><a href="02_harjoitus_2.html#tasoluettelo"><span class="toc-section-number">4.10</span> 4. Tasoluettelo</a></li>
-<li><a href="02_harjoitus_2.html#hakutoiminto"><span class="toc-section-number">4.11</span> 5. Hakutoiminto</a></li>
-<li><a href="02_harjoitus_2.html#tilapalkki"><span class="toc-section-number">4.12</span> 6. Tilapalkki</a></li>
-<li><a href="02_harjoitus_2.html#kokeile-itse"><span class="toc-section-number">4.13</span> Kokeile itse</a></li>
-<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-valinta"><span class="toc-section-number">4.14</span> Paikkatietoaineiston kohteiden valinta</a></li>
-<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-suodatus"><span class="toc-section-number">4.15</span> Paikkatietoaineiston kohteiden suodatus</a></li>
+<li><a href="02_harjoitus_2.html#kokeile-itse"><span class="toc-section-number">4.7</span> Kokeile itse</a></li>
+<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-valinta"><span class="toc-section-number">4.8</span> Paikkatietoaineiston kohteiden valinta</a></li>
+<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-suodatus"><span class="toc-section-number">4.9</span> Paikkatietoaineiston kohteiden suodatus</a></li>
 </ul></li>
 <li><a href="03_harjoitus_3.html#harjoitus-3-paikkatietopalvelut"><span class="toc-section-number">5</span> Harjoitus 3: Paikkatietopalvelut</a>
 <ul>
@@ -213,7 +207,7 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div id="valmistautuminen-1" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Valmistautuminen</h2>
-<p>Avaa uusi QGIS-projekti (Projekti &gt; Uusi) ja tallenna se nimellä “QGIS-harjoitus 2”.</p>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 2</strong>”.</p>
 </div>
 <div id="paikkatietoaineiston-tiedostot" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> Paikkatietoaineiston tiedostot</h2>
@@ -243,33 +237,21 @@ Formaatti Sisältö
 <p><img src="img/harjoitus_2/image5.png" /></p>
 <p>QGISin karttaikkunassa pitäisi nyt näkyä Maanmittauslaitoksen vektorimuotoinen tieaineisto. Viivan väri saattaa vaihdella, sillä kuvaustekniikka ei ole kiinteä osa paikkatietoaineistoa – QGIS luo satunnaisen värityksen aineistolle kunnes sille luodaan erillinen kuvaustekniikka.</p>
 <p><img src="img/harjoitus_2/image6.png" /></p>
+<p>** 1. Työkalupalkit**
+Työkalupalkit sisältävät nimensä mukaisesti erilaisia työkaluja. QGIS-työtilassasi saattaa olla näkyvissä enemmän tai vähemmän työkalupalkkeja, kuin yllä olevassa kuvankaappauksessa. Napauttamalla hiiren oikea näppäintä työkalupalkkien päällä, voit piilottaa tai ottaa esiin työkalupalkkeja. Voit myös raahata työkalupalkkeja eri kohtiin.</p>
+<p><strong>2. Karttaikkuna</strong>
+Karttaikkunaan piirtyvät ne paikkatietoaineistot, jotka ovat tasoluettelossa aktivoituna näkyväksi. Voit lähentää ja loitontaa karttaa sekä paneroida siinä hiiren avulla (koita myös hiiren scrollia).</p>
+<p><strong>3. Selain-paneeli</strong>
+Tutustuimmekin jo hieman QGISin Selain-paneeliin. Tästä paneelista löydät erilaisia kansiopolkuja.</p>
+<p><strong>4. Tasoluettelo</strong>
+Tähän osioon tulevat näkyviin paikkatietoaineistot, jotka näkyvät karttaikkunassa. Voit hallita tasojen järjestystä ja näkyvyyttä.</p>
+<p><strong>5. Hakutoiminto</strong>
+QGISin hakutoiminnolla löydät kätevästi esimerkiksi työkalujen ja toimintojen sijainnit.</p>
+<p><strong>6. Tilapalkki</strong>
+Tilapalkista löydät hiiren kursorin koordinaatit (joko metreinä tai leveys- ja pituusasteina), mittakaavan, suurennuksen, kierron, projektin koordinaattijärjestelmän sekä QGISin lokiviestit. Tilapalkista pääset nopeasti muuttamaan mm. projektin koordinaattijärjestelmää.</p>
 </div>
-<div id="työkalupalkit" class="section level2" number="4.7">
-<h2><span class="header-section-number">4.7</span> 1. Työkalupalkit</h2>
-<p>Työkalupalkit sisältävät nimensä mukaisesti erilaisia työkaluja. QGIS-työtilassasi saattaa olla näkyvissä enemmän tai vähemmän työkalupalkkeja, kuin yllä olevassa kuvankaappauksessa. Napauttamalla hiiren oikea näppäintä työkalupalkkien päällä, voit piilottaa tai ottaa esiin työkalupalkkeja. Voit myös raahata työkalupalkkeja eri kohtiin.</p>
-</div>
-<div id="karttaikkuna" class="section level2" number="4.8">
-<h2><span class="header-section-number">4.8</span> 2. Karttaikkuna</h2>
-<p>Karttaikkunaan piirtyvät ne paikkatietoaineistot, jotka ovat tasoluettelossa aktivoituna näkyväksi. Voit lähentää ja loitontaa karttaa sekä paneroida siinä hiiren avulla (koita myös hiiren scrollia).</p>
-</div>
-<div id="selain-paneeli" class="section level2" number="4.9">
-<h2><span class="header-section-number">4.9</span> 3. Selain-paneeli</h2>
-<p>Tutustuimmekin jo hieman QGISin Selain-paneeliin. Tästä paneelista löydät erilaisia kansiopolkuja.</p>
-</div>
-<div id="tasoluettelo" class="section level2" number="4.10">
-<h2><span class="header-section-number">4.10</span> 4. Tasoluettelo</h2>
-<p>Tähän osioon tulevat näkyviin paikkatietoaineistot, jotka näkyvät karttaikkunassa. Voit hallita tasojen järjestystä ja näkyvyyttä.</p>
-</div>
-<div id="hakutoiminto" class="section level2" number="4.11">
-<h2><span class="header-section-number">4.11</span> 5. Hakutoiminto</h2>
-<p>QGISin hakutoiminnolla löydät kätevästi esimerkiksi työkalujen ja toimintojen sijainnit.</p>
-</div>
-<div id="tilapalkki" class="section level2" number="4.12">
-<h2><span class="header-section-number">4.12</span> 6. Tilapalkki</h2>
-<p>Tilapalkista löydät hiiren kursorin koordinaatit (joko metreinä tai leveys- ja pituusasteina), mittakaavan, suurennuksen, kierron, projektin koordinaattijärjestelmän sekä QGISin lokiviestit. Tilapalkista pääset nopeasti muuttamaan mm. projektin koordinaattijärjestelmää.</p>
-</div>
-<div id="kokeile-itse" class="section level2" number="4.13">
-<h2><span class="header-section-number">4.13</span> Kokeile itse</h2>
+<div id="kokeile-itse" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Kokeile itse</h2>
 <p>Kokeile nyt vapaasti QGIS-työkaluja. Tarkastele ainakin <strong>Karttanavigoinnin työkalupalkkien</strong> sekä <strong>Ominaisuustietojen työkalupalkkien</strong> toiminnallisuuksia:</p>
 <p><img src="img/harjoitus_2/image7.png" /></p>
 <p>Paikanna edellä näkyneestä työkalurivistä seuraavat työkalut ja tunnista niiden tarkoitukset:</p>
@@ -282,16 +264,16 @@ Formaatti Sisältö
 <p><img src="img/harjoitus_2/image13.png" /></p>
 <p><img src="img/harjoitus_2/image14.png" /></p>
 </div>
-<div id="paikkatietoaineiston-kohteiden-valinta" class="section level2" number="4.14">
-<h2><span class="header-section-number">4.14</span> Paikkatietoaineiston kohteiden valinta</h2>
+<div id="paikkatietoaineiston-kohteiden-valinta" class="section level2" number="4.8">
+<h2><span class="header-section-number">4.8</span> Paikkatietoaineiston kohteiden valinta</h2>
 <p>Kokeile työkalua <strong>Valitse kohteet</strong> <img src="img/harjoitus_2/image15.png" /> . Klikkaa työkalu aktiiviseksi ja piirrä kartalle suorakaide. Kaikki Tieviiva-tason elementit, jotka osuvat edes osittain valintarajauksesi sisään, korostuvat keltaisella.</p>
 <p><img src="img/harjoitus_2/image16.png" /></p>
 <p>Avaa nyt <strong>tason attribuuttitaulu</strong> joko <img src="img/harjoitus_2/image17.png" /> -painikkeella tai klikkaamalla tasoluettelossa tasoa hiiren oikealla napilla ja valitsemalla <strong>Avaa attribuuttitaulu</strong>. Kaikki ne tie-elementit, jotka tulivat kartalta valituksi, ovat korostuneet taulussa sinisellä. Voit suodattaa attribuuttitaulun näkymää sen vasemmasta alanurkasta ja näyttää vain valitut kohteet:</p>
 <p><img src="img/harjoitus_2/image18.png" /></p>
 <p>Poista aineiston valinta klikkaamalla <strong>Poista valinnat kaikilta tasoilta -painiketta</strong> <img src="img/harjoitus_2/image19.png" /> , joka löytyy attribuuttitaulun työkalupalkista.</p>
 </div>
-<div id="paikkatietoaineiston-kohteiden-suodatus" class="section level2" number="4.15">
-<h2><span class="header-section-number">4.15</span> Paikkatietoaineiston kohteiden suodatus</h2>
+<div id="paikkatietoaineiston-kohteiden-suodatus" class="section level2" number="4.9">
+<h2><span class="header-section-number">4.9</span> Paikkatietoaineiston kohteiden suodatus</h2>
 <p>Suuria aineistoja käsiteltäessä on joskus hyödyllistä suodattaa karttaikkunassa näkyvän aineiston määrää – tämä voidaan tehdä suodattamalla aineistoa sen ominaisuustietojen perusteella. Klikkaa hiiren oikealla painikkeella <strong>TieViiva-tasoa</strong> ja valitse <strong>Suodata…</strong></p>
 <p><img src="img/harjoitus_2/image20.png" /></p>
 <p>QGISiin aukeaa <strong>Kyselyn muodostaja</strong> -ikkuna, jossa voit muodostaa erilaisia suodatuslausekkeita. Kaikki kohteet, jotka täyttävät lausekkeen ehdon, jäävät näkyviin kartalle – muut kohteet suodattuvat pois. <strong>Tietokentät</strong>-kohdassa listataan käytettävissä olevat ominaisuustiedot (kentät/sarakkeet). Tuplaklikkaamalla riviä se siirtyy <strong>Suodattimena käytettävä lauseke</strong> -kenttään. Kentän arvoja voit etsiä oikealta <strong>Otos</strong>- tai <strong>Kaikki</strong>-painikkeella. Suodatetaan nyt aineistoa niin, että vain tieluokan 1 tieviivat jäävät näkyviin.</p>

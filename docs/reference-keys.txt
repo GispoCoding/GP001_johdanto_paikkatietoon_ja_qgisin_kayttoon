@@ -15,12 +15,6 @@ arvioitu-kesto-1
 valmistautuminen-1
 paikkatietoaineiston-tiedostot
 qgisin-käyttöliittymä
-työkalupalkit
-karttaikkuna
-selain-paneeli
-tasoluettelo
-hakutoiminto
-tilapalkki
 kokeile-itse
 paikkatietoaineiston-kohteiden-valinta
 paikkatietoaineiston-kohteiden-suodatus
