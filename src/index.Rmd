@@ -19,7 +19,7 @@ documentclass: book
 
 
 <!-- Harjoitukset -->
-# Johdanto QGISin käyttöön
+Johdanto QGISin käyttöön
 
 Tervetuloa QGIS-peruskurssille!
 Tämän kurssin tarkoituksena on opastaa sinut QGIS–ohjelmiston käyttöön. Muiden paikkatieto-ohjelmistojen käyttökokemus ei ole välttämätöntä koulutukseen osallistumisel­le. Toki niistä on paljon hyötyä. Kysy rohkeasti opettajalta lisätietoja, jos käytetty terminologia tai joku muu asia jää epäselväksi.
