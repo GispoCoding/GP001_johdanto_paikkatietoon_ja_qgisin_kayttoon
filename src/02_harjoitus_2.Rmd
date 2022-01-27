@@ -14,7 +14,7 @@ Harjoituksen jälkeen koulutettava tuntee paikkatietoaineistojen perusominaisuud
 
 
 ## Valmistautuminen
-Avaa uusi QGIS-projekti (Projekti > Uusi) ja tallenna se nimellä “QGIS-harjoitus 2”.
+Avaa uusi QGIS-projekti (**Projekti > Uusi**) ja tallenna se nimellä “**QGIS-harjoitus 2**”.
 
 ## Paikkatietoaineiston tiedostot
 QGISin käyttöliittymä saattaa aueta englanninkielisenä ensimmäisellä käyttökerralla, mutta voit vaihtaa kielen suomeksi valitsemalla QGISin ylävalikosta **Asetukset > Valinnat** ja tämän jälkeen **Yleiset > Käyttöliittymän kielisyys > suomi**. Paina lopuksi **OK**.
@@ -57,22 +57,22 @@ QGISin karttaikkunassa pitäisi nyt näkyä Maanmittauslaitoksen vektorimuotoine
 
 ![](img/harjoitus_2/image6.png)
 
-## 1. Työkalupalkit
+** 1. Työkalupalkit**
 Työkalupalkit sisältävät nimensä mukaisesti erilaisia työkaluja. QGIS-työtilassasi saattaa olla näkyvissä enemmän tai vähemmän työkalupalkkeja, kuin yllä olevassa kuvankaappauksessa. Napauttamalla hiiren oikea näppäintä työkalupalkkien päällä, voit piilottaa tai ottaa esiin työkalupalkkeja. Voit myös raahata työkalupalkkeja eri kohtiin.
 
-## 2. Karttaikkuna
+**2. Karttaikkuna**
 Karttaikkunaan piirtyvät ne paikkatietoaineistot, jotka ovat tasoluettelossa aktivoituna näkyväksi. Voit lähentää ja loitontaa karttaa sekä paneroida siinä hiiren avulla (koita myös hiiren scrollia). 
 
-## 3. Selain-paneeli
+**3. Selain-paneeli**
 Tutustuimmekin jo hieman QGISin Selain-paneeliin. Tästä paneelista löydät erilaisia kansiopolkuja.
 
-## 4. Tasoluettelo
+**4. Tasoluettelo**
 Tähän osioon tulevat näkyviin paikkatietoaineistot, jotka näkyvät karttaikkunassa. Voit hallita tasojen järjestystä ja näkyvyyttä.
 
-## 5. Hakutoiminto
+**5. Hakutoiminto**
 QGISin hakutoiminnolla löydät kätevästi esimerkiksi työkalujen ja toimintojen sijainnit.
 
-## 6. Tilapalkki
+**6. Tilapalkki**
 Tilapalkista löydät hiiren kursorin koordinaatit (joko metreinä tai leveys- ja pituusasteina), mittakaavan, suurennuksen, kierron, projektin koordinaattijärjestelmän sekä QGISin lokiviestit. Tilapalkista pääset nopeasti muuttamaan mm. projektin koordinaattijärjestelmää.
 
 ## Kokeile itse
