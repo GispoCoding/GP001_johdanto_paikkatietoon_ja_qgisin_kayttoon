@@ -301,6 +301,42 @@ h5 { font-size: 100% !important; }
     margin: 0 !important;
 }
 
+.code-box {
+    background: #ffe1cd;
+    padding: 10px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.code-box p {
+    color: #444444;
+    margin: 0 !important;
+}
+
+.file-content-box {
+    background: #eeeeee;
+    padding: 10px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.file-content-box p {
+    color: #444444;
+    margin: 0 !important;
+}
+
+.commandline-box {
+    background: #ab8b9b;
+    padding: 10px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.commandline-box p {
+    color: #fbfbfb;
+    margin: 0 !important;
+}
+
 /* Media queries */
 @media (max-width: 1540px) {
     .sidebar { width: 320px; }
