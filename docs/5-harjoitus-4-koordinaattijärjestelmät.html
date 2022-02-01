@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
+<meta property="og:title" content="5 Harjoitus 4: Koordinaattijärjestelmät | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
 <meta property="og:type" content="book" />
 
 
@@ -19,9 +19,9 @@
 <meta name="date" content="2022-02-01" />
 
 
-<meta name="description" content="Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
+<meta name="description" content="5 Harjoitus 4: Koordinaattijärjestelmät | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
 
-<title>Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
+<title>5 Harjoitus 4: Koordinaattijärjestelmät | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
@@ -196,128 +196,80 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div class="row">
 <div class="col-sm-12">
-<!-- This title section is only rendered to index.html -->
-<div id="title-container">
+<div id="harjoitus-4-koordinaattijärjestelmät" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Harjoitus 4: Koordinaattijärjestelmät</h1>
+<div id="harjoituksen-sisältö-3" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa tutustutaan koordinaattijärjestelmien määrittelyyn QGISissä.</p>
+</div>
+<div id="harjoituksen-tavoite-3" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Harjoituksen tavoite</h2>
+<p>Harjoituksen jälkeen koulutettava osaa määrittää koordinaattijärjestelmän niin kokonaiselle projektille kuin yksittäiselle paikkatietoaineistollekin.</p>
+</div>
+<div id="arvioitu-kesto-3" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Arvioitu kesto</h2>
+<p>30 minuuttia.</p>
+</div>
+<div id="valmistautuminen-3" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Valmistautuminen</h2>
+<p>Avaa uusi QGIS-projekti (Projekti &gt; Uusi) ja tallenna se nimellä “QGIS-harjoitus 4”. Lisää projektiin seuraavat aineistot:
+..kurssihakemisto/MML/YK_1M/TieViiva.shp
+..kurssihakemisto/Natural_Earth/ne_10m_populated_places/ne_10m_populated_places_suomi.shp</p>
+<blockquote>
+<p>Psst! Paikkatietoaineistolla pitäisi aina olla asetettuna jokin koordinaattijärjestelmä!</p>
+</blockquote>
+</div>
+<div id="projektin-koordinaattijärjestelmä" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> Projektin koordinaattijärjestelmä</h2>
+<p>Paikkatietoaineistoja tuotetaan jatkuvasti erilaisiin koordinaattijärjestelmiin, mikä voi tehdä erilaisten aineistojen yhtäaikaisesta tarkastelusta samassa karttaikkunassa haastavaa. QGIS ratkaisee tämän ongelman projektin koordinaattijärjestelmän avulla: kaikki projektiin avatut paikkatietoaineistot projisoidaan “lennossa” projektin koordinaattijärjestelmään, vaikka yksittäisillä aineistoilla olisi todellisuudessa eri koordinaattijärjestelmät. Toisin sanoen, eri koordinaattijärjestelmässä olevien aineistojen koordinaatit lasketaan ”lennossa” projektin koordinaattijärjestelmää vastaaviksi (englannin kielen lyhenne on OTF - on the fly).</p>
+<p>Huomaa, että ”lennossa”-ilmaisulla tarkoitetaan sitä, että paikkatietoaineisto piirtyy tilapäisesti projektin koordinaattijärjestelmään ilman, että sen alkuperäinen koordinaattijärjestelmä muuttuu. Tällä tavoin mahdollistetaan aineistojen piirtäminen ja visualisointi yhdessä. Avaa nyt päävalikosta <strong>Projekti &gt; Ominaisuudet…</strong> ja valitse vasemmasta palkista <strong>Koordinaattijärjestelmä</strong>. Pääset projektin koordinaattijärjestelmän asetuksiin myös klikkaamalla QGIS-työtilan oikeassa alareunassa olevaa <strong>EPSG-painiketta</strong> <img src="img/harjoitus_4/image1.png" /> .</p>
+<p><img src="img/harjoitus_4/image2.png" /></p>
+<p>Projektin koordinaattijärjestelmä näkyy <strong>Äskettäin käytetyt koordinaattijärjestelmät</strong> -listauksessa ensimmäisenä: <strong>ETRS89/TM35FIN (EPSG: 3067)</strong>. QGIS määrittelee projektin koordinaattijärjestelmän automaattisesti ensimmäiseksi lisätyn paikkatietoaineiston perusteella. Projektiin lisättiin ensimmäisenä Maanmittauslaitoksen <strong>TieViiva-aineiston</strong>, jonka koordinaattijärjestelmä on <strong>ETRS89/TM35FIN (EPSG:3067)</strong> – näin ollen QGIS asetti sen koko projektin koordinaattijärjestelmäksi.</p>
+<p><img src="img/harjoitus_4/image3.png" /></p>
+<p>Vaihda (= uudelleenprojisoi lennossa) projektin koordinaattijärjestelmäksi <strong>WGS 84 (EPSG: 4326)</strong> ja paina <strong>OK</strong>. Löydät halutun koordinaattijärjestelmän helpoiten kirjoittamalla EPSG-koodin <strong>Suodatin</strong>-kenttään.</p>
+<p><img src="img/harjoitus_4/image4.png" /></p>
+<p>Koordinaattijärjestelmän muuttamisen jälkeen klikkaa <strong>Zoomaa täydeksi</strong> -työkalua <img src="img/harjoitus_4/image5.png" /> , niin paikkatietoaineistot keskittyvät karttaikkunaan. Voit huomata, että paikkatietoaineistomme ovat nyt uudelleenprojisoituneet lennossa WGS 84 -koordinaattijärjestelmään ja samalla Suomi on vääristynyt muodoltaan.</p>
+<p><img src="img/harjoitus_4/image6.png" /> <img src="img/harjoitus_4/image7.png" /></p>
+<p>Vie hiiresi Helsingin kohdalle ja tarkastele alapalkin <strong>Koordinaatit-kenttää</strong>. Koordinaatit näyttävät jokseenkin tältä:</p>
+<p><img src="img/harjoitus_4/image8.png" /></p>
+<p>Vaihda nyt projektin koordinaattijärjestelmä takaisin <strong>ETRS89/TM35FIN-koordinaattijärjestelmään</strong>. Vie hiiresi uudestaan Helsingin kohdalle ja tarkastele <strong>Koordinaatit-kenttää</strong>.</p>
+<p><img src="img/harjoitus_4/image9.png" /></p>
+<p>Voit huomata, että koordinaattien suuruusluokka on hyvin erilainen. Tämä johtuu siitä, että aineistoilla on eri koordinaattijärjestelmät. ETRS89/TM35FIN-koordinaattijärjestelmän mittasuhteet ovat metreinä (itä ja pohjoinen / x ja y), kun taas WGS 84 -koordinaattijärjestelmässä mittasuhteet ovat asteina (pituus ja leveys). ETRS89/TM35FIN-koordinaattijärjestelmässä on määritetty origo eli piste, jonka koordinaatit ovat (0, 0). ETRS89/TM35FIN-koordinaattijärjestelmässä taas sama piste sijaitsee päiväntasaajalla UTM-kaistalla 35. UTM on maailmanlaajuisesti käytössä oleva projektio, joka jakaa maapallon 6° kaistoihin. Kaista UTM01 sijaitsee Alaskan länsipuolella. Koska koordinaattijärjestelmien arvoja voidaan ilmentää sekä metreinä että asteina, niiden koordinaattiarvoja ei voida suoraan vertailla toisiinsa. Koordinaatit tulee uudelleenprojisoida yhteiseen koordinaattijärjestelmään.</p>
+</div>
+<div id="paikkatietoaineiston-koordinaattijärjestelmä" class="section level2" number="5.6">
+<h2><span class="header-section-number">5.6</span> Paikkatietoaineiston koordinaattijärjestelmä</h2>
+<p>Tarkastele nyt tason <strong>ne_10m_populated_places_suomi</strong> koordinaattijärjestelmää klikkaamalla tasoa hiiren oikealla painikkeella <strong>Tasot</strong>-paneelissa ja valitsemalla <strong>Ominaisuudet…</strong>. QGISiin avautuu <strong>Tason ominaisuudet</strong> -ikkuna, josta löytyy paljon tietoa kyseisestä paikkatietoaineistosta. <strong>Informaatio-välilehdeltä</strong> löydät tietoa mm. paikkatietoaineiston koodauksesta, geometriatyypistä, koordinaattijärjestelmästä ja kohteiden lukumäärästä. Huomaa, että tämän kyseisen tason koordinaattijärjestelmä on todellisuudessa eri kuin <strong>TieViiva-aineiston</strong> tai projektin koordinaattijärjestelmä. Silti QGIS esittää aineiston karttaikkunassa ETRS89/TM35FIN-koordinaattijärjestelmässä, sillä projektin koordinaattijärjestelmä on dominoiva.</p>
+<p><img src="img/harjoitus_4/image10.png" /></p>
+<p>Avaa seuraavaksi <strong>Tason ominaisuudet</strong> -ikkunan vasemmasta palkista <strong>Lähde-välilehti</strong>. Huomaa, että voisit vaihtaa järjestelmää <strong>Koordinaattijärjestelmä</strong>-alasvetolaatikon avulla. Älä kuitenkaan tee sitä nyt. Koordinaattijärjestelmän muuttaminen <strong>Lähde</strong>-välilehdellä muuttaa vain aineiston koordinaattijärjestelmämääritystä. Aineiston koordinaatit eivät muutu, ja väärällä määrityksellä aineisto ei piirry oikeaan paikkaan. Jos haluaisit muuttaa aineiston koordinaattijärjestelmää, aineisto tulee uudelleenprojisoida eli sen koordinaatit on laskettava uudelleen. Sulje <strong>Tason ominaisuudet</strong> -ikkuna klikkaamalla <strong>OK</strong>.</p>
+<p><img src="img/harjoitus_4/image11.png" /></p>
+</div>
+<div id="paikkatietoaineiston-uudelleenprojisointi" class="section level2" number="5.7">
+<h2><span class="header-section-number">5.7</span> Paikkatietoaineiston uudelleenprojisointi</h2>
+<p>Toisinaan on tärkeää, että paikkatietoaineistot ovat samassa koordinaattijärjestelmässä – esimerkiksi osa QGISin prosessityökaluista ei tuota oikeaa tulosta jos aineistot ovat eri koordinaattijärjestelmissä. Näin ollen paikkatietoaineisto on uudelleenprojisoitava ja tallennettava uutena paikkatietoaineistona. Uudelleenprojisoidaan nyt <strong>ne_10m_populated_places_suomi-taso</strong> WGS 84 -koordinaattijärjestelmästä ETRS89/TM35FIN-koordinaattijärjestelmään.</p>
+<div id="tapa-1-projisoi-taso--prosessityökalu" class="section level3" number="5.7.1">
+<h3><span class="header-section-number">5.7.1</span> Tapa 1: Projisoi taso -prosessityökalu</h3>
+<p>Uudelleenprojisoinnin voi tehdä suoraan QGIS-prosessointityökalun avulla valitsemalla ylävalikosta <strong>Vektori &gt; Tiedonhallinta &gt; Projisoi taso…</strong> Aseta syötetasoksi <strong>ne_10m_populated_places_suomi</strong> ja valitse halutuksi koordinaattijärjestelmäksi <strong>ETRS89/TM35FIN (EPSG: 3067)</strong>. Klikkaa <strong>Projisoitu-</strong> kentän kohdalla … &gt; <strong>Tallenna tiedostoon</strong> ja valitse sijainti, minne haluat tallentaa uudelleenprojisoidun aineiston. Anna tasolle nimeksi <strong>ne_10m_populated_places_suomi_3067</strong> ja tarkista, että aineisto tallentuu <strong>GeoPackage-formaattiin</strong>. Klikkaa lopuksi <strong>Suorita</strong>.</p>
+<p><img src="img/harjoitus_4/image12.png" /></p>
+<p>QGISin <strong>Tasot-paneeliin</strong> ilmestyy uudelleenprojisoitu paikkatietoaineisto. Voit tarkistaa koordinaattijärjestelmän tason ominaisuuksista.</p>
+</div>
+<div id="tapa-2-tallennus-tasot-paneelissa" class="section level3" number="5.7.2">
+<h3><span class="header-section-number">5.7.2</span> Tapa 2: Tallennus Tasot-paneelissa</h3>
+<p>Klikkaa tasoa <strong>Tasot</strong>-paneelissa hiiren oikealla painikkeella ja valitse <strong>Vie &gt; Tallenna kohteet nimellä…</strong> Tällä työkalulla voit tallentaa paikkatietoaineiston uudella nimellä ja samanaikaisesti suorittaa niille erilaisia toimenpiteitä. Voisit esimerkiksi vaihtaa tiedostomuodon ja/tai tallentaa vain osan aineistosta.</p>
+<p><img src="img/harjoitus_4/image13.png" /></p>
+<p>Vaihdetaan ensin tiedostomuoto <strong>Shape-tiedostostaGeoPackageen</strong>. Valitse tämän jälkeen <strong>Tiedoston nimi</strong> -kohdassa uudelleenprojisoidun aineiston sijainti ja anna sille nimeksi n<strong>e_10m_populated_places_suomi_3067</strong>. Aseta koordinaattijärjestelmäksi <strong>ETRS89/TM35FIN (EPSG: 3067)</strong> ja rastita <strong>Lisää tallennettu tiedosto kartalle</strong>. Paina sitten <strong>OK</strong>.</p>
+<p><img src="img/harjoitus_4/image14.png" /></p>
+<p>QGISin <strong>Tasot</strong>-paneeliin ilmestyy uudelleenprojisoitu paikkatietoaineisto. Voit tarkistaa koordinaattijärjestelmän tason ominaisuuksista.</p>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<blockquote>
+<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
+</blockquote>
 
-<h1 id="title-header">Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</h1>
-
-<h4 class="author">Gispo Ltd.</h4>
-
-<h4 id="build-date">Version: 2022-02-01</h4>
-
-<div class="abstract"><p>Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin</p></div>
-
 </div>
-<div id="johdanto-qgisin-käyttöön" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Johdanto QGISin käyttöön</h1>
-<div id="tervetuloa-qgis-peruskurssille" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Tervetuloa QGIS-peruskurssille!</h2>
-<p>Tämän kurssin tarkoituksena on opastaa sinut QGIS–ohjelmiston käyttöön. Muiden paikkatieto-ohjelmistojen käyttökokemus ei ole välttämätöntä koulutukseen osallistumisel­le. Toki niistä on paljon hyötyä. Kysy rohkeasti opettajalta lisätietoja, jos käytetty terminologia tai joku muu asia jää epäselväksi.</p>
-</div>
-<div id="qgisin-taustaa" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> QGISin taustaa</h2>
-<p>QGIS (alkuperäiseltä nimeltään Quantum GIS) on yhteisöllisesti kehitetty avoimen lähdekoodin paikkatieto-ohjelmisto. QGISin kehittäminen on alkanut heinäkuussa 2002, jonka jälkeen kehitystyöhön on osallistunut yli 150 sovelluskehittäjää. QGISin käyttäjämäärää on hyvin vaikea arvioida, sillä ohjelmistoa ei tarvitse rekisteröidä ja sitä voi jakaa edelleen vapaasti. Karkeasti arvioiden voidaan kuitenkin todeta, että QGIS-ohjelmiston eri versioilla on yli miljoona käyttäjää maailmanlaajuisesti.
-QGIS–ohjelmisto ja sen lisäosat muodostavat kattavan ohjelmistoperheen paikkatietojen keräämiseen, mallintamiseen, analysointiin, visualisointiin ja jakeluun. Tämän kurssin aikana käsittelemme vain murto-osaa QGISin kaikista toiminnallisuuksista.</p>
-</div>
-<div id="miksi-qgis" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Miksi QGIS?</h2>
-<p>Perimmäinen syy QGISin käyttöön on tietysti paikkatietoaineistojen hyödyntäminen. Paikkatietoja voi hyödyntää monilla avoimen ja suljetun lähdekoodin ohjelmistolla, mutta tässä muutamia perusteluja juuri QGIS-ohjelmiston käytölle:</p>
-<ul>
-<li><strong>QGIS on ilmainen.</strong> Voit ladata ja asentaa QGIS ilman lisenssi- tai käyttömaksuja. Käyttöön ei sisälly mitään maksuja.</li>
-<li><strong>QGIS on vapaa.</strong> Jos tarvitset QGISiin lisää ominaisuuksia, sinulla on täysi vapaus laajentaa ja muuttaa QGISiä. Sinun ei tarvitse odottaa seuraavaa versioita ja toivoa, että tarvitsemasi ominaisuudet ovat sisällytetty mukaan. Jos osaat ohjelmoida, voit lisätä ominaisuudet itse. Voit myös rahoittaa uusien ominaisuuksien kehittämistä osaksi QGISiä.</li>
-<li><strong>QGIS kehittyy jatkuvasti.</strong> Kuka tahansa voi lisätä tai rahoittaa uusia ominaisuuksia QGISiin ja siksi ohjelmisto kehittyy kiihtyvällä vauhdilla. Erilaisten lisäosien avulla on helppo toteuttaa omia prosesseja tukevia toimintoja.</li>
-<li><strong>QGIS on hyvin dokumentoitu.</strong> QGIS sisältää laajan dokumentaation. Koko ajan kasvava käyttäjäyhteisö auttaa mielellään uusia käyttäjiä ja voit myös kysyä apua suoraan sovelluskehittäjiltä.</li>
-<li><strong>QGIS on järjestelmäriippumaton.</strong> QGISiä voi käyttää Windows-, Linux- ja Mac-käyttöjärjestelmissä.</li>
-<li><strong>QGIS on suomenkielinen.</strong> QGIS-käyttöliittymä on suomennettu. Myös ruotsinkielinen versio on käytettävissä ilman lisäkustannuksia. Käyttöohjeita, web-sivustoja ja muita materiaaleja kehitetään ja suomennetaan jatkuvasti.</li>
-</ul>
-</div>
-<div id="lukuohje" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Lukuohje</h2>
-<p><strong>Web-selaimessa</strong> suoritettavat komennot on merkitty seuraavasti:</p>
-<div class="note-box">
-<p><a href="http://localhost:8080/geoserver" class="uri">http://localhost:8080/geoserver</a></p>
-</div>
-<p><strong>Komentorivillä</strong> suoritettavat komennot on merkitty seuraavasti:</p>
-<div class="commandline-box">
-<p>sudo lsb_release -a</p>
-</div>
-<p><strong>Tiedostojen sisältö</strong> on esitetty seuraavasti:</p>
-<div class="file-content-box">
-<p>#IPv4 local connections:
-#host all all 127.0.0.1/32 md5</p>
-</div>
-<p><strong>HTML- ja CSS-koodit, SQL-komennot sekä Python-scriptit</strong> on esitetty seuraavasti:</p>
-<div class="code-box">
-<p>SELECT version();</p>
-</div>
-<p><strong>Kysymykset, lisätiedot ja vihjeet</strong> on esitetty seuraavasti:</p>
-<div class="hint-box">
-<p>Mistä löydät tietoa GeoServeristä?</p>
-<p>GeoServerillä on omat kotisivut.</p>
-<p>Psst! Tietoa GeoServeristä löydät internetistä.</p>
-</div>
-</div>
-<div id="mistä-lisätietoja" class="section level2" number="1.5">
-<h2><span class="header-section-number">1.5</span> Mistä lisätietoja?</h2>
-<p>Ohessa muutamia web-sivustoja, joista saat lisätietoja:</p>
-<div class="note-box">
-<p><a href="http://www.qgis.org/" class="uri">http://www.qgis.org/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://docs.qgis.org/" class="uri">http://docs.qgis.org/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://gis.stackexchange.com/" class="uri">http://gis.stackexchange.com/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://www.osgeo.fi" class="uri">http://www.osgeo.fi</a></p>
-</div>
-</div>
-<div id="virheet" class="section level2" number="1.6">
-<h2><span class="header-section-number">1.6</span> Virheet</h2>
-<p>Jos havaitset materiaalissa virheitä, niin pyydämme ilmoittamaan niistä kouluttajalle tai sähköpostilla <a href="mailto:info@gispo.fi-osoitteeseen" class="email">info@gispo.fi-osoitteeseen</a>.</p>
-<!--# Introduction to QGIS
-
-Welcome to the Introduction to QGIS course by [Gispo Ltd.](https://gispo.fi)!
-
-These course materials are designed to be used during the two-day Introduction to QGIS course.
-
-Todo: add some more materials here
-
-## About
-
-When working through the material, try to follow along the exercises as well as you can.
-Even if you cannot complete an exercise, you learn much more by at least trying.
-
-The materials contain notes and hints that help with completing the exercises.
-These are placed in special boxes.
-Hints look like this:
-
-:::{.hint-box}
-**Hint:** these boxes contain useful tips for completing exercises.
-:::
-
-While notes look like this:
-
-:::{.note-box}
-**Note:** these boxes contain various things that should to keep in mind and consider.
-::: 
--->
-</div>
-<div id="lisenssi-ja-oikeudet" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> Lisenssi ja oikeudet</h2>
-<p>Nämä materiaalit on kehitetty “Johdanto paikkatietoon ja QGISin käyttöön”-kurssille Gispo Oy:n toimesta. Materiaalit on lisensoitu
-seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></p>
-<!--
-License and permissions
-These materials are developed for the Introduction to QGIS course by Gispo Ltd.
-The materials are licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
--->
-
 </div>
 </div>
 <p style="text-align: center;">
-<a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html"><button class="btn btn-default">Next</button></a>
+<a href="4-harjoitus-3-paikkatietopalvelut.html"><button class="btn btn-default">Previous</button></a>
+<a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html"><button class="btn btn-default">Next</button></a>
 </p>
 </div>
 </div>

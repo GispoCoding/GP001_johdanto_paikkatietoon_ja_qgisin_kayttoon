@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
+<meta property="og:title" content="11 Harjoitus 10: QGISin lisäosat | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
 <meta property="og:type" content="book" />
 
 
@@ -19,9 +19,9 @@
 <meta name="date" content="2022-02-01" />
 
 
-<meta name="description" content="Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
+<meta name="description" content="11 Harjoitus 10: QGISin lisäosat | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
 
-<title>Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
+<title>11 Harjoitus 10: QGISin lisäosat | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
@@ -196,128 +196,67 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div class="row">
 <div class="col-sm-12">
-<!-- This title section is only rendered to index.html -->
-<div id="title-container">
-
-<h1 id="title-header">Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</h1>
-
-<h4 class="author">Gispo Ltd.</h4>
-
-<h4 id="build-date">Version: 2022-02-01</h4>
-
-<div class="abstract"><p>Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin</p></div>
-
+<div id="harjoitus-10-qgisin-lisäosat" class="section level1" number="11">
+<h1><span class="header-section-number">11</span> Harjoitus 10: QGISin lisäosat</h1>
+<div id="harjoituksen-sisältö-9" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa tutustutaan QGISin monipuolisiin lisäosiin ja opitaan käyttämään muutamaa keskeistä lisäosaa.</p>
 </div>
-<div id="johdanto-qgisin-käyttöön" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Johdanto QGISin käyttöön</h1>
-<div id="tervetuloa-qgis-peruskurssille" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Tervetuloa QGIS-peruskurssille!</h2>
-<p>Tämän kurssin tarkoituksena on opastaa sinut QGIS–ohjelmiston käyttöön. Muiden paikkatieto-ohjelmistojen käyttökokemus ei ole välttämätöntä koulutukseen osallistumisel­le. Toki niistä on paljon hyötyä. Kysy rohkeasti opettajalta lisätietoja, jos käytetty terminologia tai joku muu asia jää epäselväksi.</p>
+<div id="harjoituksen-tavoite-8" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> Harjoituksen tavoite</h2>
+<p>Opiskelijalla tietää perusasiat QGISin lisäosien käytöstä ja osaa myös hyödyntää niitä.</p>
 </div>
-<div id="qgisin-taustaa" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> QGISin taustaa</h2>
-<p>QGIS (alkuperäiseltä nimeltään Quantum GIS) on yhteisöllisesti kehitetty avoimen lähdekoodin paikkatieto-ohjelmisto. QGISin kehittäminen on alkanut heinäkuussa 2002, jonka jälkeen kehitystyöhön on osallistunut yli 150 sovelluskehittäjää. QGISin käyttäjämäärää on hyvin vaikea arvioida, sillä ohjelmistoa ei tarvitse rekisteröidä ja sitä voi jakaa edelleen vapaasti. Karkeasti arvioiden voidaan kuitenkin todeta, että QGIS-ohjelmiston eri versioilla on yli miljoona käyttäjää maailmanlaajuisesti.
-QGIS–ohjelmisto ja sen lisäosat muodostavat kattavan ohjelmistoperheen paikkatietojen keräämiseen, mallintamiseen, analysointiin, visualisointiin ja jakeluun. Tämän kurssin aikana käsittelemme vain murto-osaa QGISin kaikista toiminnallisuuksista.</p>
+<div id="arvioitu-kesto-8" class="section level2" number="11.3">
+<h2><span class="header-section-number">11.3</span> Arvioitu kesto</h2>
+<p>40 minuuttia.</p>
 </div>
-<div id="miksi-qgis" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Miksi QGIS?</h2>
-<p>Perimmäinen syy QGISin käyttöön on tietysti paikkatietoaineistojen hyödyntäminen. Paikkatietoja voi hyödyntää monilla avoimen ja suljetun lähdekoodin ohjelmistolla, mutta tässä muutamia perusteluja juuri QGIS-ohjelmiston käytölle:</p>
-<ul>
-<li><strong>QGIS on ilmainen.</strong> Voit ladata ja asentaa QGIS ilman lisenssi- tai käyttömaksuja. Käyttöön ei sisälly mitään maksuja.</li>
-<li><strong>QGIS on vapaa.</strong> Jos tarvitset QGISiin lisää ominaisuuksia, sinulla on täysi vapaus laajentaa ja muuttaa QGISiä. Sinun ei tarvitse odottaa seuraavaa versioita ja toivoa, että tarvitsemasi ominaisuudet ovat sisällytetty mukaan. Jos osaat ohjelmoida, voit lisätä ominaisuudet itse. Voit myös rahoittaa uusien ominaisuuksien kehittämistä osaksi QGISiä.</li>
-<li><strong>QGIS kehittyy jatkuvasti.</strong> Kuka tahansa voi lisätä tai rahoittaa uusia ominaisuuksia QGISiin ja siksi ohjelmisto kehittyy kiihtyvällä vauhdilla. Erilaisten lisäosien avulla on helppo toteuttaa omia prosesseja tukevia toimintoja.</li>
-<li><strong>QGIS on hyvin dokumentoitu.</strong> QGIS sisältää laajan dokumentaation. Koko ajan kasvava käyttäjäyhteisö auttaa mielellään uusia käyttäjiä ja voit myös kysyä apua suoraan sovelluskehittäjiltä.</li>
-<li><strong>QGIS on järjestelmäriippumaton.</strong> QGISiä voi käyttää Windows-, Linux- ja Mac-käyttöjärjestelmissä.</li>
-<li><strong>QGIS on suomenkielinen.</strong> QGIS-käyttöliittymä on suomennettu. Myös ruotsinkielinen versio on käytettävissä ilman lisäkustannuksia. Käyttöohjeita, web-sivustoja ja muita materiaaleja kehitetään ja suomennetaan jatkuvasti.</li>
-</ul>
+<div id="valmistautuminen-9" class="section level2" number="11.4">
+<h2><span class="header-section-number">11.4</span> Valmistautuminen</h2>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 10</strong>”. Lataa projektiin seuraavat aineistot:</p>
+<p>..kurssihakemisto/MML/Korkeusmalli_2m/L4133B.asc</p>
+<p>..kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019</p>
 </div>
-<div id="lukuohje" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Lukuohje</h2>
-<p><strong>Web-selaimessa</strong> suoritettavat komennot on merkitty seuraavasti:</p>
-<div class="note-box">
-<p><a href="http://localhost:8080/geoserver" class="uri">http://localhost:8080/geoserver</a></p>
+<div id="lisäosien-hallinta" class="section level2" number="11.5">
+<h2><span class="header-section-number">11.5</span> Lisäosien hallinta</h2>
+<p>Lisäosia lisätään käyttöön päävalikosta <strong>Lisäosat &gt; Hallitse ja asenna lisäosia…</strong> -valikon kautta. Valitse <strong>Asennettu</strong>-välilehti ja saat esille kaikki asennetut lisäosat. Huomaa, että suurinta osaa niistä ei ole aktivoitu. Lisäosien aktivointi lisää erilaisia valikkoja ja paneeleja QGISin käyttöliittymään. Siksi on hyödyllistä piilottaa ne joita ei käytetä.</p>
 </div>
-<p><strong>Komentorivillä</strong> suoritettavat komennot on merkitty seuraavasti:</p>
-<div class="commandline-box">
-<p>sudo lsb_release -a</p>
+<div id="quickmapservices" class="section level2" number="11.6">
+<h2><span class="header-section-number">11.6</span> QuickMapServices</h2>
+<p>QuickMapServices-lisäosan kautta saat QGISin karttaprojektiin verkosta erilaisia kuten OpenStreetMap tai Maanmittauslaitoksen taustakarttasarjat tai ortoilmakuvat. Avaa <strong>Lisäosat &gt; Hallitse ja asenna lisäosia… &gt; Kaikki</strong> ja etsi QuickMapServices tekstillä:</p>
+<p><img src="img/harjoitus_10/image1.png" /></p>
+<p>Paina vielä <strong>Asenna lisäosa</strong> ja paina sen jälkeen <strong>Sulje</strong>. Uusi valikko tulee päävalikon <strong>Verkko</strong> alle. Valitse <strong>Verkko &gt; QuickMapServices &gt; OSM &gt; OSM Standard</strong>. Karttaikkunassa on nyt OpenStreetMap taustakarttana. Järjestä tasot siten, että väestöaineisto on hyvin näkyvissä. Voit myös piilottaa korkeusmalliaineistot, jos ne haittaavat visualisointia. Kokeile lisäksi muita taustakarttoja.</p>
+<p><img src="img/harjoitus_10/image2.png" /></p>
 </div>
-<p><strong>Tiedostojen sisältö</strong> on esitetty seuraavasti:</p>
-<div class="file-content-box">
-<p>#IPv4 local connections:
-#host all all 127.0.0.1/32 md5</p>
+<div id="qgis2threejs" class="section level2" number="11.7">
+<h2><span class="header-section-number">11.7</span> Qgis2threejs</h2>
+<p>Lisää samaan tapaan Qgis2threejs-lisäosa. Tämä lisäosa mahdollistaa nopean kolmiulotteisen visualisoinnin luomisen web-selaimelle käyttäen threejs-kirjastoa. Lisäosan valikko tulee myös <strong>Verkko</strong>-valikkoon. Avaa <strong>Qgis2threejs Exporter</strong> ja valitse <strong>DEM Layer</strong> -valikosta <strong>Flat Plane</strong>. Valitse sen jälkeen <strong>Polygon</strong>-kohdan alta <strong>väestötietoruudukkoaineisto</strong> ja tuplaklikkaa sitä avataksesi <strong>asetukset</strong>. Aseta <strong>Z-coordinate</strong> -kohdan <strong>Mode</strong>-asetukseksi <strong>Absolute</strong> ja <strong>Height-arvoksi asukkaita</strong>-kentän arvo.</p>
+<p><img src="img/harjoitus_10/image3.png" /></p>
+<p>Voit esikatsella 3D-mallia lisäosassa ja halutessasi tallentaa sen HTML-muotoon valikosta <strong>File &gt; Export to web</strong>.</p>
+<p><img src="img/harjoitus_10/image4.png" /></p>
 </div>
-<p><strong>HTML- ja CSS-koodit, SQL-komennot sekä Python-scriptit</strong> on esitetty seuraavasti:</p>
-<div class="code-box">
-<p>SELECT version();</p>
+<div id="qgis2web" class="section level2" number="11.8">
+<h2><span class="header-section-number">11.8</span> Qgis2web</h2>
+<p>Qgis2web-lisäosa on helppokäyttöinen lisäosa verkkokartan luomista varten. Sillä voi tuottaa verkkokarttoja hyödyntäen Leaflet- tai OpenLayers-kirjastoja. Qgis2web on hyödyllinen apuväline näiden kirjastojen opetteluun ja verkkokarttajulkaisujen tekemiseen. Asenna Qgis2web-lisäosa ja avaa se valikosta <strong>Verkko &gt; Qgis2web &gt; Create web map</strong>. Valitse <strong>väestötietoruudukko-aineiston</strong> kentille <strong>Popup fields</strong> -kohdan alta <strong>Inline label</strong>, ja klikkaa <strong>Update preview</strong>. Kun kartta on päivittynyt, klikkaa ruudukkoa.</p>
+<p><img src="img/harjoitus_10/image5.png" /></p>
+<p>Vaihda <strong>Appearance-välilehdelle</strong> ja muuta asetukset kuvan mukaisesti:</p>
+<p><img src="img/harjoitus_10/image5.png" /></p>
+<p>Paina lopulta <strong>Export</strong> tallentaaksesi kartan HTML-tiedostoon. Tiedosto aukeaa automaattisesti selaimelle. Kokeile verkkokartassasi etsiä osoitteita ja käyttää mittaustyökalua.</p>
 </div>
-<p><strong>Kysymykset, lisätiedot ja vihjeet</strong> on esitetty seuraavasti:</p>
-<div class="hint-box">
-<p>Mistä löydät tietoa GeoServeristä?</p>
-<p>GeoServerillä on omat kotisivut.</p>
-<p>Psst! Tietoa GeoServeristä löydät internetistä.</p>
-</div>
-</div>
-<div id="mistä-lisätietoja" class="section level2" number="1.5">
-<h2><span class="header-section-number">1.5</span> Mistä lisätietoja?</h2>
-<p>Ohessa muutamia web-sivustoja, joista saat lisätietoja:</p>
-<div class="note-box">
-<p><a href="http://www.qgis.org/" class="uri">http://www.qgis.org/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://docs.qgis.org/" class="uri">http://docs.qgis.org/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://gis.stackexchange.com/" class="uri">http://gis.stackexchange.com/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://www.osgeo.fi" class="uri">http://www.osgeo.fi</a></p>
-</div>
-</div>
-<div id="virheet" class="section level2" number="1.6">
-<h2><span class="header-section-number">1.6</span> Virheet</h2>
-<p>Jos havaitset materiaalissa virheitä, niin pyydämme ilmoittamaan niistä kouluttajalle tai sähköpostilla <a href="mailto:info@gispo.fi-osoitteeseen" class="email">info@gispo.fi-osoitteeseen</a>.</p>
-<!--# Introduction to QGIS
-
-Welcome to the Introduction to QGIS course by [Gispo Ltd.](https://gispo.fi)!
-
-These course materials are designed to be used during the two-day Introduction to QGIS course.
-
-Todo: add some more materials here
-
-## About
-
-When working through the material, try to follow along the exercises as well as you can.
-Even if you cannot complete an exercise, you learn much more by at least trying.
-
-The materials contain notes and hints that help with completing the exercises.
-These are placed in special boxes.
-Hints look like this:
-
-:::{.hint-box}
-**Hint:** these boxes contain useful tips for completing exercises.
-:::
-
-While notes look like this:
-
-:::{.note-box}
-**Note:** these boxes contain various things that should to keep in mind and consider.
-::: 
--->
-</div>
-<div id="lisenssi-ja-oikeudet" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> Lisenssi ja oikeudet</h2>
-<p>Nämä materiaalit on kehitetty “Johdanto paikkatietoon ja QGISin käyttöön”-kurssille Gispo Oy:n toimesta. Materiaalit on lisensoitu
-seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></p>
-<!--
-License and permissions
-These materials are developed for the Introduction to QGIS course by Gispo Ltd.
-The materials are licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
--->
+<div id="prosessointityökalut" class="section level2" number="11.9">
+<h2><span class="header-section-number">11.9</span> Prosessointityökalut</h2>
+<p>Iso joukko työkaluja on saatavilla <strong>Prosessointi</strong>-valikon kautta. Prosessointityökalut on lisäosa, joka on oletuksena aktivoitu QGISiin. Sillä on oma paikka päävalikossa <strong>Prosessointi &gt; Työkalut</strong>. Työkalut tulevat esiin paneelina karttaikkunan oikealle puolelle. Etsi työkalujen joukosta <strong>Vyöhyke-työkalu (= Buffer)</strong>. Voit kirjoittaa <strong>Etsi…</strong>-kenttään sanan “buffer”, jolloin työkalu löytyy helposti. Avaa työkalu, valitse lähtötasoksi <strong>HSY_vaestotietoruudukko_2019</strong> ja aseta <strong>Etäisyys-kenttään -50 metriä</strong>. Pidä puskuroinnin työkalun tulos väliaikaisena tiedostona tai tallenna se pysyväksi.</p>
+<p><img src="img/harjoitus_10/image7.png" /></p>
+<p>Tuloksena on negatiivinen puskuri, eli alkuperäistä pienempi ruudukko. Prosessointityökalujen kautta pääse käyttämään työkaluja monesta muusta ohjelmistoista (niiden ohjelmistokirjastot täytyy tällöin olla asennettu koneeseen). Muun muassa GRASS-, GDAL-, Orfeo Toolbox- ja SAGA-työkalut ovat saatavilla.</p>
+<p>Jos sinulle jää aikaa, käy läpi muita lisäosia ja tarkastele mitä työkaluja sieltä löytyy, jotka voivat auttaa sinua omassa työssäsi.</p>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> (englanninkielisessä QGISissä CTRL + S) tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<blockquote>
+<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
+</blockquote>
 
 </div>
 </div>
 <p style="text-align: center;">
-<a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html"><button class="btn btn-default">Next</button></a>
+<a href="10-harjoitus-9-paikkatietoanalyysit.html"><button class="btn btn-default">Previous</button></a>
 </p>
 </div>
 </div>

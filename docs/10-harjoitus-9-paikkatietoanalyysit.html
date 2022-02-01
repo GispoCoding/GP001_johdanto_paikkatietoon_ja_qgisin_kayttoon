@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
+<meta property="og:title" content="10 Harjoitus 9: Paikkatietoanalyysit | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
 <meta property="og:type" content="book" />
 
 
@@ -19,9 +19,9 @@
 <meta name="date" content="2022-02-01" />
 
 
-<meta name="description" content="Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
+<meta name="description" content="10 Harjoitus 9: Paikkatietoanalyysit | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
 
-<title>Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
+<title>10 Harjoitus 9: Paikkatietoanalyysit | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
@@ -196,128 +196,69 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div class="row">
 <div class="col-sm-12">
-<!-- This title section is only rendered to index.html -->
-<div id="title-container">
-
-<h1 id="title-header">Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</h1>
-
-<h4 class="author">Gispo Ltd.</h4>
-
-<h4 id="build-date">Version: 2022-02-01</h4>
-
-<div class="abstract"><p>Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin</p></div>
-
+<div id="harjoitus-9-paikkatietoanalyysit" class="section level1" number="10">
+<h1><span class="header-section-number">10</span> Harjoitus 9: Paikkatietoanalyysit</h1>
+<div id="harjoituksen-sisältö-8" class="section level2" number="10.1">
+<h2><span class="header-section-number">10.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa tutustutaan QGISin paikkatietoanalyysien tekoon.
+## Harjoituksen tavoite</p>
+<p>Opiskelijalla on perustiedot erilaisten paikkatietoanalyysien muodostamisesta QGIS-ohjelmistossa.
+## Arvioitu kesto</p>
+<p>40 minuuttia.</p>
 </div>
-<div id="johdanto-qgisin-käyttöön" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Johdanto QGISin käyttöön</h1>
-<div id="tervetuloa-qgis-peruskurssille" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Tervetuloa QGIS-peruskurssille!</h2>
-<p>Tämän kurssin tarkoituksena on opastaa sinut QGIS–ohjelmiston käyttöön. Muiden paikkatieto-ohjelmistojen käyttökokemus ei ole välttämätöntä koulutukseen osallistumisel­le. Toki niistä on paljon hyötyä. Kysy rohkeasti opettajalta lisätietoja, jos käytetty terminologia tai joku muu asia jää epäselväksi.</p>
+<div id="valmistautuminen-8" class="section level2" number="10.2">
+<h2><span class="header-section-number">10.2</span> Valmistautuminen</h2>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “QGIS-harjoitus 9”. Lisää projektiin seuraavat aineistot:</p>
+<p>..kurssihakemisto/MML/YK_1M/HallintoAlue.shp</p>
+<p>..kurssihakemisto/MML/YK_1M/TieViiva.shp</p>
+<p>Karttanäkymän tulisi näyttää tältä:</p>
+<p><img src="img/harjoitus_8/image1.png" /></p>
+<p>Voit tarkistaa/muokata projektisi koordinaattijärjestelmän asetuksia (<strong>Projekti &gt; Projektin asetukset &gt; Koordinaattijärjestelmä</strong>) tai klikkaamalla oikeasta alareunasta löytyvää kuvaketta:</p>
+<p><img src="img/harjoitus_8/image2.png" /></p>
+<p>Kummatkin tavat avaavat projektin koordinaattijärjestelmän määrityslomakkeen. Tarkista, että järjestelmä on <strong>ETRS89/TM35FIN (EPSG:3067)</strong>. Voit lisätä ongelmitta aineistot eri karttaprojektioissa. Monet analyysityökalut eivät kuitenkaan toimi tai antavat epätarkkoja tuloksia, jos analyysin aineistoilla on eri koordinaattijärjestelmät. Tällöin ne täytyy tallentaa uudelleen ja tehdä tallennusvaiheessa muunnos samaan järjestelmään. Tällä kertaa ongelmia ei tule, koska aineistot on alun perin tuotettu samassa koordinaattijärjestelmässä.</p>
 </div>
-<div id="qgisin-taustaa" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> QGISin taustaa</h2>
-<p>QGIS (alkuperäiseltä nimeltään Quantum GIS) on yhteisöllisesti kehitetty avoimen lähdekoodin paikkatieto-ohjelmisto. QGISin kehittäminen on alkanut heinäkuussa 2002, jonka jälkeen kehitystyöhön on osallistunut yli 150 sovelluskehittäjää. QGISin käyttäjämäärää on hyvin vaikea arvioida, sillä ohjelmistoa ei tarvitse rekisteröidä ja sitä voi jakaa edelleen vapaasti. Karkeasti arvioiden voidaan kuitenkin todeta, että QGIS-ohjelmiston eri versioilla on yli miljoona käyttäjää maailmanlaajuisesti.
-QGIS–ohjelmisto ja sen lisäosat muodostavat kattavan ohjelmistoperheen paikkatietojen keräämiseen, mallintamiseen, analysointiin, visualisointiin ja jakeluun. Tämän kurssin aikana käsittelemme vain murto-osaa QGISin kaikista toiminnallisuuksista.</p>
-</div>
-<div id="miksi-qgis" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Miksi QGIS?</h2>
-<p>Perimmäinen syy QGISin käyttöön on tietysti paikkatietoaineistojen hyödyntäminen. Paikkatietoja voi hyödyntää monilla avoimen ja suljetun lähdekoodin ohjelmistolla, mutta tässä muutamia perusteluja juuri QGIS-ohjelmiston käytölle:</p>
-<ul>
-<li><strong>QGIS on ilmainen.</strong> Voit ladata ja asentaa QGIS ilman lisenssi- tai käyttömaksuja. Käyttöön ei sisälly mitään maksuja.</li>
-<li><strong>QGIS on vapaa.</strong> Jos tarvitset QGISiin lisää ominaisuuksia, sinulla on täysi vapaus laajentaa ja muuttaa QGISiä. Sinun ei tarvitse odottaa seuraavaa versioita ja toivoa, että tarvitsemasi ominaisuudet ovat sisällytetty mukaan. Jos osaat ohjelmoida, voit lisätä ominaisuudet itse. Voit myös rahoittaa uusien ominaisuuksien kehittämistä osaksi QGISiä.</li>
-<li><strong>QGIS kehittyy jatkuvasti.</strong> Kuka tahansa voi lisätä tai rahoittaa uusia ominaisuuksia QGISiin ja siksi ohjelmisto kehittyy kiihtyvällä vauhdilla. Erilaisten lisäosien avulla on helppo toteuttaa omia prosesseja tukevia toimintoja.</li>
-<li><strong>QGIS on hyvin dokumentoitu.</strong> QGIS sisältää laajan dokumentaation. Koko ajan kasvava käyttäjäyhteisö auttaa mielellään uusia käyttäjiä ja voit myös kysyä apua suoraan sovelluskehittäjiltä.</li>
-<li><strong>QGIS on järjestelmäriippumaton.</strong> QGISiä voi käyttää Windows-, Linux- ja Mac-käyttöjärjestelmissä.</li>
-<li><strong>QGIS on suomenkielinen.</strong> QGIS-käyttöliittymä on suomennettu. Myös ruotsinkielinen versio on käytettävissä ilman lisäkustannuksia. Käyttöohjeita, web-sivustoja ja muita materiaaleja kehitetään ja suomennetaan jatkuvasti.</li>
-</ul>
-</div>
-<div id="lukuohje" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Lukuohje</h2>
-<p><strong>Web-selaimessa</strong> suoritettavat komennot on merkitty seuraavasti:</p>
-<div class="note-box">
-<p><a href="http://localhost:8080/geoserver" class="uri">http://localhost:8080/geoserver</a></p>
-</div>
-<p><strong>Komentorivillä</strong> suoritettavat komennot on merkitty seuraavasti:</p>
-<div class="commandline-box">
-<p>sudo lsb_release -a</p>
-</div>
-<p><strong>Tiedostojen sisältö</strong> on esitetty seuraavasti:</p>
-<div class="file-content-box">
-<p>#IPv4 local connections:
-#host all all 127.0.0.1/32 md5</p>
-</div>
-<p><strong>HTML- ja CSS-koodit, SQL-komennot sekä Python-scriptit</strong> on esitetty seuraavasti:</p>
-<div class="code-box">
-<p>SELECT version();</p>
-</div>
-<p><strong>Kysymykset, lisätiedot ja vihjeet</strong> on esitetty seuraavasti:</p>
-<div class="hint-box">
-<p>Mistä löydät tietoa GeoServeristä?</p>
-<p>GeoServerillä on omat kotisivut.</p>
-<p>Psst! Tietoa GeoServeristä löydät internetistä.</p>
-</div>
-</div>
-<div id="mistä-lisätietoja" class="section level2" number="1.5">
-<h2><span class="header-section-number">1.5</span> Mistä lisätietoja?</h2>
-<p>Ohessa muutamia web-sivustoja, joista saat lisätietoja:</p>
-<div class="note-box">
-<p><a href="http://www.qgis.org/" class="uri">http://www.qgis.org/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://docs.qgis.org/" class="uri">http://docs.qgis.org/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://gis.stackexchange.com/" class="uri">http://gis.stackexchange.com/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://www.osgeo.fi" class="uri">http://www.osgeo.fi</a></p>
-</div>
-</div>
-<div id="virheet" class="section level2" number="1.6">
-<h2><span class="header-section-number">1.6</span> Virheet</h2>
-<p>Jos havaitset materiaalissa virheitä, niin pyydämme ilmoittamaan niistä kouluttajalle tai sähköpostilla <a href="mailto:info@gispo.fi-osoitteeseen" class="email">info@gispo.fi-osoitteeseen</a>.</p>
-<!--# Introduction to QGIS
-
-Welcome to the Introduction to QGIS course by [Gispo Ltd.](https://gispo.fi)!
-
-These course materials are designed to be used during the two-day Introduction to QGIS course.
-
-Todo: add some more materials here
-
-## About
-
-When working through the material, try to follow along the exercises as well as you can.
-Even if you cannot complete an exercise, you learn much more by at least trying.
-
-The materials contain notes and hints that help with completing the exercises.
-These are placed in special boxes.
-Hints look like this:
-
-:::{.hint-box}
-**Hint:** these boxes contain useful tips for completing exercises.
-:::
-
-While notes look like this:
-
-:::{.note-box}
-**Note:** these boxes contain various things that should to keep in mind and consider.
-::: 
--->
-</div>
-<div id="lisenssi-ja-oikeudet" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> Lisenssi ja oikeudet</h2>
-<p>Nämä materiaalit on kehitetty “Johdanto paikkatietoon ja QGISin käyttöön”-kurssille Gispo Oy:n toimesta. Materiaalit on lisensoitu
-seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></p>
-<!--
-License and permissions
-These materials are developed for the Introduction to QGIS course by Gispo Ltd.
-The materials are licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
--->
+<div id="vektorianalyysit" class="section level2" number="10.3">
+<h2><span class="header-section-number">10.3</span> Vektorianalyysit</h2>
+<p>Tässä harjoituksessa on tarkoitus etsiä ne kunnat, joiden alueella kulkee suomalainen versio kuuluisasta Route 66 -tiestä. Lyhyesti harjoituksen kulku on seuraava:</p>
+<p>Valitaan tieaineistosta ne tieviivat, joiden numero on 66.</p>
+<p>Tehdään spatiaalinen analyysi kunta- ja tieviiva-aineiston kanssa, jonka myötä viiva-aineisto saa kunta-aineiston sisältämät tiedot.</p>
+<p>Yhdistetään tieviivat kunnan nimen avulla.</p>
+<p>Monista <strong>TieViiva -taso</strong> klikkaamalla tason nimeä hiiren oikealla ja valitse <strong>Monista taso</strong>. Avaa <strong>TieViiva kopio</strong>-tason ominaisuudet. Valitse <strong>Lähde</strong>-välilehti ja vaihda tason nimeksi <strong>Tie 66</strong>.
+Seuraavaksi suodatetaan tason kohteita eli määritetään mitä kohteita näytetään. Klikkaa <strong>Tie 66</strong> -tasoa hiiren oikealla painikkeella ja valitse <strong>Suodata…</strong>. Syötä <strong>Suodattimena käytettävä lauseke</strong> -kohtaan seuraava lauseke:</p>
+<p><strong>“Tienumero” = 66</strong></p>
+<p>Saat kentän nimen suoraan lausekkeeseen <strong>Tietokentät</strong>-kohdasta tuplaklikkaamalla. Muuta uuden tason kuvaustekniikkaa, jotta se erottuu muista kartta-aineistoista.</p>
+<p>Ristiinleikataan seuraavaksi tieaineisto kuntarajojen mukaan. Valitse ylävalikosta <strong>Vektori &gt; Geoprosessointi &gt; Ristiinleikkaus-työkalun (intersection)</strong>, joka avaa QGISiin uuden ikkunan. Aseta <strong>syötetasoksi Tie 66</strong> ja <strong>peitetasoksi HallintoAlue</strong>.</p>
+<p><img src="img/harjoitus_8/image3.png" /></p>
+<p>Suorita analyysi painamalla <strong>Suorita</strong> ja paina sen jälkeen <strong>Sulje</strong>. Syntyy uusi tilapäinen taso, joka näyttää karttaikkunassa samalta kuin alkuperäinen aineisto.</p>
+<blockquote>
+<p>Kun vertaat eri tiestöaineistojen (Tie 66) ja ristiinleikkaustason ominaisuustietoja, mitä huomaat?</p>
+</blockquote>
+<p>Luokittele aineisto kunnan nimen perusteella käyttäen kenttää Kunta_ni1 (<strong>Ominaisuudet &gt; Kuvaustekniikka</strong>). Aktivoi <strong>Näytä kohteiden lukumäärä</strong> -toiminto (hiiren oikealla näppäimellä tason nimen päällä <strong>Tasoluettelossa</strong>). Tasoluettelossa luokittelun pitäisi näyttää suunnilleen seuraavalta (värit ja viivojen paksuus on sen mukainen kuin olet määritellyt):</p>
+<p><img src="img/harjoitus_8/image4.png" /></p>
+<p>Seuraavaksi voimme yhdistää erilliset tieviivat <strong>Sulauta (dissolve)</strong> -työkalun avulla. Valitse työkalu <strong>Vektori &gt; Geoprosessointi &gt; Sulauta</strong>. Aseta <strong>Syötetasoksi</strong> ristiinleikkauksessa syntynyt taso.
+Sulauta <strong>Ristiinleikkaus-aineisto</strong> kunnan nimen (tai numeron) perusteella: paina <strong>Dissolve field(s)</strong> -kohdan vieressä olevaa painiketta ja valitse kentäksi <strong>Kunta_ni1</strong>. Tallenna lopputulos esimerkiksi kurssihakemistoon haluamallasi nimellä (esimerkiksi tie66_sulautettu.gpkg). Paina <strong>Suorita</strong> ja sitten <strong>Sulje</strong>.</p>
+<p><img src="img/harjoitus_8/image5.png" /></p>
+<p>Voit kopioida aiemmin luodun tason tyylin helposti uudelle aineistoille. Valitse hiiren oikealla näppäimellä avautuvasta valikosta <strong>Tyylit &gt; Kopioi tyyli &gt; All style categories</strong>. Valitse äsken luotu taso ja <strong>Tyylit &gt; Liitä tyyli &gt; All style categories</strong>.</p>
+<p><img src="img/harjoitus_8/image6.png" /></p>
+<p>Kun lisäät vielä kohteiden lukumäärän laskennan päälle, niin lopputuloksen pitäisi tasoluettelossa olla seuraava:</p>
+<p><img src="img/harjoitus_8/image7.png" /></p>
+<p>Lopuksi voidaan laskea kunkin kunnan osuus tien 66 kokonaispituudesta (vaikkapa ylläpitokustannuksien jakamista varten). Lasketaan ensin kunkin sulautetun tieviivan pituus. Avaa ominaisuustietotaulukko, muuta taulukko muokattavaksi ja käytä tiedon laskinta samalla tavalla kuin pinta-alan laskemisen yhteydessä. Luo uusi kenttä, jossa on kunkin tieviivan pituus hyödyntämällä <strong>Geometria</strong>-kohdasta <strong>$length</strong>-funktiota. Kentän tyyppi voi olla kokonaisluku, jolloin saamme pituuden metrin tarkkuudella. Jos kentän haluaa ilmoittaa desimaaleissa, voi lukua pyöristää <strong>round</strong>-funktion avulla.</p>
+<p><img src="img/harjoitus_8/image8.png" /></p>
+<p>Lisää nyt uusi kenttä, jossa lasketaan prosenttiosuudet kullekin kunnalle. Teiden kokonaispituuden voi laskea <strong>Tilastollinen yhteenveto -paneelin</strong> <img src="img/harjoitus_8/image9.png" /> avulla. Valitse paneelissa tarkasteltavaksi tasoksi taso, jossa pituudet ovat, ja tämän jälkeen toisesta pudotusvalikosta pituus-kenttä. Näet <strong>Summa</strong>-kentässä tien kokonaispituuden.</p>
+<p><img src="img/harjoitus_8/image10.png" /></p>
+<p>Nyt voit laskea Kentän arvojen laskin -työkalulla vielä yhden uuden kentän, pituuksien prosenttiosuuden.</p>
+<p><img src="img/harjoitus_8/image11.png" /></p>
+<p>Jos lausekkeessa halutaan välttää absoluuttisia lukuja ja tehdä siitä dynaamisempi, lauseke voi olla myös seuraava:</p>
+<p>“pituus” / sum(“pituus”) * 100</p>
+<p>Mikäli <strong>Pituus</strong>-kentän arvot muuttuvat, myös suhteellisen tieosuuden luku muuttuu.</p>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> (englanninkielisessä QGISissä CTRL + S) tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
 
 </div>
 </div>
 <p style="text-align: center;">
-<a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html"><button class="btn btn-default">Next</button></a>
+<a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html"><button class="btn btn-default">Previous</button></a>
+<a href="11-harjoitus-10-qgisin-lisäosat.html"><button class="btn btn-default">Next</button></a>
 </p>
 </div>
 </div>

@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
+<meta property="og:title" content="8 Harjoitus 7: Karttatuloste ja kartta-atlas | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
 <meta property="og:type" content="book" />
 
 
@@ -19,9 +19,9 @@
 <meta name="date" content="2022-02-01" />
 
 
-<meta name="description" content="Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
+<meta name="description" content="8 Harjoitus 7: Karttatuloste ja kartta-atlas | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
 
-<title>Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
+<title>8 Harjoitus 7: Karttatuloste ja kartta-atlas | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
@@ -196,128 +196,105 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div class="row">
 <div class="col-sm-12">
-<!-- This title section is only rendered to index.html -->
-<div id="title-container">
-
-<h1 id="title-header">Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</h1>
-
-<h4 class="author">Gispo Ltd.</h4>
-
-<h4 id="build-date">Version: 2022-02-01</h4>
-
-<div class="abstract"><p>Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin</p></div>
-
+<div id="harjoitus-7-karttatuloste-ja-kartta-atlas" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Harjoitus 7: Karttatuloste ja kartta-atlas</h1>
+<div id="harjoituksen-sisältö-6" class="section level2" number="8.1">
+<h2><span class="header-section-number">8.1</span> Harjoituksen sisältö</h2>
+<p>Harjoituksessa tehdään karttatuloste sekä kartta-atlas.</p>
 </div>
-<div id="johdanto-qgisin-käyttöön" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Johdanto QGISin käyttöön</h1>
-<div id="tervetuloa-qgis-peruskurssille" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Tervetuloa QGIS-peruskurssille!</h2>
-<p>Tämän kurssin tarkoituksena on opastaa sinut QGIS–ohjelmiston käyttöön. Muiden paikkatieto-ohjelmistojen käyttökokemus ei ole välttämätöntä koulutukseen osallistumisel­le. Toki niistä on paljon hyötyä. Kysy rohkeasti opettajalta lisätietoja, jos käytetty terminologia tai joku muu asia jää epäselväksi.</p>
+<div id="harjoituksen-tavoite-6" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> Harjoituksen tavoite</h2>
+<p>Opiskelija osaa laatia karttatulosteen halutussa mittakaavassa sekä tehdä tulosteesta PDF-tiedoston.</p>
 </div>
-<div id="qgisin-taustaa" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> QGISin taustaa</h2>
-<p>QGIS (alkuperäiseltä nimeltään Quantum GIS) on yhteisöllisesti kehitetty avoimen lähdekoodin paikkatieto-ohjelmisto. QGISin kehittäminen on alkanut heinäkuussa 2002, jonka jälkeen kehitystyöhön on osallistunut yli 150 sovelluskehittäjää. QGISin käyttäjämäärää on hyvin vaikea arvioida, sillä ohjelmistoa ei tarvitse rekisteröidä ja sitä voi jakaa edelleen vapaasti. Karkeasti arvioiden voidaan kuitenkin todeta, että QGIS-ohjelmiston eri versioilla on yli miljoona käyttäjää maailmanlaajuisesti.
-QGIS–ohjelmisto ja sen lisäosat muodostavat kattavan ohjelmistoperheen paikkatietojen keräämiseen, mallintamiseen, analysointiin, visualisointiin ja jakeluun. Tämän kurssin aikana käsittelemme vain murto-osaa QGISin kaikista toiminnallisuuksista.</p>
+<div id="arvioitu-kesto-6" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> Arvioitu kesto</h2>
+<p>40 minuuttia.</p>
 </div>
-<div id="miksi-qgis" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Miksi QGIS?</h2>
-<p>Perimmäinen syy QGISin käyttöön on tietysti paikkatietoaineistojen hyödyntäminen. Paikkatietoja voi hyödyntää monilla avoimen ja suljetun lähdekoodin ohjelmistolla, mutta tässä muutamia perusteluja juuri QGIS-ohjelmiston käytölle:</p>
-<ul>
-<li><strong>QGIS on ilmainen.</strong> Voit ladata ja asentaa QGIS ilman lisenssi- tai käyttömaksuja. Käyttöön ei sisälly mitään maksuja.</li>
-<li><strong>QGIS on vapaa.</strong> Jos tarvitset QGISiin lisää ominaisuuksia, sinulla on täysi vapaus laajentaa ja muuttaa QGISiä. Sinun ei tarvitse odottaa seuraavaa versioita ja toivoa, että tarvitsemasi ominaisuudet ovat sisällytetty mukaan. Jos osaat ohjelmoida, voit lisätä ominaisuudet itse. Voit myös rahoittaa uusien ominaisuuksien kehittämistä osaksi QGISiä.</li>
-<li><strong>QGIS kehittyy jatkuvasti.</strong> Kuka tahansa voi lisätä tai rahoittaa uusia ominaisuuksia QGISiin ja siksi ohjelmisto kehittyy kiihtyvällä vauhdilla. Erilaisten lisäosien avulla on helppo toteuttaa omia prosesseja tukevia toimintoja.</li>
-<li><strong>QGIS on hyvin dokumentoitu.</strong> QGIS sisältää laajan dokumentaation. Koko ajan kasvava käyttäjäyhteisö auttaa mielellään uusia käyttäjiä ja voit myös kysyä apua suoraan sovelluskehittäjiltä.</li>
-<li><strong>QGIS on järjestelmäriippumaton.</strong> QGISiä voi käyttää Windows-, Linux- ja Mac-käyttöjärjestelmissä.</li>
-<li><strong>QGIS on suomenkielinen.</strong> QGIS-käyttöliittymä on suomennettu. Myös ruotsinkielinen versio on käytettävissä ilman lisäkustannuksia. Käyttöohjeita, web-sivustoja ja muita materiaaleja kehitetään ja suomennetaan jatkuvasti.</li>
-</ul>
+<div id="valmistautuminen-6" class="section level2" number="8.4">
+<h2><span class="header-section-number">8.4</span> Valmistautuminen</h2>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 7</strong>”. Lisää projektiin seuraavat aineistot:</p>
+<p>../kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019</p>
+<p>../kurssihakemisto/muuta/HSY_postinumeroalueet/HSY_postinumeroalueet_2019</p>
+<p>Haluamasi taustakartta, esimerkiksi Selain &gt; XYZ Tiles &gt; OpenStreetMap</p>
+<p><img src="img/harjoitus_7/image1.png" /></p>
 </div>
-<div id="lukuohje" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Lukuohje</h2>
-<p><strong>Web-selaimessa</strong> suoritettavat komennot on merkitty seuraavasti:</p>
-<div class="note-box">
-<p><a href="http://localhost:8080/geoserver" class="uri">http://localhost:8080/geoserver</a></p>
+<div id="karttatuloste" class="section level2" number="8.5">
+<h2><span class="header-section-number">8.5</span> Karttatuloste</h2>
+<p>Piilota HSY_postinumeroalueet_2019-aineisto karttaikkunastasi ja jätä <strong>HSY_vaestotietoruudukko_2019</strong>-aineisto ja <strong>OpenStreetMap</strong>-aineisto näkyviin. Visualisoi HSY_vaestotietoruudukko_2019-aineisto haluamallasi tavalla - voit esimerkiksi luokitella aineiston asvaljyys-kentän mukaisesti. Voit visualisoida myös OpenStreetMap-rasteriaineistoa halutessasi. Karttasi voi näyttää esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image2.png" /></p>
+<p>Uuden tulosteen muodostaminen voidaan aloittaa kahdella tavalla, joko valitsemalla <strong>Projekti &gt; Uusi taitto</strong> tai klikkaamalla <strong>Uusi taitto</strong> -työkalua <img src="img/harjoitus_7/image3.png" /> . Kaikkia taittoja voidaan hallinnoida <strong>Näytä taittojen hallinta</strong> -työkalulla <img src="img/harjoitus_7/image4.png" />. Luo uusi taitto ja anna taitolle jokin sitä kuvaava nimi, jonka jälkeen uusi taitto avautuu <strong>Tulosteen muodostaja</strong> -ikkunaan. Tästä ikkunasta löytyy hieman erilaisia työkaluja kuin QGISin normaalista työtilasta. Klikkaa ensimmäiseksi tulostusalueella hiiren oikealla painikkeella ja valitse <strong>Sivun ominaisuudet</strong>. Valitse oikealta <strong>Elementin ominaisuudet</strong> -välilehti ja aseta <strong>sivun kooksi A4 ja suunnaksi Vaaka</strong>. Valitse sitten <strong>Taitto</strong>-välilehti ja tarkista, että viennin <strong>resoluutio on 300 dpi</strong>.</p>
+<p><img src="img/harjoitus_7/image5.png" />
+<img src="img/harjoitus_7/image6.png" /></p>
+<p>Nyt taiton pohjatyöt on tehty ja varsinainen taittotyö voidaan aloittaa. Lisätään taittoon ensimmäiseksi karttaikkuna. Klikkaa vasemmasta työkalupalkista <strong>Lisää Kartta -työkalua</strong> <img src="img/harjoitus_7/image7.png" /> . Vedä tulosalueelle haluamasi kokoinen suorakulmio, minkä jälkeen kartta piirtyy suorakulmion sisään.</p>
+<p><img src="img/harjoitus_7/image8.png" /></p>
+<p>Valitse sitten <strong>Valitse/siirrä elementtiä -työkalu</strong> <img src="img/harjoitus_7/image9.png" /> vasemmasta työkalupalkista ja klikkaa karttaelementti aktiiviseksi. Valitse <strong>Elementin ominaisuudet -välilehti</strong>. Muuta kartan parametrejä seuraavasti:</p>
+<p>Kartan mittakaava 1:250 000</p>
+<p>Valitse <strong>Kehys</strong> aktiiviseksi, jolloin karttaelementille piirtyy reunat</p>
+<p><img src="img/harjoitus_7/image10.png" />
+<img src="img/harjoitus_7/image11.png" /></p>
+<p>Siirrä karttaelementin sisältöä <strong>Siirrä elementtiä -työkalulla</strong> <img src="img/harjoitus_7/image12.png" /> . Karttaelementin tulee olla aktiivinen, jotta Siirrä elementtiä -työkalu toimii. Karttatuloste voi näyttää tällä hetkellä esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image13.png" /></p>
+<p>Myös muut alla listatut työkalut ovat hyödyllisiä.</p>
+<p><img src="img/harjoitus_7/image9.png" /> Valitse/siirrä elementtiä.</p>
+<p><img src="img/harjoitus_7/image12.png" /> Siirrä elementin sisältöä (esimerkiksi kartan sisältöä).</p>
+<p><img src="img/harjoitus_7/image14.png" /> Zoomaa taiton näkymässä.</p>
+<p>Lisää taittoosi nyt otsikko <strong>Lisää Otsikko -työkalulla</strong> <img src="img/harjoitus_7/image15.png" /> . <strong>Elementin ominaisuudet</strong> -välilehdeltä voit muokata otsikon ominaisuuksia tekstinkäsittelyohjelmista tutuilla työkaluilla. Aseta tekstin vaaka- ja pystykohdistukseksi <strong>Keskellä</strong>. Voit visualisoida nimiöelementtiä halutessasi.</p>
+<p><img src="img/harjoitus_7/image16.png" />
+<img src="img/harjoitus_7/image17.png" /></p>
+<p>Lisää seuraavaksi taittoon selite <strong>Lisää Selite -työkalulla</strong> <img src="img/harjoitus_7/image18.png" /> . Voit huomata, että selitteeseen tulee kaikki QGIS-työtilan puolella olevat tasot sekä tasojen ei-niin-silmää-miellyttävät nimet.</p>
+<p><img src="img/harjoitus_7/image19.png" /></p>
+<p>Klikkaa selite aktiiviseksi ja mene <strong>Elementin ominaisuudet &gt; Selitteen merkinnät</strong> -kohtaan. Ota ensimmäiseksi rasti pois <strong>Päivitä automaattisesti</strong> -kohdasta, sillä tämän valinnan ollessa aktiivinen, QGIS-projektin tasot tuodaan automaattisesti selitteeseen sellaisenaan eikä niitä ole mahdollista muokata. Aseta rasti kohtaan <strong>Only show items inside linked map</strong>, jolloin selitteessä näytetään vain ne aineistot, jotka näkyvät karttaelementissä. Klikkaa hiiren oikealla painikkeella <strong>HSY_vaestotietoruudukko_2019</strong>-aineistoa ja aktivoi kohta <strong>Piilotettu</strong>. Tämä asetus piilottaa tason nimen. Tee sama <strong>OpenStreetMap</strong>-aineiston kohdalla.</p>
+<p><img src="img/harjoitus_7/image20.png" />
+<img src="img/harjoitus_7/image21.png" /></p>
+<blockquote>
+<p>Psst! Mikäli aineiston piilotus selitteestä ei onnistu, aineistoja voi poistaa selitteestä myös miinus-merkistä.</p>
+</blockquote>
+<p>Nyt selitteen pitäisi näyttää miellyttävämmältä. Lisätään selitteelle otsikko <strong>Tärkeimmät ominaisuudet</strong> -kohdasta. Voit lisäksi muotoilla selitettä haluamasi näköiseksi kohdista <strong>Fontit ja tekstin muotoilu, Symboli</strong> sekä <strong>Jaottelu</strong>. Aseta selitteelle samanlainen reunamuotoilu kuin karttaelementille.</p>
+<p><img src="img/harjoitus_7/image22.png" /></p>
+<p>Lisää taittoosi mittakaava <strong>Lisää Mittakaavajana -työkalulla</strong> <img src="img/harjoitus_7/image23.png" /> . Mene jälleen <strong>Elementin ominaisuudet</strong> -välilehdelle ja tarkastele eri ominaisuuksia. Vaihda <strong>Tyyli</strong>-kohtaan <strong>Jana, jakoviivat yläpuolella</strong>. Muuta visualisointia haluamaksesi.</p>
+<p>Lisätään karttatulosteeseen lopuksi myös pohjoisnuoli työkalulla <img src="img/harjoitus_7/image24.png" />. Pohjoisnuolta ei enää nykypäivänä käytetä, ellei pohjoinen ole jossakin muualla kuin ylhäällä. Aseta <strong>Elementin ominaisuudet</strong> -välilehdellä pohjoisnuolesi kierto ruksimalla kohta <strong>Synkronoi kartan kanssa</strong>. Jos nyt kierrät karttaelementtiä, pohjoisnuoli kiertyy mukana.</p>
+<p>Voit lisätä pohjoisnuolen (tai minkä tahansa muun symbolin/kuvan) myös <strong>Lisää uusi kuva taittoon -työkalulla</strong> <img src="img/harjoitus_7/image25.png" /> . Vedä taittoon kohta, johon haluat pohjoisnuolen sijoittuvan. Valitse sen jälkeen <strong>Elementin ominaisuudet</strong> -välilehdeltä <strong>Hakemistopolut</strong>-kohdasta haluamasi pohjoisnuoli (selaa sisältöä alaspäin, jos et heti näe nuolia). Tyylittele nuoli haluamallasi tavalla.</p>
+<p><img src="img/harjoitus_7/image26.png" /></p>
+<p>Valmis karttatuloste voi näyttää esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image27.png" /></p>
+<p>Halutessasi voit tallentaa käyttämäsi taittomallin <strong>Tallenna malliksi</strong> -työkalulla <img src="img/harjoitus_7/image28.png" /> ja hyödyntää sitä jatkossa seuraavien karttatulosteiden tekemiseen. Voit esimerkiksi muotoilla karttatulostemallin organisaatiollesi (logot, värit, tekstin paikka…). Karttatulosteen voi viedä kuvaksi (PNG/JPEG), muodoksi (SVG), digitulosteeksi (PDF) tai lähettää fyysiseen tulostimeen tulostettavaksi.</p>
+<p><img src="img/harjoitus_7/image29.png" /></p>
+<p>Voit halutessasi tallentaa karttatulosteesi kuvatiedostoksi esimerkiksi kurssihakemistoon. Sopiva resoluutio karttatulosteellesi riippuu kartan käyttötarkoituksesta, mutta oletusarvoinen 300 dpi tallentaa resoluutioltaan hyvinkin tarkkoja kuvia.</p>
 </div>
-<p><strong>Komentorivillä</strong> suoritettavat komennot on merkitty seuraavasti:</p>
-<div class="commandline-box">
-<p>sudo lsb_release -a</p>
-</div>
-<p><strong>Tiedostojen sisältö</strong> on esitetty seuraavasti:</p>
-<div class="file-content-box">
-<p>#IPv4 local connections:
-#host all all 127.0.0.1/32 md5</p>
-</div>
-<p><strong>HTML- ja CSS-koodit, SQL-komennot sekä Python-scriptit</strong> on esitetty seuraavasti:</p>
-<div class="code-box">
-<p>SELECT version();</p>
-</div>
-<p><strong>Kysymykset, lisätiedot ja vihjeet</strong> on esitetty seuraavasti:</p>
-<div class="hint-box">
-<p>Mistä löydät tietoa GeoServeristä?</p>
-<p>GeoServerillä on omat kotisivut.</p>
-<p>Psst! Tietoa GeoServeristä löydät internetistä.</p>
-</div>
-</div>
-<div id="mistä-lisätietoja" class="section level2" number="1.5">
-<h2><span class="header-section-number">1.5</span> Mistä lisätietoja?</h2>
-<p>Ohessa muutamia web-sivustoja, joista saat lisätietoja:</p>
-<div class="note-box">
-<p><a href="http://www.qgis.org/" class="uri">http://www.qgis.org/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://docs.qgis.org/" class="uri">http://docs.qgis.org/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://gis.stackexchange.com/" class="uri">http://gis.stackexchange.com/</a></p>
-</div>
-<div class="note-box">
-<p><a href="http://www.osgeo.fi" class="uri">http://www.osgeo.fi</a></p>
-</div>
-</div>
-<div id="virheet" class="section level2" number="1.6">
-<h2><span class="header-section-number">1.6</span> Virheet</h2>
-<p>Jos havaitset materiaalissa virheitä, niin pyydämme ilmoittamaan niistä kouluttajalle tai sähköpostilla <a href="mailto:info@gispo.fi-osoitteeseen" class="email">info@gispo.fi-osoitteeseen</a>.</p>
-<!--# Introduction to QGIS
-
-Welcome to the Introduction to QGIS course by [Gispo Ltd.](https://gispo.fi)!
-
-These course materials are designed to be used during the two-day Introduction to QGIS course.
-
-Todo: add some more materials here
-
-## About
-
-When working through the material, try to follow along the exercises as well as you can.
-Even if you cannot complete an exercise, you learn much more by at least trying.
-
-The materials contain notes and hints that help with completing the exercises.
-These are placed in special boxes.
-Hints look like this:
-
-:::{.hint-box}
-**Hint:** these boxes contain useful tips for completing exercises.
-:::
-
-While notes look like this:
-
-:::{.note-box}
-**Note:** these boxes contain various things that should to keep in mind and consider.
-::: 
--->
-</div>
-<div id="lisenssi-ja-oikeudet" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> Lisenssi ja oikeudet</h2>
-<p>Nämä materiaalit on kehitetty “Johdanto paikkatietoon ja QGISin käyttöön”-kurssille Gispo Oy:n toimesta. Materiaalit on lisensoitu
-seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a></p>
-<!--
-License and permissions
-These materials are developed for the Introduction to QGIS course by Gispo Ltd.
-The materials are licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
--->
+<div id="kartta-atlas" class="section level2" number="8.6">
+<h2><span class="header-section-number">8.6</span> Kartta-atlas</h2>
+<p>QGIS mahdollistaa myös kartta-atlaksen tekemisen. Kartta-atlas on ns. karttakirja, jonka avulla voidaan tuottaa automatisoidusti paljon karttoja samasta teemasta. Seuraavassa esimerkissä tuotetaan kartta-atlas Helsingin postinumeroalueista tutkien niitä väestön jakautumisen näkökulmasta. Tavoitteenamme on tuottaa 173 karttaa, jotka kattavat kaikki pääkaupunkiseudun postinumeroalueet. Aseta nyt <strong>HSY_postinumeroalueet_2019-aineisto</strong> näkyväksi yhdessä HSY_vaestotietoruudukko_2019-aineiston sekä OpenStreetMapin kanssa. Visualisoi postinumeroaineisto niin, että polygonin täyttö on läpinäkyvä ja reunat näkyvät hyvin.</p>
+<p><img src="img/harjoitus_7/image30.png" /></p>
+<p>Luo uusi taitto. Lisää taittoon karttaelementti, johon piirtyvät karttaikkunassa näkyvät projektin tasot. Lisää taittoon otsikko, selite, mittakaava ja muita haluamiasi graafisia tai kartografisia elementtejä (kuten logo tai pohjoisnuoli). Karttaelementin mittakaava kannattaa asettaa yhden postinumeroalueen laajuiseksi (esimerkiksi 1:25 000), sillä lopputuloksessa kartta-atlaksen karttalehdet kohdentuvat automaattisesti postinumeroalueiden kokoon. Karttatuloste voi tässä vaiheessa näyttää esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image31.png" /></p>
+<p>Sitten aloitetaan kartta-atlaksen tuottaminen. Kartta-atlas-ominaisuus on aktivoitava, ennen kuin sitä voidaan hyödyntää QGISin tulosteen muodostajassa. Valitse ylävalikosta <strong>Atlas &gt; Atlaksen asetukset</strong>. Oikealle ilmestyy uusi <strong>Atlas-välilehti</strong>, josta aktivoidaan kohta <strong>Luo atlas</strong>. Aseta <strong>Coverage layer</strong> -kohtaan se taso, jonka alueisiin kartta-atlas perustuu - tässä tapauksessa se on <strong>HSY_postinumeroalueet_2019</strong>.</p>
+<p><img src="img/harjoitus_7/image32.png" /></p>
+<p>Varmista, että karttakomponentti on valittuna: valitse <strong>Valitse/Siirrä elementtiä -työkalu</strong> vasemmasta työkalupalkista ja klikkaa kartta aktiiviseksi. Muokkaa kartta-atlasasetuksia oikean puolen sivupalkissa <strong>Elementin ominaisuudet &gt; Atlas ohjaa tätä</strong>.</p>
+<p><img src="img/harjoitus_7/image33.png" /></p>
+<p>Painikkeella <img src="img/harjoitus_7/image0.png" /> saat auki leikkausasetukset. Voit leikata joko osan karttasi tasoista tai kaikki tasot atlaksen kulloisenkin kohteen mukaisesti.</p>
+<p><img src="img/harjoitus_7/image34.png" />
+<img src="img/harjoitus_7/image35.png" /></p>
+<p>Tämän jälkeen voimme esikatsella kartta-atlastamme valitsemalla ylävalikosta <strong>Atlas &gt; Esikatsele Atlasta</strong>. Esikatselun avulla voit vilkaista, miltä kartta-atlas näyttää tulostaessa. Käytä nuolia esikatselu-työkalupalkista. Huomaa, että voit tehdä samanaikaisesti muutoksia karttatulosteen tyyliasetuksiin tai vaikkapa tason luokitteluväreihin.</p>
+<p><img src="img/harjoitus_7/image36.png" /></p>
+<p>Lisää karttatulosteeseen yleiskatsauskarttanäkymä eli indeksikartta valitsemalla <strong>Lisää uusi kartta taittoon</strong> -työkalu ja lisäämällä pienempi karttaelementti isomman viereen. Indeksikartta näyttää, millä alueella liikutaan. Valitse indeksikarttaelementti aktiiviseksi ja mene <strong>Elementin omaisuudet &gt; Yleiskatsaukset</strong> ja lisää yleiskatsaus plussasta. Määritä asetukset kuvan mukaisesti:</p>
+<p><img src="img/harjoitus_7/image37.png" /></p>
+<p>Voit halutessasi myös muuttaa yleiskatsauskartan kehyksen tyylin. Kokeile atlaksen esikatselua niin huomaat, että yleiskatsauskartan kehys liikkuu pääkartan mukana. Kun olet valmis, voit tulostaa kartta-atlaksen halutessasi <strong>Vie atlas</strong> -työkalulla. Huomaa, että jokaisesta kartta-atlaksen sivusta syntyy kuva, joten tallentaminen voi viedä aikaa.</p>
+<p><img src="img/harjoitus_7/image38.png" /></p>
+<p>Voit tulostaa atlaksen yksittäisinä kuvina tai yhteen tiedostoon PDF-formaatissa. Yhteen tiedostoon tallentaminen onnistuu aktivoimalla <strong>Yhden tiedoston vienti, jos mahdollista</strong> -asetuksen Atlas-välilehdellä.</p>
+<p><img src="img/harjoitus_7/image39.png" /></p>
+<p>valmiin kartta-atlaksen sivu voi näyttää esimerkiksi tältä:</p>
+<p><img src="img/harjoitus_7/image40.png" /></p>
+<p>Huomaa, kuinka yleiskarttanäkymän neliö vaihtaa paikkaa kun kohdennetun kartan alue vaihtuu.</p>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> (englanninkielisessä QGISissä CTRL + S) tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<blockquote>
+<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
+</blockquote>
 
 </div>
 </div>
 <p style="text-align: center;">
-<a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html"><button class="btn btn-default">Next</button></a>
+<a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html"><button class="btn btn-default">Previous</button></a>
+<a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html"><button class="btn btn-default">Next</button></a>
 </p>
 </div>
 </div>

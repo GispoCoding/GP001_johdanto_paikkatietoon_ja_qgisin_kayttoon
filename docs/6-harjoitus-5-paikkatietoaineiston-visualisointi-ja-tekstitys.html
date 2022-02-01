@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="7 Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys | Johdanto paikkatietoon ja QGISin käyttöön" />
+<meta property="og:title" content="6 Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset" />
 <meta property="og:type" content="book" />
 
 
@@ -16,12 +16,12 @@
 
 <meta name="author" content="Gispo Ltd." />
 
-<meta name="date" content="2022-01-27" />
+<meta name="date" content="2022-02-01" />
 
 
-<meta name="description" content="7 Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys | Johdanto paikkatietoon ja QGISin käyttöön">
+<meta name="description" content="6 Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset">
 
-<title>7 Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys | Johdanto paikkatietoon ja QGISin käyttöön</title>
+<title>6 Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys | Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</title>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
@@ -56,131 +56,136 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 
 <div class="sidebar-title-wrapper">
 <img alt="Logo" width="100" src="img/gispo_white_sm.png" class="sidebar-logo">
-<div class="sidebar-title"><h1>Johdanto paikkatietoon ja QGISin käyttöön</h1></div>
+<div class="sidebar-title"><h1>Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</h1></div>
 <div class="abstract-sidebar"><p>Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin</p></div>
 </div>
 
 <nav class="sidebar-nav">
 <div id="TOC" class="toc">
 <ul>
-<li><a href="index.html#introduction-to-qgis"><span class="toc-section-number">1</span> Introduction to QGIS</a>
+<li><a href="index.html#johdanto-qgisin-käyttöön"><span class="toc-section-number">1</span> Johdanto QGISin käyttöön</a>
 <ul>
-<li><a href="index.html#about"><span class="toc-section-number">1.1</span> About</a></li>
-<li><a href="index.html#license-and-permissions"><span class="toc-section-number">1.2</span> License and permissions</a></li>
+<li><a href="index.html#tervetuloa-qgis-peruskurssille"><span class="toc-section-number">1.1</span> Tervetuloa QGIS-peruskurssille!</a></li>
+<li><a href="index.html#qgisin-taustaa"><span class="toc-section-number">1.2</span> QGISin taustaa</a></li>
+<li><a href="index.html#miksi-qgis"><span class="toc-section-number">1.3</span> Miksi QGIS?</a></li>
+<li><a href="index.html#lukuohje"><span class="toc-section-number">1.4</span> Lukuohje</a></li>
+<li><a href="index.html#mistä-lisätietoja"><span class="toc-section-number">1.5</span> Mistä lisätietoja?</a></li>
+<li><a href="index.html#virheet"><span class="toc-section-number">1.6</span> Virheet</a></li>
+<li><a href="index.html#lisenssi-ja-oikeudet"><span class="toc-section-number">1.7</span> Lisenssi ja oikeudet</a></li>
 </ul></li>
-<li><a href="01_harjoitus_1.html#harjoitus-1-koulutusympäristön-valmistaminen"><span class="toc-section-number">2</span> Harjoitus 1: Koulutusympäristön valmistaminen</a>
+<li><a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html#harjoitus-1-koulutusympäristön-valmistaminen"><span class="toc-section-number">2</span> Harjoitus 1: Koulutusympäristön valmistaminen</a>
 <ul>
-<li><a href="01_harjoitus_1.html#harjoituksen-sisältö"><span class="toc-section-number">2.1</span> Harjoituksen sisältö</a></li>
-<li><a href="01_harjoitus_1.html#arvioitu-kesto"><span class="toc-section-number">2.2</span> Arvioitu kesto</a></li>
-<li><a href="01_harjoitus_1.html#valmistautuminen"><span class="toc-section-number">2.3</span> Valmistautuminen</a></li>
-<li><a href="01_harjoitus_1.html#qgisin-lataus-ja-asennus"><span class="toc-section-number">2.4</span> QGISin lataus ja asennus</a></li>
-<li><a href="01_harjoitus_1.html#kurssimateriaalien-lataus"><span class="toc-section-number">2.5</span> Kurssimateriaalien lataus</a></li>
+<li><a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html#harjoituksen-sisältö"><span class="toc-section-number">2.1</span> Harjoituksen sisältö</a></li>
+<li><a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html#harjoituksen-tavoite"><span class="toc-section-number">2.2</span> Harjoituksen tavoite</a></li>
+<li><a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html#arvioitu-kesto"><span class="toc-section-number">2.3</span> Arvioitu kesto</a></li>
+<li><a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html#valmistautuminen"><span class="toc-section-number">2.4</span> Valmistautuminen</a></li>
+<li><a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html#qgisin-lataus-ja-asennus"><span class="toc-section-number">2.5</span> QGISin lataus ja asennus</a></li>
+<li><a href="2-harjoitus-1-koulutusympäristön-valmistaminen.html#kurssimateriaalien-lataus"><span class="toc-section-number">2.6</span> Kurssimateriaalien lataus</a></li>
 </ul></li>
-<li><a href="02_env.html#training-environment"><span class="toc-section-number">3</span> Training environment</a></li>
-<li><a href="02_harjoitus_2.html#harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä"><span class="toc-section-number">4</span> Harjoitus 2: Paikkatietoaineistot ja QGISin käyttöliittymä</a>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä"><span class="toc-section-number">3</span> Harjoitus 2: Paikkatietoaineistot ja QGISin käyttöliittymä</a>
 <ul>
-<li><a href="02_harjoitus_2.html#harjoituksen-sisältö-1"><span class="toc-section-number">4.1</span> Harjoituksen sisältö</a></li>
-<li><a href="02_harjoitus_2.html#harjoituksen-tavoite"><span class="toc-section-number">4.2</span> Harjoituksen tavoite</a></li>
-<li><a href="02_harjoitus_2.html#arvioitu-kesto-1"><span class="toc-section-number">4.3</span> Arvioitu kesto</a></li>
-<li><a href="02_harjoitus_2.html#valmistautuminen-1"><span class="toc-section-number">4.4</span> Valmistautuminen</a></li>
-<li><a href="02_harjoitus_2.html#paikkatietoaineiston-tiedostot"><span class="toc-section-number">4.5</span> Paikkatietoaineiston tiedostot</a></li>
-<li><a href="02_harjoitus_2.html#qgisin-käyttöliittymä"><span class="toc-section-number">4.6</span> QGISin käyttöliittymä</a></li>
-<li><a href="02_harjoitus_2.html#kokeile-itse"><span class="toc-section-number">4.7</span> Kokeile itse</a></li>
-<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-valinta"><span class="toc-section-number">4.8</span> Paikkatietoaineiston kohteiden valinta</a></li>
-<li><a href="02_harjoitus_2.html#paikkatietoaineiston-kohteiden-suodatus"><span class="toc-section-number">4.9</span> Paikkatietoaineiston kohteiden suodatus</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#harjoituksen-sisältö-1"><span class="toc-section-number">3.1</span> Harjoituksen sisältö</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#harjoituksen-tavoite-1"><span class="toc-section-number">3.2</span> Harjoituksen tavoite</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#arvioitu-kesto-1"><span class="toc-section-number">3.3</span> Arvioitu kesto</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#valmistautuminen-1"><span class="toc-section-number">3.4</span> Valmistautuminen</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#paikkatietoaineiston-tiedostot"><span class="toc-section-number">3.5</span> Paikkatietoaineiston tiedostot</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#qgisin-käyttöliittymä"><span class="toc-section-number">3.6</span> QGISin käyttöliittymä</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#kokeile-itse"><span class="toc-section-number">3.7</span> Kokeile itse</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#paikkatietoaineiston-kohteiden-valinta"><span class="toc-section-number">3.8</span> Paikkatietoaineiston kohteiden valinta</a></li>
+<li><a href="3-harjoitus-2-paikkatietoaineistot-ja-qgisin-käyttöliittymä.html#paikkatietoaineiston-kohteiden-suodatus"><span class="toc-section-number">3.9</span> Paikkatietoaineiston kohteiden suodatus</a></li>
 </ul></li>
-<li><a href="03_harjoitus_3.html#harjoitus-3-paikkatietopalvelut"><span class="toc-section-number">5</span> Harjoitus 3: Paikkatietopalvelut</a>
+<li><a href="4-harjoitus-3-paikkatietopalvelut.html#harjoitus-3-paikkatietopalvelut"><span class="toc-section-number">4</span> Harjoitus 3: Paikkatietopalvelut</a>
 <ul>
-<li><a href="03_harjoitus_3.html#harjoituksen-sisältö-2"><span class="toc-section-number">5.1</span> Harjoituksen sisältö</a></li>
-<li><a href="03_harjoitus_3.html#harjoituksen-tavoite-1"><span class="toc-section-number">5.2</span> Harjoituksen tavoite</a></li>
-<li><a href="03_harjoitus_3.html#arvioitu-kesto-2"><span class="toc-section-number">5.3</span> Arvioitu kesto</a></li>
-<li><a href="03_harjoitus_3.html#valmistautuminen-2"><span class="toc-section-number">5.4</span> Valmistautuminen</a></li>
-<li><a href="03_harjoitus_3.html#wms-palvelun-lisääminen"><span class="toc-section-number">5.5</span> WMS-palvelun lisääminen</a></li>
-<li><a href="03_harjoitus_3.html#wfs-palvelun-lisääminen"><span class="toc-section-number">5.6</span> WFS-palvelun lisääminen</a></li>
-<li><a href="03_harjoitus_3.html#paikkatietopalvelujen-tallentaminen"><span class="toc-section-number">5.7</span> Paikkatietopalvelujen tallentaminen</a></li>
+<li><a href="4-harjoitus-3-paikkatietopalvelut.html#harjoituksen-sisältö-2"><span class="toc-section-number">4.1</span> Harjoituksen sisältö</a></li>
+<li><a href="4-harjoitus-3-paikkatietopalvelut.html#harjoituksen-tavoite-2"><span class="toc-section-number">4.2</span> Harjoituksen tavoite</a></li>
+<li><a href="4-harjoitus-3-paikkatietopalvelut.html#arvioitu-kesto-2"><span class="toc-section-number">4.3</span> Arvioitu kesto</a></li>
+<li><a href="4-harjoitus-3-paikkatietopalvelut.html#valmistautuminen-2"><span class="toc-section-number">4.4</span> Valmistautuminen</a></li>
+<li><a href="4-harjoitus-3-paikkatietopalvelut.html#wms-palvelun-lisääminen"><span class="toc-section-number">4.5</span> WMS-palvelun lisääminen</a></li>
+<li><a href="4-harjoitus-3-paikkatietopalvelut.html#wfs-palvelun-lisääminen"><span class="toc-section-number">4.6</span> WFS-palvelun lisääminen</a></li>
+<li><a href="4-harjoitus-3-paikkatietopalvelut.html#paikkatietopalvelujen-tallentaminen"><span class="toc-section-number">4.7</span> Paikkatietopalvelujen tallentaminen</a></li>
 </ul></li>
-<li><a href="04_harjoitus_4.html#harjoitus-4-koordinaattijärjestelmät"><span class="toc-section-number">6</span> Harjoitus 4: Koordinaattijärjestelmät</a>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#harjoitus-4-koordinaattijärjestelmät"><span class="toc-section-number">5</span> Harjoitus 4: Koordinaattijärjestelmät</a>
 <ul>
-<li><a href="04_harjoitus_4.html#harjoituksen-sisältö-3"><span class="toc-section-number">6.1</span> Harjoituksen sisältö</a></li>
-<li><a href="04_harjoitus_4.html#harjoituksen-tavoite-2"><span class="toc-section-number">6.2</span> Harjoituksen tavoite</a></li>
-<li><a href="04_harjoitus_4.html#arvioitu-kesto-3"><span class="toc-section-number">6.3</span> Arvioitu kesto</a></li>
-<li><a href="04_harjoitus_4.html#valmistautuminen-3"><span class="toc-section-number">6.4</span> Valmistautuminen</a></li>
-<li><a href="04_harjoitus_4.html#projektin-koordinaattijärjestelmä"><span class="toc-section-number">6.5</span> Projektin koordinaattijärjestelmä</a></li>
-<li><a href="04_harjoitus_4.html#paikkatietoaineiston-koordinaattijärjestelmä"><span class="toc-section-number">6.6</span> Paikkatietoaineiston koordinaattijärjestelmä</a></li>
-<li><a href="04_harjoitus_4.html#paikkatietoaineiston-uudelleenprojisointi"><span class="toc-section-number">6.7</span> Paikkatietoaineiston uudelleenprojisointi</a>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#harjoituksen-sisältö-3"><span class="toc-section-number">5.1</span> Harjoituksen sisältö</a></li>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#harjoituksen-tavoite-3"><span class="toc-section-number">5.2</span> Harjoituksen tavoite</a></li>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#arvioitu-kesto-3"><span class="toc-section-number">5.3</span> Arvioitu kesto</a></li>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#valmistautuminen-3"><span class="toc-section-number">5.4</span> Valmistautuminen</a></li>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#projektin-koordinaattijärjestelmä"><span class="toc-section-number">5.5</span> Projektin koordinaattijärjestelmä</a></li>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#paikkatietoaineiston-koordinaattijärjestelmä"><span class="toc-section-number">5.6</span> Paikkatietoaineiston koordinaattijärjestelmä</a></li>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#paikkatietoaineiston-uudelleenprojisointi"><span class="toc-section-number">5.7</span> Paikkatietoaineiston uudelleenprojisointi</a>
 <ul>
-<li><a href="04_harjoitus_4.html#tapa-1-projisoi-taso--prosessityökalu"><span class="toc-section-number">6.7.1</span> Tapa 1: Projisoi taso -prosessityökalu</a></li>
-<li><a href="04_harjoitus_4.html#tapa-2-tallennus-tasot-paneelissa"><span class="toc-section-number">6.7.2</span> Tapa 2: Tallennus Tasot-paneelissa</a></li>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#tapa-1-projisoi-taso--prosessityökalu"><span class="toc-section-number">5.7.1</span> Tapa 1: Projisoi taso -prosessityökalu</a></li>
+<li><a href="5-harjoitus-4-koordinaattijärjestelmät.html#tapa-2-tallennus-tasot-paneelissa"><span class="toc-section-number">5.7.2</span> Tapa 2: Tallennus Tasot-paneelissa</a></li>
 </ul></li>
 </ul></li>
-<li><a href="05_harjoitus_5.html#harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys"><span class="toc-section-number">7</span> Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys</a>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys"><span class="toc-section-number">6</span> Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys</a>
 <ul>
-<li><a href="05_harjoitus_5.html#harjoituksen-sisältö-4"><span class="toc-section-number">7.1</span> Harjoituksen sisältö</a></li>
-<li><a href="05_harjoitus_5.html#harjoituksen-tavoite-3"><span class="toc-section-number">7.2</span> Harjoituksen tavoite</a></li>
-<li><a href="05_harjoitus_5.html#arvioitu-kesto-4"><span class="toc-section-number">7.3</span> Arvioitu kesto</a></li>
-<li><a href="05_harjoitus_5.html#valmistautuminen-4"><span class="toc-section-number">7.4</span> Valmistautuminen</a></li>
-<li><a href="05_harjoitus_5.html#rasteriaineistojen-visualisointi"><span class="toc-section-number">7.5</span> Rasteriaineistojen visualisointi</a></li>
-<li><a href="05_harjoitus_5.html#vektoriaineistojen-visualisointi"><span class="toc-section-number">7.6</span> Vektoriaineistojen visualisointi</a></li>
-<li><a href="05_harjoitus_5.html#pisteaineiston-visualisointi"><span class="toc-section-number">7.7</span> Pisteaineiston visualisointi</a></li>
-<li><a href="05_harjoitus_5.html#polygoniaineiston-visualisointi"><span class="toc-section-number">7.8</span> Polygoniaineiston visualisointi</a></li>
-<li><a href="05_harjoitus_5.html#symbolien-muuttaminen"><span class="toc-section-number">7.9</span> Symbolien muuttaminen</a></li>
-<li><a href="05_harjoitus_5.html#mittakaavan-käyttö-symboleissa"><span class="toc-section-number">7.10</span> Mittakaavan käyttö symboleissa</a></li>
-<li><a href="05_harjoitus_5.html#symbolitasojen-muokkaaminen"><span class="toc-section-number">7.11</span> Symbolitasojen muokkaaminen</a></li>
-<li><a href="05_harjoitus_5.html#tekstitys-eli-nimiöinti"><span class="toc-section-number">7.12</span> Tekstitys eli nimiöinti</a></li>
-<li><a href="05_harjoitus_5.html#nimiöiden-tyyli--ja-yleisasetukset"><span class="toc-section-number">7.13</span> Nimiöiden tyyli- ja yleisasetukset</a></li>
-<li><a href="05_harjoitus_5.html#teksti"><span class="toc-section-number">7.14</span> Teksti</a></li>
-<li><a href="05_harjoitus_5.html#nimiöinnit-viivatasoilla"><span class="toc-section-number">7.15</span> Nimiöinnit viivatasoilla</a></li>
-<li><a href="05_harjoitus_5.html#nimiöiden-piirtäminen"><span class="toc-section-number">7.16</span> Nimiöiden piirtäminen</a></li>
-<li><a href="05_harjoitus_5.html#edistyneet-ominaisuudet"><span class="toc-section-number">7.17</span> Edistyneet ominaisuudet</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#harjoituksen-sisältö-4"><span class="toc-section-number">6.1</span> Harjoituksen sisältö</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#harjoituksen-tavoite-4"><span class="toc-section-number">6.2</span> Harjoituksen tavoite</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#arvioitu-kesto-4"><span class="toc-section-number">6.3</span> Arvioitu kesto</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#valmistautuminen-4"><span class="toc-section-number">6.4</span> Valmistautuminen</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#rasteriaineistojen-visualisointi"><span class="toc-section-number">6.5</span> Rasteriaineistojen visualisointi</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#vektoriaineistojen-visualisointi"><span class="toc-section-number">6.6</span> Vektoriaineistojen visualisointi</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#pisteaineiston-visualisointi"><span class="toc-section-number">6.7</span> Pisteaineiston visualisointi</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#polygoniaineiston-visualisointi"><span class="toc-section-number">6.8</span> Polygoniaineiston visualisointi</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#symbolien-muuttaminen"><span class="toc-section-number">6.9</span> Symbolien muuttaminen</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#mittakaavan-käyttö-symboleissa"><span class="toc-section-number">6.10</span> Mittakaavan käyttö symboleissa</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#symbolitasojen-muokkaaminen"><span class="toc-section-number">6.11</span> Symbolitasojen muokkaaminen</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#tekstitys-eli-nimiöinti"><span class="toc-section-number">6.12</span> Tekstitys eli nimiöinti</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#nimiöiden-tyyli--ja-yleisasetukset"><span class="toc-section-number">6.13</span> Nimiöiden tyyli- ja yleisasetukset</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#teksti"><span class="toc-section-number">6.14</span> Teksti</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#nimiöinnit-viivatasoilla"><span class="toc-section-number">6.15</span> Nimiöinnit viivatasoilla</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#nimiöiden-piirtäminen"><span class="toc-section-number">6.16</span> Nimiöiden piirtäminen</a></li>
+<li><a href="6-harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys.html#edistyneet-ominaisuudet"><span class="toc-section-number">6.17</span> Edistyneet ominaisuudet</a></li>
 </ul></li>
-<li><a href="06_harjoitus_6.html#harjoitus-6-paikkatietoaineiston-luokittelu"><span class="toc-section-number">8</span> Harjoitus 6: Paikkatietoaineiston luokittelu</a>
+<li><a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html#harjoitus-6-paikkatietoaineiston-luokittelu"><span class="toc-section-number">7</span> Harjoitus 6: Paikkatietoaineiston luokittelu</a>
 <ul>
-<li><a href="06_harjoitus_6.html#harjoituksen-sisältö-5"><span class="toc-section-number">8.1</span> Harjoituksen sisältö</a></li>
-<li><a href="06_harjoitus_6.html#harjoituksen-tavoite-4"><span class="toc-section-number">8.2</span> Harjoituksen tavoite</a></li>
-<li><a href="06_harjoitus_6.html#arvioitu-kesto-5"><span class="toc-section-number">8.3</span> Arvioitu kesto</a></li>
-<li><a href="06_harjoitus_6.html#valmistautuminen-5"><span class="toc-section-number">8.4</span> Valmistautuminen</a></li>
-<li><a href="06_harjoitus_6.html#vektoriaineiston-luokittelut"><span class="toc-section-number">8.5</span> Vektoriaineiston luokittelut</a></li>
-<li><a href="06_harjoitus_6.html#rasteriaineiston-luokittelut"><span class="toc-section-number">8.6</span> Rasteriaineiston luokittelut</a></li>
+<li><a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html#harjoituksen-sisältö-5"><span class="toc-section-number">7.1</span> Harjoituksen sisältö</a></li>
+<li><a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html#harjoituksen-tavoite-5"><span class="toc-section-number">7.2</span> Harjoituksen tavoite</a></li>
+<li><a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html#arvioitu-kesto-5"><span class="toc-section-number">7.3</span> Arvioitu kesto</a></li>
+<li><a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html#valmistautuminen-5"><span class="toc-section-number">7.4</span> Valmistautuminen</a></li>
+<li><a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html#vektoriaineiston-luokittelut"><span class="toc-section-number">7.5</span> Vektoriaineiston luokittelut</a></li>
+<li><a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html#rasteriaineiston-luokittelut"><span class="toc-section-number">7.6</span> Rasteriaineiston luokittelut</a></li>
 </ul></li>
-<li><a href="07_harjoitus_7.html#harjoitus-7-karttatuloste-ja-kartta-atlas"><span class="toc-section-number">9</span> Harjoitus 7: Karttatuloste ja kartta-atlas</a>
+<li><a href="8-harjoitus-7-karttatuloste-ja-kartta-atlas.html#harjoitus-7-karttatuloste-ja-kartta-atlas"><span class="toc-section-number">8</span> Harjoitus 7: Karttatuloste ja kartta-atlas</a>
 <ul>
-<li><a href="07_harjoitus_7.html#harjoituksen-sisältö-6"><span class="toc-section-number">9.1</span> Harjoituksen sisältö</a></li>
-<li><a href="07_harjoitus_7.html#harjoituksen-tavoite-5"><span class="toc-section-number">9.2</span> Harjoituksen tavoite</a></li>
-<li><a href="07_harjoitus_7.html#arvioitu-kesto-6"><span class="toc-section-number">9.3</span> Arvioitu kesto</a></li>
-<li><a href="07_harjoitus_7.html#valmistautuminen-6"><span class="toc-section-number">9.4</span> Valmistautuminen</a></li>
-<li><a href="07_harjoitus_7.html#karttatuloste"><span class="toc-section-number">9.5</span> Karttatuloste</a></li>
-<li><a href="07_harjoitus_7.html#kartta-atlas"><span class="toc-section-number">9.6</span> Kartta-atlas</a></li>
+<li><a href="8-harjoitus-7-karttatuloste-ja-kartta-atlas.html#harjoituksen-sisältö-6"><span class="toc-section-number">8.1</span> Harjoituksen sisältö</a></li>
+<li><a href="8-harjoitus-7-karttatuloste-ja-kartta-atlas.html#harjoituksen-tavoite-6"><span class="toc-section-number">8.2</span> Harjoituksen tavoite</a></li>
+<li><a href="8-harjoitus-7-karttatuloste-ja-kartta-atlas.html#arvioitu-kesto-6"><span class="toc-section-number">8.3</span> Arvioitu kesto</a></li>
+<li><a href="8-harjoitus-7-karttatuloste-ja-kartta-atlas.html#valmistautuminen-6"><span class="toc-section-number">8.4</span> Valmistautuminen</a></li>
+<li><a href="8-harjoitus-7-karttatuloste-ja-kartta-atlas.html#karttatuloste"><span class="toc-section-number">8.5</span> Karttatuloste</a></li>
+<li><a href="8-harjoitus-7-karttatuloste-ja-kartta-atlas.html#kartta-atlas"><span class="toc-section-number">8.6</span> Kartta-atlas</a></li>
 </ul></li>
-<li><a href="08_harjoitus_8.html#harjoitus-8-paikkatietoaineiston-digitointieditointi"><span class="toc-section-number">10</span> Harjoitus 8: Paikkatietoaineiston digitointi/editointi</a>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#harjoitus-8-paikkatietoaineiston-digitointieditointi"><span class="toc-section-number">9</span> Harjoitus 8: Paikkatietoaineiston digitointi/editointi</a>
 <ul>
-<li><a href="08_harjoitus_8.html#harjoituksen-sisältö-7"><span class="toc-section-number">10.1</span> Harjoituksen sisältö</a></li>
-<li><a href="08_harjoitus_8.html#harjoituksen-tavoite-6"><span class="toc-section-number">10.2</span> Harjoituksen tavoite</a></li>
-<li><a href="08_harjoitus_8.html#arvioitu-kesto-7"><span class="toc-section-number">10.3</span> Arvioitu kesto</a></li>
-<li><a href="08_harjoitus_8.html#valmistautuminen-7"><span class="toc-section-number">10.4</span> Valmistautuminen</a></li>
-<li><a href="08_harjoitus_8.html#vektoriaineiston-luominen"><span class="toc-section-number">10.5</span> Vektoriaineiston luominen</a></li>
-<li><a href="08_harjoitus_8.html#tietorakenteen-valmistelu-ja-editointiasetukset"><span class="toc-section-number">10.6</span> Tietorakenteen valmistelu ja editointiasetukset</a></li>
-<li><a href="08_harjoitus_8.html#vektoriaineiston-editointi"><span class="toc-section-number">10.7</span> Vektoriaineiston editointi</a></li>
-<li><a href="08_harjoitus_8.html#muokkauksen-yleisasetukset"><span class="toc-section-number">10.8</span> Muokkauksen yleisasetukset</a></li>
-<li><a href="08_harjoitus_8.html#geometrioiden-lisääminen"><span class="toc-section-number">10.9</span> Geometrioiden lisääminen</a></li>
-<li><a href="08_harjoitus_8.html#ominaisuustietojen-lisääminen"><span class="toc-section-number">10.10</span> Ominaisuustietojen lisääminen</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#harjoituksen-sisältö-7"><span class="toc-section-number">9.1</span> Harjoituksen sisältö</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#harjoituksen-tavoite-7"><span class="toc-section-number">9.2</span> Harjoituksen tavoite</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#arvioitu-kesto-7"><span class="toc-section-number">9.3</span> Arvioitu kesto</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#valmistautuminen-7"><span class="toc-section-number">9.4</span> Valmistautuminen</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#vektoriaineiston-luominen"><span class="toc-section-number">9.5</span> Vektoriaineiston luominen</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#tietorakenteen-valmistelu-ja-editointiasetukset"><span class="toc-section-number">9.6</span> Tietorakenteen valmistelu ja editointiasetukset</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#vektoriaineiston-editointi"><span class="toc-section-number">9.7</span> Vektoriaineiston editointi</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#muokkauksen-yleisasetukset"><span class="toc-section-number">9.8</span> Muokkauksen yleisasetukset</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#geometrioiden-lisääminen"><span class="toc-section-number">9.9</span> Geometrioiden lisääminen</a></li>
+<li><a href="9-harjoitus-8-paikkatietoaineiston-digitointieditointi.html#ominaisuustietojen-lisääminen"><span class="toc-section-number">9.10</span> Ominaisuustietojen lisääminen</a></li>
 </ul></li>
-<li><a href="09_harjoitus_9.html#harjoitus-9-paikkatietoanalyysit"><span class="toc-section-number">11</span> Harjoitus 9: Paikkatietoanalyysit</a>
+<li><a href="10-harjoitus-9-paikkatietoanalyysit.html#harjoitus-9-paikkatietoanalyysit"><span class="toc-section-number">10</span> Harjoitus 9: Paikkatietoanalyysit</a>
 <ul>
-<li><a href="09_harjoitus_9.html#harjoituksen-sisältö-8"><span class="toc-section-number">11.1</span> Harjoituksen sisältö</a></li>
-<li><a href="09_harjoitus_9.html#valmistautuminen-8"><span class="toc-section-number">11.2</span> Valmistautuminen</a></li>
-<li><a href="09_harjoitus_9.html#vektorianalyysit"><span class="toc-section-number">11.3</span> Vektorianalyysit</a></li>
+<li><a href="10-harjoitus-9-paikkatietoanalyysit.html#harjoituksen-sisältö-8"><span class="toc-section-number">10.1</span> Harjoituksen sisältö</a></li>
+<li><a href="10-harjoitus-9-paikkatietoanalyysit.html#valmistautuminen-8"><span class="toc-section-number">10.2</span> Valmistautuminen</a></li>
+<li><a href="10-harjoitus-9-paikkatietoanalyysit.html#vektorianalyysit"><span class="toc-section-number">10.3</span> Vektorianalyysit</a></li>
 </ul></li>
-<li><a href="10_harjoitus_10.html#harjoitus-10-qgisin-lisäosat"><span class="toc-section-number">12</span> Harjoitus 10: QGISin lisäosat</a>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoitus-10-qgisin-lisäosat"><span class="toc-section-number">11</span> Harjoitus 10: QGISin lisäosat</a>
 <ul>
-<li><a href="10_harjoitus_10.html#harjoituksen-sisältö-9"><span class="toc-section-number">12.1</span> Harjoituksen sisältö</a></li>
-<li><a href="10_harjoitus_10.html#harjoituksen-tavoite-7"><span class="toc-section-number">12.2</span> Harjoituksen tavoite</a></li>
-<li><a href="10_harjoitus_10.html#arvioitu-kesto-8"><span class="toc-section-number">12.3</span> Arvioitu kesto</a></li>
-<li><a href="10_harjoitus_10.html#valmistautuminen-9"><span class="toc-section-number">12.4</span> Valmistautuminen</a></li>
-<li><a href="10_harjoitus_10.html#lisäosien-hallinta"><span class="toc-section-number">12.5</span> Lisäosien hallinta</a></li>
-<li><a href="10_harjoitus_10.html#quickmapservices"><span class="toc-section-number">12.6</span> QuickMapServices</a></li>
-<li><a href="10_harjoitus_10.html#qgis2threejs"><span class="toc-section-number">12.7</span> Qgis2threejs</a></li>
-<li><a href="10_harjoitus_10.html#qgis2web"><span class="toc-section-number">12.8</span> Qgis2web</a></li>
-<li><a href="10_harjoitus_10.html#prosessointityökalut"><span class="toc-section-number">12.9</span> Prosessointityökalut</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoituksen-sisältö-9"><span class="toc-section-number">11.1</span> Harjoituksen sisältö</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoituksen-tavoite-8"><span class="toc-section-number">11.2</span> Harjoituksen tavoite</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#arvioitu-kesto-8"><span class="toc-section-number">11.3</span> Arvioitu kesto</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#valmistautuminen-9"><span class="toc-section-number">11.4</span> Valmistautuminen</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#lisäosien-hallinta"><span class="toc-section-number">11.5</span> Lisäosien hallinta</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#quickmapservices"><span class="toc-section-number">11.6</span> QuickMapServices</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#qgis2threejs"><span class="toc-section-number">11.7</span> Qgis2threejs</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#qgis2web"><span class="toc-section-number">11.8</span> Qgis2web</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#prosessointityökalut"><span class="toc-section-number">11.9</span> Prosessointityökalut</a></li>
 </ul></li>
 </ul>
 </div>
@@ -191,30 +196,30 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div class="row">
 <div class="col-sm-12">
-<div id="harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys" class="section level1" number="7">
-<h1><span class="header-section-number">7</span> Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys</h1>
-<div id="harjoituksen-sisältö-4" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> Harjoituksen sisältö</h2>
+<div id="harjoitus-5-paikkatietoaineiston-visualisointi-ja-tekstitys" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys</h1>
+<div id="harjoituksen-sisältö-4" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Harjoituksen sisältö</h2>
 <p>Harjoituksessa tutustutaan eri rasteri- ja vektoriaineistoihin ja niiden perusvisualisointitekniikoihin sekä vektoriaineistojen tekstitystoimintoihin.</p>
 </div>
-<div id="harjoituksen-tavoite-3" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Harjoituksen tavoite</h2>
+<div id="harjoituksen-tavoite-4" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Harjoituksen tavoite</h2>
 <p>Harjoituksen jälkeen opiskelija tuntee eri paikkatietoaineistojen visualisoinnin perustyökalut ja osaa lisätä vektoriaineistoon haluamansa tekstitykset.</p>
 </div>
-<div id="arvioitu-kesto-4" class="section level2" number="7.3">
-<h2><span class="header-section-number">7.3</span> Arvioitu kesto</h2>
+<div id="arvioitu-kesto-4" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Arvioitu kesto</h2>
 <p>60 minuuttia.</p>
 </div>
-<div id="valmistautuminen-4" class="section level2" number="7.4">
-<h2><span class="header-section-number">7.4</span> Valmistautuminen</h2>
+<div id="valmistautuminen-4" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Valmistautuminen</h2>
 <p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä <strong>“QGIS-harjoitus 5”</strong>. Lisää projektiin seuraavat aineistot:
 ..kurssihakemisto/MML/Yleiskarttarasteri_1milj.png
 ..kurssihakemisto/MML/YK_1M/TieViiva.shp
 ..kurssihakemisto/Natural_Earth/ne_10m_populated_places/ne_10m_populated_places_suomi.shp
 ..kurssihakemisto/SYKE/Naturakohde_ma.shp</p>
 </div>
-<div id="rasteriaineistojen-visualisointi" class="section level2" number="7.5">
-<h2><span class="header-section-number">7.5</span> Rasteriaineistojen visualisointi</h2>
+<div id="rasteriaineistojen-visualisointi" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Rasteriaineistojen visualisointi</h2>
 <p>Tutustutaan ensin <strong>Yleiskarttarasteri_1milj</strong>-rasteriaineistoon. Tämä rasteriaineisto on Maanmittauslaitoksen tuottama taustakartta, johon on sisällytetty Suomen tiet, kaupungit ja muita yleiskartan tarkoitusta ajavia aineistoja. Aineistossa käytetty visualisointi on tuttu paperikartoilta. Piilota nyt kaikki muut avaamasi aineistot näkyvistä <strong>Tasot</strong>-paneelista.</p>
 <p><img src="img/harjoitus_5/image1.png" /></p>
 <p><img src="img/harjoitus_5/image2.png" /></p>
@@ -231,8 +236,8 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <p><img src="img/harjoitus_5/image7.png" /></p>
 <p>Kokeile nyt vaihtaa kanavien järjestystä. Kun painat <strong>Käytä</strong> voit tarkistaa tehdyt muutokset. Näin voit testailla eri asetuksia sulkematta <strong>Tason ominaisuudet</strong> -ikkunaa. Kun olet testaillut tarpeeksi, klikkaa <strong>OK</strong>.</p>
 </div>
-<div id="vektoriaineistojen-visualisointi" class="section level2" number="7.6">
-<h2><span class="header-section-number">7.6</span> Vektoriaineistojen visualisointi</h2>
+<div id="vektoriaineistojen-visualisointi" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> Vektoriaineistojen visualisointi</h2>
 <p>Siirrytään nyt visualisoimaan vektoriaineistoja. Tarkastele kaikkia QGIS-projektiin avaamiasi vektoriaineistoja. Voit huomata, että jokaisen tason vasemmalla puolella on muoto, joka kuvastaa kyseisen tason vektorityyppiä. <strong>TieViiva</strong> on viiva-aineisto, <strong>ne_10m_populated_places_suomi</strong> on pisteaineisto ja <strong>NaturaKohde_ma</strong> on polygoniaineisto.</p>
 <p><img src="img/harjoitus_5/image8.png" /></p>
 <p>##Viiva-aineiston visualisointi
@@ -242,34 +247,34 @@ Aseta <strong>TieViiva</strong>-aineisto näkyviin ja piilota muut aineistot. Av
 <p><img src="img/harjoitus_5/image11.png" /></p>
 <p>Muut paikkatietoaineistojen visualisoinnin työkalut saa käyttöön samalla tavalla: avaamalla hiiren oikealla painikkeella <strong>Tason ominaisuudet</strong> ja valitsemalla sivupalkista <strong>Kuvaustekniikka</strong>. Eri vektoriaineistotyypeillä (piste, viiva, polygoni) on erilaiset kuvaustekniikan työkalut, vaikkakin ne muistuttavat paljon toisiaan. Esimerkiksi pistetasolle ei voida tehdä samoja tyylittelyjä kuin viiva- tai polygonitasolle.</p>
 </div>
-<div id="pisteaineiston-visualisointi" class="section level2" number="7.7">
-<h2><span class="header-section-number">7.7</span> Pisteaineiston visualisointi</h2>
+<div id="pisteaineiston-visualisointi" class="section level2" number="6.7">
+<h2><span class="header-section-number">6.7</span> Pisteaineiston visualisointi</h2>
 <p>Visualisoidaan seuraavaksi piste-aineistoa. Aseta <strong>ne_10m_populated_places_suomi</strong>-aineisto näkyviin yhdessä TieViiva-aineiston kanssa ja piilota muut aineistot. Tämä aineisto sisältää Natural Earth -kaupunkiaineiston Suomesta. Avaa tason <strong>Kuvaustekniikka</strong>-välilehti samalla tavalla kuin äsken viivatason yhteydessä. Huomaa erot viiva- ja pisteaineiston ominaisuuksissa. Vaihda aineiston <strong>Väri ja Koko</strong> ja paina taas <strong>Käytä</strong>. Vaihda myös symbolia ja kokeile, miten kierto vaikuttaa symbolin näkymiseen.</p>
 <p><img src="img/harjoitus_5/image12.png" /></p>
 <p>Pisteaineistosi voi näyttää yhdessä viiva-aineiston kanssa esimerkiksi tältä:</p>
 <p><img src="img/harjoitus_5/image13.png" /></p>
 </div>
-<div id="polygoniaineiston-visualisointi" class="section level2" number="7.8">
-<h2><span class="header-section-number">7.8</span> Polygoniaineiston visualisointi</h2>
+<div id="polygoniaineiston-visualisointi" class="section level2" number="6.8">
+<h2><span class="header-section-number">6.8</span> Polygoniaineiston visualisointi</h2>
 <p>Visualisoidaan vielä polygoniaineisto. Aseta <strong>NaturaKohde_ma</strong>-aineisto näkyviin yhdessä <strong>TieViiva</strong>-aineiston ja <strong>ne_10m_populated_places_suomi</strong>-aineiston kanssa ja piilota muut aineistot. Avaa NaturaKohde_ma-aineiston <strong>Kuvaustekniikka</strong>-välilehti ja huomaa erot verrattuna viiva- ja pisteaineistojen kuvaustekniikkaan. Vaihda tason <strong>Väri</strong> ja valitse tasolle eri symboli. Voit myös kokeilla erilaisia <strong>Peittävyys</strong>-arvoja. Kun olet testannut tarpeeksi, paina <strong>OK</strong>.</p>
 <p><img src="img/harjoitus_5/image14.png" /></p>
 <p>Saattaa olla, että aineistotasot peittävät toisensa vaikka siten, että polygoniaineisto peittää muut sen alle jäävät aineistot. Voit muuttaa tasojen järjestystä ja siten tasojen näkymistä raahaamalla/vetämällä tasot uuteen järjestykseen <strong>Tasot</strong>-paneelissa. Usein polygoniaineistot on hyvä jättää alimmiksi tasoiksi. Jos kartalla halutaan visualisoida jotakin rasterikuvaa, kannattaa se/ne yleensä pitää myös alimpina tasoina. Uudelleen järjestettynä karttasi tulisi näyttää tältä:</p>
 <p><img src="img/harjoitus_5/image15.png" /></p>
 </div>
-<div id="symbolien-muuttaminen" class="section level2" number="7.9">
-<h2><span class="header-section-number">7.9</span> Symbolien muuttaminen</h2>
+<div id="symbolien-muuttaminen" class="section level2" number="6.9">
+<h2><span class="header-section-number">6.9</span> Symbolien muuttaminen</h2>
 <p>Seuraavaksi muutamme polygonien symboleja. Avaa uudelleen <strong>Naturakohde_ma</strong>-tason <strong>Tason ominaisuudet</strong> -ikkuna. Valitse <strong>Kuvaustekniikka</strong>-välilehdeltä ensin <strong>Simple fill</strong> -rivi oheisen kuvan mukaisesti:</p>
 <p><img src="img/harjoitus_5/image16.png" /></p>
 <p>Valitse sen jälkeen <strong>Viivan tyyli</strong> -asetukseksi <strong>Katkonainen pisteviiva</strong>. Voit määritellä viivan leveyden haluamaksesi. Lopuksi voit vielä muuttaa <strong>Peittävyys</strong>-asetukseksi 70 % (<strong>Tason piirto</strong> -asetuksista).</p>
 </div>
-<div id="mittakaavan-käyttö-symboleissa" class="section level2" number="7.10">
-<h2><span class="header-section-number">7.10</span> Mittakaavan käyttö symboleissa</h2>
+<div id="mittakaavan-käyttö-symboleissa" class="section level2" number="6.10">
+<h2><span class="header-section-number">6.10</span> Mittakaavan käyttö symboleissa</h2>
 <p>Seuraavaksi määrittelemme mittakaavarajat <strong>Tieviiva</strong>-tasolle. Valitse tason <strong>Ominaisuudet &gt; Karttanäyttö</strong> ja rastita <strong>Scale Dependent Visibility</strong> (mittakaavaperusteinen näkyvyys). Muuta sitten <strong>Pienimmäksi mittakaavaksi 1:3 000 000</strong>. Tämä tarkoittaa sitä, että kun kartan mittakaava on pienempi kuin 1:3 000 000, niin karttatasoa ei piirretä.</p>
 <p><img src="img/harjoitus_5/image17.png" /></p>
 <p>Ota muutokset käyttöön painamalla joko <strong>Käytä</strong> tai <strong>OK</strong>. Jälkimmäinen visualisoinnin käyttöönoton lisäksi sulkee <strong>Ominaisuudet -ikkunan</strong>. Kokeile nyt karttaikkunassa tason näkymistä eri mittakaavoilla. Mittakaavaa saat muutettua lähentämällä tai loitontamalla karttaa (esim. hiiren scroll-toiminnolla). Voit myös syöttää mittakaavan lukuna QGISin alaosassa sijaitsevassa <strong>Tilapalkissa</strong>.</p>
 </div>
-<div id="symbolitasojen-muokkaaminen" class="section level2" number="7.11">
-<h2><span class="header-section-number">7.11</span> Symbolitasojen muokkaaminen</h2>
+<div id="symbolitasojen-muokkaaminen" class="section level2" number="6.11">
+<h2><span class="header-section-number">6.11</span> Symbolitasojen muokkaaminen</h2>
 <p>Seuraavaksi muokkaamme visualisointityyliämme hieman pidemmälle. Symbologiat voivat QGISissä koostua yhdestä tai useammasta symbolitasosta (kuvassa <strong>Täyttö</strong>-kohdan alla). Esimerkiksi monikulmioiden symbolitasojen hyödyntäminen voi tuottaa hyvinkin hienovaraisen visualisoinnin. Symbolitasojen avulla voidaan määrittää monikulmion täyttämisen värit ja tyylit (esim. pistetäyttö).</p>
 <p>Lisää uusi symbolitaso <strong>NaturaKohde_ma</strong>-tasolle. Avaa tason <strong>Kuvaustekniikka</strong>-asetukset (<strong>Tason ominaisuudet -ikkunasta</strong>) ja lisää uusi symbolitaso painamalla plussa-kuvaketta.</p>
 <p><img src="img/harjoitus_5/image18.png" /></p>
@@ -277,17 +282,17 @@ Aseta <strong>TieViiva</strong>-aineisto näkyviin ja piilota muut aineistot. Av
 <p><img src="img/harjoitus_5/image19.png" /></p>
 <p><img src="img/harjoitus_5/image20.png" /></p>
 </div>
-<div id="tekstitys-eli-nimiöinti" class="section level2" number="7.12">
-<h2><span class="header-section-number">7.12</span> Tekstitys eli nimiöinti</h2>
+<div id="tekstitys-eli-nimiöinti" class="section level2" number="6.12">
+<h2><span class="header-section-number">6.12</span> Tekstitys eli nimiöinti</h2>
 <p>QGIS-käyttöliittymässä paikkatietokohteiden tekstitykseen viitataan termillä “nimiöt” (englanninkielinen termi on “labeling”). Avaa <strong>NaturaKohde_ma-tason Tason ominaisuudet</strong> -ikkuna ja valitse <strong>Nimiöt</strong>-välilehti. Valitse <strong>Yksittäinen nimiö</strong> ja <strong>Nimiöiden perustana</strong> -alasvetovalikosta nimiöinnissä käytettävän sarakkeen nimi. Paina <strong>Käytä</strong>, niin kohteille syntyy nimiöt. Tämä nähdään nyt karttaikkunasta, johon nimiöt ovat päivittyneet.</p>
 <p><img src="img/harjoitus_5/image21.png" /></p>
 </div>
-<div id="nimiöiden-tyyli--ja-yleisasetukset" class="section level2" number="7.13">
-<h2><span class="header-section-number">7.13</span> Nimiöiden tyyli- ja yleisasetukset</h2>
+<div id="nimiöiden-tyyli--ja-yleisasetukset" class="section level2" number="6.13">
+<h2><span class="header-section-number">6.13</span> Nimiöiden tyyli- ja yleisasetukset</h2>
 <p>Nimiöiden tekstien näkymistä kartalla voi määrittää monella eri tavalla. Alla kuvaukset QGISin nimiöiden muokkaamisen alateemoista:</p>
 </div>
-<div id="teksti" class="section level2" number="7.14">
-<h2><span class="header-section-number">7.14</span> Teksti</h2>
+<div id="teksti" class="section level2" number="6.14">
+<h2><span class="header-section-number">6.14</span> Teksti</h2>
 <p>Määritellään tekstin tyyli, väri ja muita yleisiä ominaisuuksia.
 ## Muotoilu
 Voit muodostaa useampirivisiä tekstejä, keskittää tekstiä ja määritellä lukujen muotoa.
@@ -312,20 +317,20 @@ Määrittelee tekstien mittakaavarajoja ja muita tekstien näkyvyyteen liittyvi�
 <p>Psst! Yksi hyödyllinen tapa rajata nimiöitä on <strong>Piirtäminen &gt; Kohteen valinnat</strong> ja asettaa kohtaan “*Häivytä nimiöinti kohteilta, jotka ovat pienempiä kuin**-kohtaan jokin arvo. Näin QGIS näyttää vain isoimpien kohteiden nimiöinnit.</p>
 </blockquote>
 </div>
-<div id="nimiöinnit-viivatasoilla" class="section level2" number="7.15">
-<h2><span class="header-section-number">7.15</span> Nimiöinnit viivatasoilla</h2>
+<div id="nimiöinnit-viivatasoilla" class="section level2" number="6.15">
+<h2><span class="header-section-number">6.15</span> Nimiöinnit viivatasoilla</h2>
 <p>Samalla tavalla kuin juuri määritimme nimiöinnin monikulmiotasolle, voidaan niitä määrittää muillekin vektoriaineistoille. Avaa <strong>TieViiva-tason Tason ominaisuudet</strong> -ikkuna ja aktivoi nimiöiden käyttö päälle edellisessä harjoituksessa oppimallasi tavalla. Valitse <strong>Nimiöiden perustan</strong> -kohdan alavalikosta käytettäväksi nimiöintisarakkeeksi <strong>Tienumero</strong>. Paina <strong>Käytä</strong>, ja katso muutokset. Avaa vielä nimiöiden <strong>Sijoittaminen</strong>-alateema ja rastita <strong>Seuraa viivaa</strong> -toiminto päälle. Paina <strong>Käytä</strong>, ja tarkista, että nimiöinti toimii odotetulla tavalla. Katso esimerkkiasetukset kuvasta:</p>
 <p><img src="img/harjoitus_5/image24.png" /></p>
 <p>Nyt nimiöt seuraavat viivoja paremmin. Huomaa myös, että kaikki nimiöt eivät nyt tule piirretyksi. Vaihda <strong>Maksimikulma kaarevien merkkien välillä</strong> -kohdan arvoja, niin pystyt muokkaamaan tekstin kaarevuuden reunaehtoja. Voit sulkea <strong>Tason ominaisuudet</strong>-ikkunan totuttuun tapaan painamalla <strong>OK</strong>.</p>
 </div>
-<div id="nimiöiden-piirtäminen" class="section level2" number="7.16">
-<h2><span class="header-section-number">7.16</span> Nimiöiden piirtäminen</h2>
+<div id="nimiöiden-piirtäminen" class="section level2" number="6.16">
+<h2><span class="header-section-number">6.16</span> Nimiöiden piirtäminen</h2>
 <p>Zoomaa karttanäkymä näyttämään koko aineisto klikkaamalla <strong>Zoomaa täydeksi</strong> -painiketta <img src="img/harjoitus_5/image25.png" /> . Odota hetki, että nimiöt piirtyvät. Nimiöitä on nyt liikaa karttaikkunassa, mikä vaikeuttaa kartan hahmottamista. Olisi hyödyllistä määrittää nimiöt eri mittakaavoille erikseen. Avaa taas <strong>NaturaKohde_ma-tason</strong> ominaisuudet ja valitse <strong>Nimiöt</strong> sivupalkista ja <strong>Karttanäyttö</strong>-alateema. Rastita <strong>Show all labels for this layer</strong> (Näytä kaikki nimiöt tällä tasolla [myös törmäävät nimiöt]) ja paina <strong>Käytä</strong>. Nimiöiden piirtämiseen menee hetki, koska kaikki kartalla näkyvät monikulmiot nimetään. Kun kartta on piirtynyt huomaat, ettei kannata nimiöidä kaikkia monikulmioita kyseisellä mittakaavalla. Rastita tämä asetus pois päältä ja paina <strong>Käytä</strong>. Huomaa, että oletuksena QGIS jättää piirtämättä toisiinsa törmäävät nimiöt.</p>
 <p>Rastita päälle <strong>Mittakaavaperusteinen näkyvyys</strong> ja laita <strong>Minimimittakaava-kentän</strong> arvoksi <strong>500 000</strong>. Paina <strong>OK</strong>. Natura-kohteiden nimiöt eivät enää näy 1:500 000 mittakaavan ulkopuolella. Lähennä karttaan, kunnes nimiöt näkyvät uudelleen. Muuta samalla tavalla <strong>TieViiva-tason</strong> piirtäminen siten, että sen nimiöt näkyvät vasta kun mittakaava on pienempi kuin <strong>1:200 000</strong>.</p>
 <p><img src="img/harjoitus_5/image26.png" /></p>
 </div>
-<div id="edistyneet-ominaisuudet" class="section level2" number="7.17">
-<h2><span class="header-section-number">7.17</span> Edistyneet ominaisuudet</h2>
+<div id="edistyneet-ominaisuudet" class="section level2" number="6.17">
+<h2><span class="header-section-number">6.17</span> Edistyneet ominaisuudet</h2>
 <p>Voit myös testata tekstien edistyneitä ominaisuuksia <strong>NaturaKohde_ma</strong> -tasolla. Voit ohjata nimiöiden tekstejä lausekepohjaisesti QGISin <strong>Lausekkeen muokkaus</strong> -työkalulla. Saat lausekkeen muodostajan auki** Nimiöiden perustana** -alasvetolaatikon vieressä olevasta painikkeesta:</p>
 <p><img src="img/harjoitus_5/image27.png" /></p>
 <p>Tehdään nyt nimiö, joka yhdistää tietoa useammasta kentästä. Klikkaa kuvassa näkyvästä <strong>Lausekkeen muodostaja</strong> -painikkeesta. <strong>Lausekkeen muokkaus -työkalu</strong> aukeaa.</p>
@@ -347,8 +352,8 @@ Määrittelee tekstien mittakaavarajoja ja muita tekstien näkyvyyteen liittyvi�
 </div>
 </div>
 <p style="text-align: center;">
-<a href="04_harjoitus_4.html"><button class="btn btn-default">Previous</button></a>
-<a href="06_harjoitus_6.html"><button class="btn btn-default">Next</button></a>
+<a href="5-harjoitus-4-koordinaattijärjestelmät.html"><button class="btn btn-default">Previous</button></a>
+<a href="7-harjoitus-6-paikkatietoaineiston-luokittelu.html"><button class="btn btn-default">Next</button></a>
 </p>
 </div>
 </div>
@@ -358,8 +363,8 @@ Määrittelee tekstien mittakaavarajoja ja muita tekstien näkyvyyteen liittyvi�
 <div class="footer-container text-center">
 
 <div class="footer-info">
-<h5 class="footer-title">Johdanto paikkatietoon ja QGISin käyttöön</h5>
-<span class="footer-version">v2022-01-27</span>
+<h5 class="footer-title">Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset</h5>
+<span class="footer-version">v2022-02-01</span>
 <div class="license"><img src="img/by-nd.svg" width="80px" alt="CC-BY-ND"></div>
 </div>
 
