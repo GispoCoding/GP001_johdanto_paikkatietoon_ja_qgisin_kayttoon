@@ -1,6 +1,6 @@
 ---
 title: "Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset"
-author: "Gispo Ltd."
+author: "Gispo Ltd."   
 date: "`r Sys.Date()`"
 site: "bookdown::bookdown_site"
 abstract: "Peruskurssi paikkatiedon ja QGIS-ohjelmiston perusteisiin"
@@ -10,7 +10,7 @@ output:
         theme: null
         template: custom.html
         css: custom.css
-        split_by: rmd
+        split_by: chapter+number #rmd       
 documentclass: book
 ---
 
@@ -79,12 +79,21 @@ Psst! Tietoa GeoServeristä löydät internetistä.
 
 ## Mistä lisätietoja?
 
+
 Ohessa muutamia web-sivustoja, joista saat lisätietoja:
 
-http://www.qgis.org/
-http://docs.qgis.org/
-http://gis.stackexchange.com/
+:::{.note-box} 
+http://www.qgis.org/ 
+:::
+:::{.note-box}
+http://docs.qgis.org/ 
+:::
+:::{.note-box}
+http://gis.stackexchange.com/            
+:::
+:::{.note-box}
 http://www.osgeo.fi
+:::
 
 
 ## Virheet

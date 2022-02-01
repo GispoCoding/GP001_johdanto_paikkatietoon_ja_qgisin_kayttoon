@@ -4,7 +4,7 @@
 
 Harjoituksessa ladataan QGIS ja tallennetaan kurssimateriaalit käytettävälle tietokoneelle.
 
-##Harjoituksen tavoite
+## Harjoituksen tavoite
 
 Harjoituksen jälkeen koulutettava osaa asentaa QGISin ja tietää oman kurssihakemistonsa sijainnin.
 
@@ -15,7 +15,10 @@ Harjoituksen jälkeen koulutettava osaa asentaa QGISin ja tietää oman kurssiha
 
 ## Valmistautuminen
 Avaa web-selain ja mene QGISin suomenkielisille verkkosivuille:
+
+:::{.note-box}
 http://www.qgis.org/fi/site/
+:::
 
 
 ## QGISin lataus ja asennus
@@ -29,4 +32,11 @@ Avaa tietokoneeltasi sijainti, jonne asennuspaketti latautui ja tuplaklikkaa ase
 QGISin perusasennuspaketin mukana tietokoneellesi asennetaan **QGIS Desktop -perusohjelmiston** lisäksi mm. **QGIS Desktop with GRASS** sekä **SAGA GIS**. Nämä QGISin perusversion mukana tulevat ohjelmistot tuovat QGISin käyttöön lisää erilaisia prosessointi- ja analysointityökaluja.
 
 ## Kurssimateriaalien lataus
-Kouluttaja ohjeistaa sinua lataamaan kurssimateriaalit joko muistitikulta, Google Drivestä tai AWS-palvelimelta. Kopioi kurssimateriaalit omalle tietokoneellesi tai koulutuskoneelle haluamaasi kansioon niin, että löydät ne helposti harjoituksia tehdessä. Kun kurssimateriaalissa viitataan **../kurssihakemisto/**, tarkoitetaan itse määrittelemääsi kurssihakemiston polkua.
+Kurssilla tarvittavat paikkatieto-aineistot on ladattavissa Google Drivestä linkistä
+
+:::{.note-box}
+[Kurssihakemisto.zip](https://drive.google.com/file/d/1uj7H3_MEsc3yuR1ib-TYzwxqzzCYFiuy/view?usp=sharing)
+:::
+
+Avaa yllä oleva linkki ja klikkaa **Lataa**. Tämä lataa aineistot kokonaisuudessaan pakattuna zip-tiedostona **Kurssihakemisto.zip**. 
+Pura kurssimateriaalit omalle tietokoneellesi haluamaasi kansioon niin, että löydät ne helposti harjoituksia tehdessä. Kun kurssimateriaalissa viitataan **../kurssihakemisto/**, tarkoitetaan itse määrittelemääsi kurssihakemiston polkua. Kysy tarvittaessa apua kouluttajalta.
