@@ -1,19 +1,18 @@
 # Harjoitus 1: Koulutusympäristön valmistaminen
 
-## Harjoituksen sisältö
+**Harjoituksen sisältö**
 
 Harjoituksessa ladataan QGIS ja tallennetaan kurssimateriaalit käytettävälle tietokoneelle.
 
-## Harjoituksen tavoite
+**Harjoituksen tavoite**
 
 Harjoituksen jälkeen koulutettava osaa asentaa QGISin ja tietää oman kurssihakemistonsa sijainnin.
 
-## Arvioitu kesto
+**Arvioitu kesto**
 
 10 minuuttia.
 
-
-## Valmistautuminen
+**Valmistautuminen**
 Avaa web-selain ja mene QGISin suomenkielisille verkkosivuille:
 
 :::{.note-box}
@@ -26,6 +25,7 @@ Löydät QGISin verkkosivujen etusivulta linkin, jonka avulla pääset lataamaan
 ![](img/harjoitus_1/image1.png)
 
 Avaa tietokoneeltasi sijainti, jonne asennuspaketti latautui ja tuplaklikkaa asennuspaketin kuvaketta asentaaksesi QGIS-paketin tietokoneellesi. Kun asennus on suoritettu, kurkista työpöydälle ilmestyneeseen **QGIS 3.16 -kansioon** ja tarkastele sieltä löytyviä pikakuvakkeita.
+
 ![](img/harjoitus_1/image2.png)
 
 
