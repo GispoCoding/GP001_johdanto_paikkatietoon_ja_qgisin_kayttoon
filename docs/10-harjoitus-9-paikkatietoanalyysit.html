@@ -139,16 +139,14 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </ul></li>
 <li><a href="10-harjoitus-9-paikkatietoanalyysit.html#harjoitus-9-paikkatietoanalyysit"><span class="toc-section-number">10</span> Harjoitus 9: Paikkatietoanalyysit</a>
 <ul>
-<li><a href="10-harjoitus-9-paikkatietoanalyysit.html#harjoituksen-sisältö"><span class="toc-section-number">10.1</span> Harjoituksen sisältö</a></li>
-<li><a href="10-harjoitus-9-paikkatietoanalyysit.html#valmistautuminen"><span class="toc-section-number">10.2</span> Valmistautuminen</a></li>
-<li><a href="10-harjoitus-9-paikkatietoanalyysit.html#vektorianalyysit"><span class="toc-section-number">10.3</span> Vektorianalyysit</a></li>
+<li><a href="10-harjoitus-9-paikkatietoanalyysit.html#vektorianalyysit"><span class="toc-section-number">10.1</span> Vektorianalyysit</a></li>
 </ul></li>
 <li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoitus-10-qgisin-lisäosat"><span class="toc-section-number">11</span> Harjoitus 10: QGISin lisäosat</a>
 <ul>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoituksen-sisältö-1"><span class="toc-section-number">11.1</span> Harjoituksen sisältö</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoituksen-sisältö"><span class="toc-section-number">11.1</span> Harjoituksen sisältö</a></li>
 <li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoituksen-tavoite"><span class="toc-section-number">11.2</span> Harjoituksen tavoite</a></li>
 <li><a href="11-harjoitus-10-qgisin-lisäosat.html#arvioitu-kesto"><span class="toc-section-number">11.3</span> Arvioitu kesto</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#valmistautuminen-1"><span class="toc-section-number">11.4</span> Valmistautuminen</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#valmistautuminen"><span class="toc-section-number">11.4</span> Valmistautuminen</a></li>
 <li><a href="11-harjoitus-10-qgisin-lisäosat.html#lisäosien-hallinta"><span class="toc-section-number">11.5</span> Lisäosien hallinta</a></li>
 <li><a href="11-harjoitus-10-qgisin-lisäosat.html#quickmapservices"><span class="toc-section-number">11.6</span> QuickMapServices</a></li>
 <li><a href="11-harjoitus-10-qgisin-lisäosat.html#qgis2threejs"><span class="toc-section-number">11.7</span> Qgis2threejs</a></li>
@@ -166,61 +164,65 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <div class="col-sm-12">
 <div id="harjoitus-9-paikkatietoanalyysit" class="section level1" number="10">
 <h1><span class="header-section-number">10</span> Harjoitus 9: Paikkatietoanalyysit</h1>
-<div id="harjoituksen-sisältö" class="section level2" number="10.1">
-<h2><span class="header-section-number">10.1</span> Harjoituksen sisältö</h2>
-<p>Harjoituksessa tutustutaan QGISin paikkatietoanalyysien tekoon.
-## Harjoituksen tavoite</p>
-<p>Opiskelijalla on perustiedot erilaisten paikkatietoanalyysien muodostamisesta QGIS-ohjelmistossa.
-## Arvioitu kesto</p>
+<p><strong>Harjoituksen sisältö</strong></p>
+<p>Harjoituksessa tutustutaan QGISin paikkatietoanalyysien tekoon.</p>
+<p><strong>Harjoituksen tavoite</strong></p>
+<p>Opiskelijalla on perustiedot erilaisten paikkatietoanalyysien muodostamisesta QGIS-ohjelmistossa.</p>
+<p><strong>Arvioitu kesto</strong></p>
 <p>40 minuuttia.</p>
-</div>
-<div id="valmistautuminen" class="section level2" number="10.2">
-<h2><span class="header-section-number">10.2</span> Valmistautuminen</h2>
+<p><strong>Valmistautuminen</strong></p>
 <p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “QGIS-harjoitus 9”. Lisää projektiin seuraavat aineistot:</p>
-<p>..kurssihakemisto/MML/YK_1M/HallintoAlue.shp</p>
-<p>..kurssihakemisto/MML/YK_1M/TieViiva.shp</p>
+<ul>
+<li><p><strong>..kurssihakemisto/MML/YK_1M/HallintoAlue.shp</strong></p></li>
+<li><p><strong>..kurssihakemisto/MML/YK_1M/TieViiva.shp</strong></p></li>
+</ul>
 <p>Karttanäkymän tulisi näyttää tältä:</p>
-<p><img src="img/harjoitus_8/image1.png" /></p>
+<p><img src="img/harjoitus_9/image1.png" /></p>
 <p>Voit tarkistaa/muokata projektisi koordinaattijärjestelmän asetuksia (<strong>Projekti &gt; Projektin asetukset &gt; Koordinaattijärjestelmä</strong>) tai klikkaamalla oikeasta alareunasta löytyvää kuvaketta:</p>
-<p><img src="img/harjoitus_8/image2.png" /></p>
+<p><img src="img/harjoitus_9/image2.png" /></p>
 <p>Kummatkin tavat avaavat projektin koordinaattijärjestelmän määrityslomakkeen. Tarkista, että järjestelmä on <strong>ETRS89/TM35FIN (EPSG:3067)</strong>. Voit lisätä ongelmitta aineistot eri karttaprojektioissa. Monet analyysityökalut eivät kuitenkaan toimi tai antavat epätarkkoja tuloksia, jos analyysin aineistoilla on eri koordinaattijärjestelmät. Tällöin ne täytyy tallentaa uudelleen ja tehdä tallennusvaiheessa muunnos samaan järjestelmään. Tällä kertaa ongelmia ei tule, koska aineistot on alun perin tuotettu samassa koordinaattijärjestelmässä.</p>
-</div>
-<div id="vektorianalyysit" class="section level2" number="10.3">
-<h2><span class="header-section-number">10.3</span> Vektorianalyysit</h2>
+<div id="vektorianalyysit" class="section level2" number="10.1">
+<h2><span class="header-section-number">10.1</span> Vektorianalyysit</h2>
 <p>Tässä harjoituksessa on tarkoitus etsiä ne kunnat, joiden alueella kulkee suomalainen versio kuuluisasta Route 66 -tiestä. Lyhyesti harjoituksen kulku on seuraava:</p>
-<p>Valitaan tieaineistosta ne tieviivat, joiden numero on 66.</p>
-<p>Tehdään spatiaalinen analyysi kunta- ja tieviiva-aineiston kanssa, jonka myötä viiva-aineisto saa kunta-aineiston sisältämät tiedot.</p>
-<p>Yhdistetään tieviivat kunnan nimen avulla.</p>
+<ul>
+<li><p>Valitaan tieaineistosta ne tieviivat, joiden numero on 66.</p></li>
+<li><p>Tehdään spatiaalinen analyysi kunta- ja tieviiva-aineiston kanssa, jonka myötä viiva-aineisto saa kunta-aineiston sisältämät tiedot.</p></li>
+<li><p>Yhdistetään tieviivat kunnan nimen avulla.</p></li>
+</ul>
 <p>Monista <strong>TieViiva -taso</strong> klikkaamalla tason nimeä hiiren oikealla ja valitse <strong>Monista taso</strong>. Avaa <strong>TieViiva kopio</strong>-tason ominaisuudet. Valitse <strong>Lähde</strong>-välilehti ja vaihda tason nimeksi <strong>Tie 66</strong>.
-Seuraavaksi suodatetaan tason kohteita eli määritetään mitä kohteita näytetään. Klikkaa <strong>Tie 66</strong> -tasoa hiiren oikealla painikkeella ja valitse <strong>Suodata…</strong>. Syötä <strong>Suodattimena käytettävä lauseke</strong> -kohtaan seuraava lauseke:</p>
+Seuraavaksi suodatetaan tämän uuden tason sisältö vastaamaan nimeä. Klikkaa <strong>Tie 66</strong> -tasoa hiiren oikealla painikkeella ja valitse <strong>Suodata…</strong>. Syötä <strong>Suodattimena käytettävä lauseke</strong> -kohtaan seuraava lauseke:</p>
 <p><strong>“Tienumero” = 66</strong></p>
 <p>Saat kentän nimen suoraan lausekkeeseen <strong>Tietokentät</strong>-kohdasta tuplaklikkaamalla. Muuta uuden tason kuvaustekniikkaa, jotta se erottuu muista kartta-aineistoista.</p>
-<p>Ristiinleikataan seuraavaksi tieaineisto kuntarajojen mukaan. Valitse ylävalikosta <strong>Vektori &gt; Geoprosessointi &gt; Ristiinleikkaus-työkalun (intersection)</strong>, joka avaa QGISiin uuden ikkunan. Aseta <strong>syötetasoksi Tie 66</strong> ja <strong>peitetasoksi HallintoAlue</strong>.</p>
-<p><img src="img/harjoitus_8/image3.png" /></p>
-<p>Suorita analyysi painamalla <strong>Suorita</strong> ja paina sen jälkeen <strong>Sulje</strong>. Syntyy uusi tilapäinen taso, joka näyttää karttaikkunassa samalta kuin alkuperäinen aineisto.</p>
-<blockquote>
-<p>Kun vertaat eri tiestöaineistojen (Tie 66) ja ristiinleikkaustason ominaisuustietoja, mitä huomaat?</p>
-</blockquote>
-<p>Luokittele aineisto kunnan nimen perusteella käyttäen kenttää Kunta_ni1 (<strong>Ominaisuudet &gt; Kuvaustekniikka</strong>). Aktivoi <strong>Näytä kohteiden lukumäärä</strong> -toiminto (hiiren oikealla näppäimellä tason nimen päällä <strong>Tasoluettelossa</strong>). Tasoluettelossa luokittelun pitäisi näyttää suunnilleen seuraavalta (värit ja viivojen paksuus on sen mukainen kuin olet määritellyt):</p>
-<p><img src="img/harjoitus_8/image4.png" /></p>
+<p>Ristiinleikataan seuraavaksi tieaineisto kuntarajojen mukaan. Valitse ylävalikosta <strong>Vektori &gt; Geoprosessointi &gt; Ristiinleikkaus (intersection)</strong>, joka avaa QGISiin uuden ikkunan. Aseta <strong>syötetasoksi Tie 66</strong> ja <strong>peitetasoksi HallintoAlue</strong>.</p>
+<p><img src="img/harjoitus_9/image3.png" /></p>
+<p>Suorita analyysi painamalla <strong>Suorita</strong> ja paina sen jälkeen <strong>Sulje</strong>. Syntyy uusi väliaikainen tulostaso, joka näyttää karttaikkunassa samalta kuin alkuperäinen aineisto.</p>
+<div class="hint-box">
+<p><strong>Kun vertaat eri tiestöaineistojen (Tie 66) ja ristiinleikkaustason ominaisuustietoja, mitä huomaat?</strong></p>
+</div>
+<p>Luokittele syntynyt uusi taso kunnan nimen perusteella käyttäen kenttää Kunta_ni1 (<strong>Ominaisuudet &gt; Kuvaustekniikka</strong>). Aktivoi <strong>Näytä kohteiden lukumäärä</strong> -toiminto (hiiren oikealla näppäimellä tason nimen päällä <strong>Tasoluettelossa</strong>). Tasoluettelossa luokittelun pitäisi näyttää suunnilleen seuraavalta (värit ja viivojen paksuus on sen mukainen kuin olet määritellyt):</p>
+<p><img src="img/harjoitus_9/image4.png" /></p>
 <p>Seuraavaksi voimme yhdistää erilliset tieviivat <strong>Sulauta (dissolve)</strong> -työkalun avulla. Valitse työkalu <strong>Vektori &gt; Geoprosessointi &gt; Sulauta</strong>. Aseta <strong>Syötetasoksi</strong> ristiinleikkauksessa syntynyt taso.
 Sulauta <strong>Ristiinleikkaus-aineisto</strong> kunnan nimen (tai numeron) perusteella: paina <strong>Dissolve field(s)</strong> -kohdan vieressä olevaa painiketta ja valitse kentäksi <strong>Kunta_ni1</strong>. Tallenna lopputulos esimerkiksi kurssihakemistoon haluamallasi nimellä (esimerkiksi tie66_sulautettu.gpkg). Paina <strong>Suorita</strong> ja sitten <strong>Sulje</strong>.</p>
-<p><img src="img/harjoitus_8/image5.png" /></p>
+<p><img src="img/harjoitus_9/image5.png" /></p>
 <p>Voit kopioida aiemmin luodun tason tyylin helposti uudelle aineistoille. Valitse hiiren oikealla näppäimellä avautuvasta valikosta <strong>Tyylit &gt; Kopioi tyyli &gt; All style categories</strong>. Valitse äsken luotu taso ja <strong>Tyylit &gt; Liitä tyyli &gt; All style categories</strong>.</p>
-<p><img src="img/harjoitus_8/image6.png" /></p>
+<p><img src="img/harjoitus_9/image6.png" /></p>
 <p>Kun lisäät vielä kohteiden lukumäärän laskennan päälle, niin lopputuloksen pitäisi tasoluettelossa olla seuraava:</p>
-<p><img src="img/harjoitus_8/image7.png" /></p>
+<p><img src="img/harjoitus_9/image7.png" /></p>
 <p>Lopuksi voidaan laskea kunkin kunnan osuus tien 66 kokonaispituudesta (vaikkapa ylläpitokustannuksien jakamista varten). Lasketaan ensin kunkin sulautetun tieviivan pituus. Avaa ominaisuustietotaulukko, muuta taulukko muokattavaksi ja käytä tiedon laskinta samalla tavalla kuin pinta-alan laskemisen yhteydessä. Luo uusi kenttä, jossa on kunkin tieviivan pituus hyödyntämällä <strong>Geometria</strong>-kohdasta <strong>$length</strong>-funktiota. Kentän tyyppi voi olla kokonaisluku, jolloin saamme pituuden metrin tarkkuudella. Jos kentän haluaa ilmoittaa desimaaleissa, voi lukua pyöristää <strong>round</strong>-funktion avulla.</p>
-<p><img src="img/harjoitus_8/image8.png" /></p>
-<p>Lisää nyt uusi kenttä, jossa lasketaan prosenttiosuudet kullekin kunnalle. Teiden kokonaispituuden voi laskea <strong>Tilastollinen yhteenveto -paneelin</strong> <img src="img/harjoitus_8/image9.png" /> avulla. Valitse paneelissa tarkasteltavaksi tasoksi taso, jossa pituudet ovat, ja tämän jälkeen toisesta pudotusvalikosta pituus-kenttä. Näet <strong>Summa</strong>-kentässä tien kokonaispituuden.</p>
-<p><img src="img/harjoitus_8/image10.png" /></p>
-<p>Nyt voit laskea Kentän arvojen laskin -työkalulla vielä yhden uuden kentän, pituuksien prosenttiosuuden.</p>
-<p><img src="img/harjoitus_8/image11.png" /></p>
+<p><img src="img/harjoitus_9/image8.png" /></p>
+<p>Lisää nyt uusi kenttä, jossa lasketaan prosenttiosuudet kullekin kunnalle. Teiden kokonaispituuden voi laskea <strong>Tilastollinen yhteenveto -paneelin</strong> <img src="img/harjoitus_9/image9.png" /> avulla. Valitse paneelissa tarkasteltavaksi tasoksi taso, jossa pituudet ovat, ja tämän jälkeen toisesta pudotusvalikosta pituus-kenttä. Näet <strong>Summa</strong>-kentässä tien kokonaispituuden.</p>
+<p><img src="img/harjoitus_9/image10.png" /></p>
+<p>Nyt voit laskea <strong>Kentän arvojen laskin</strong> -työkalulla vielä yhden uuden kentän, pituuksien prosenttiosuuden.</p>
+<p><img src="img/harjoitus_9/image11.png" /></p>
 <p>Jos lausekkeessa halutaan välttää absoluuttisia lukuja ja tehdä siitä dynaamisempi, lauseke voi olla myös seuraava:</p>
+<div class="code-box">
 <p>“pituus” / sum(“pituus”) * 100</p>
+</div>
 <p>Mikäli <strong>Pituus</strong>-kentän arvot muuttuvat, myös suhteellisen tieosuuden luku muuttuu.</p>
 <p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> (englanninkielisessä QGISissä CTRL + S) tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<div class="hint-box">
 <p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
+</div>
 
 </div>
 </div>

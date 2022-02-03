@@ -53,14 +53,12 @@ muokkauksen-yleisasetukset
 geometrioiden-lisääminen
 ominaisuustietojen-lisääminen
 harjoitus-9-paikkatietoanalyysit
-harjoituksen-sisältö
-valmistautuminen
 vektorianalyysit
 harjoitus-10-qgisin-lisäosat
-harjoituksen-sisältö-1
+harjoituksen-sisältö
 harjoituksen-tavoite
 arvioitu-kesto
-valmistautuminen-1
+valmistautuminen
 lisäosien-hallinta
 quickmapservices
 qgis2threejs
