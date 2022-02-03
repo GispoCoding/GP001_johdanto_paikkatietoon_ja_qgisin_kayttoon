@@ -1,24 +1,24 @@
 # Harjoitus 5: Paikkatietoaineiston visualisointi ja tekstitys
 
-## Harjoituksen sisältö
+**Harjoituksen sisältö**
 
 Harjoituksessa tutustutaan eri rasteri- ja vektoriaineistoihin ja niiden perusvisualisointitekniikoihin sekä vektoriaineistojen tekstitystoimintoihin.
 
-## Harjoituksen tavoite
+**Harjoituksen tavoite**
 
 Harjoituksen jälkeen opiskelija tuntee eri paikkatietoaineistojen visualisoinnin perustyökalut ja osaa lisätä vektoriaineistoon haluamansa tekstitykset.
 
-## Arvioitu kesto
+**Arvioitu kesto**
 
 60 minuuttia.
 
+**Valmistautuminen**
 
-## Valmistautuminen
 Avaa uusi QGIS-projekti (**Projekti > Uusi**) ja tallenna se nimellä **“QGIS-harjoitus 5”**. Lisää projektiin seuraavat aineistot:
-..kurssihakemisto/MML/Yleiskarttarasteri_1milj.png
-..kurssihakemisto/MML/YK_1M/TieViiva.shp
-..kurssihakemisto/Natural_Earth/ne_10m_populated_places/ne_10m_populated_places_suomi.shp
-..kurssihakemisto/SYKE/Naturakohde_ma.shp
+* **..kurssihakemisto/MML/Yleiskarttarasteri_1milj.png**
+* **..kurssihakemisto/MML/YK_1M/TieViiva.shp**
+* **..kurssihakemisto/Natural_Earth/ne_10m_populated_places/ne_10m_populated_places_suomi.shp**
+* **..kurssihakemisto/SYKE/NaturaKohde_ma.shp**
 
 ## Rasteriaineistojen visualisointi
 Tutustutaan ensin **Yleiskarttarasteri_1milj**-rasteriaineistoon. Tämä rasteriaineisto on Maanmittauslaitoksen tuottama taustakartta, johon on sisällytetty Suomen tiet, kaupungit ja muita yleiskartan tarkoitusta ajavia aineistoja. Aineistossa käytetty visualisointi on tuttu paperikartoilta. Piilota nyt kaikki muut avaamasi aineistot näkyvistä **Tasot**-paneelista.
@@ -27,7 +27,7 @@ Tutustutaan ensin **Yleiskarttarasteri_1milj**-rasteriaineistoon. Tämä rasteri
 
 ![](img/harjoitus_5/image2.png)
 
-Jos **Yleiskarttarasteri_1milj**-tason kohdalla näkyy ![](img/harjoitus_5/image3.png) -ikoni, tulee aineistolle määrittää koordinaattijärjestelmä. Klikkaa tason kohdalla hiiren oikeaa painiketta ja valitse **Ominaisuudet…**, jolloin QGISiin avautuu **Tason ominaisuudet** -ikkuna. Tästä ikkunasta löydät tason ominaisuudet jaoteltuna aihekohtaisesti.
+Jos **Yleiskarttarasteri_1milj**-tason kohdalla tasoluettelossa näkyy ![](img/harjoitus_5/image3.png) -ikoni, eikä taso tule näkyviin kartalle, tulee aineistolle ensin määrittää koordinaattijärjestelmä. Klikkaa tason kohdalla hiiren oikeaa painiketta ja valitse **Ominaisuudet…**, jolloin QGISiin avautuu **Tason ominaisuudet** -ikkuna. Tästä ikkunasta löydät tason ominaisuudet jaoteltuna aihekohtaisesti.
 
 ![](img/harjoitus_5/image4.png)
 
@@ -35,14 +35,23 @@ Valitse ikkunasta **Lähde**-välilehti, josta löydät tiedot aineiston koordin
 
 ![](img/harjoitus_5/image5.png)
 
-> Psst! Muista tarkistaa myös projektin koordinaattijärjestelmä!
-
+:::{.hint-box}
+**Psst! Muista tarkistaa myös tason koordinaattijärjestelmä!**
+:::
 
 Mene takaisin **Tason ominaisuudet** -ikkunaan ja valitse nyt **Kuvaustekniikka-välilehti**. Pääset muokkaamaan tason tyyliominaisuuksia tästä välilehdestä. Voit avata saman välilehden myös suoraan näkyviin QGIS-työtilaasi valitsemalla päävalikosta **Näytä > Paneelit > Kuvaustekniikka** tai pikanäppäimellä **F7**.
 
 ![](img/harjoitus_5/image6.png)
 
-**Kanavan piirto** sisältää erilaisia rasteriaineistojen visualisointikeinoja, esimerkiksi **Monikanavainen väri** -visualisointitavassa käytetään kolmea eri näkyvän valon kanavaa (R = red, G = green, B = blue eli RGB) rasterikuvan visualisoimiseen. Väriarvoja muokkaamalla voidaan muokata tapaa, jolla rasterikuvan pikselit näkyvät kartalla. Käyttämämme rasteriaineiston (yleiskarttarasteri) visualisointi on asetettu siten, että se näyttää parhaimmalta, jos kanavat asetetaan seuraavalla tavalla: Punainen kanava = Kanava 1, Vihreä kanava = Kanava 2 ja Sininen kanava = Kanava 3. On tärkeää hahmottaa tapa ja logiikka, jolla rasteriaineistoja visualisoidaan.
+**Kanavan piirto** sisältää erilaisia rasteriaineistojen visualisointikeinoja, esimerkiksi **Monikanavainen väri** -visualisointitavassa käytetään kolmea eri näkyvän valon kanavaa (R = red, G = green, B = blue eli RGB) rasterikuvan visualisoimiseen. Väriarvoja muokkaamalla voidaan muokata tapaa, jolla rasterikuvan pikselit näkyvät kartalla. Käyttämämme rasteriaineiston (yleiskarttarasteri) visualisointi on asetettu siten, että se näyttää parhaimmalta, jos kanavat asetetaan seuraavalla tavalla: 
+
+Punainen kanava = Kanava 1 
+
+Vihreä kanava = Kanava 2
+
+Sininen kanava = Kanava 3 
+
+On tärkeää hahmottaa tapa ja logiikka, jolla rasteriaineistoja visualisoidaan.
 
 ![](img/harjoitus_5/image7.png)
 
@@ -53,10 +62,10 @@ Siirrytään nyt visualisoimaan vektoriaineistoja. Tarkastele kaikkia QGIS-proje
 
 ![](img/harjoitus_5/image8.png)
 
-##Viiva-aineiston visualisointi
+## Viiva-aineiston visualisointi
 Aseta **TieViiva**-aineisto näkyviin ja piilota muut aineistot. Avaa TieViiva-aineiston **Tason ominaisuudet** samalla tavalla kuin rasteriaineistollakin. Voit huomata, että vektoritason ominaisuudet ovat moniulotteisemmat kuin rasteritason. Myös **Kuvaustekniikka-välilehti** on täysin erinäköinen kuin rasteriaineistolla.
 
-![](img/harjoitus_5/image9.png) ![](img/harjoitus_5/image10.png)
+![](img/harjoitus_5/image10.png)
 
 Vaihda TieViiva-aineiston **Väri ja Leveys** haluamaksesi ja paina lopuksi **Käytä**. Näin voit tarkastella tekemiäsi muutoksia sulkematta **Tason ominaisuudet** -ikkunaa - aivan kuten rasteriaineistossakin. Avaa vielä jokin symbolikirjasto, esimerkiksi **Suosikit**, ja muuta viivan tyyliksi jokin sinua miellyttävä tyyli. Paina lopuksi **OK**, jolloin ikkuna sulkeutuu ja TieViiva-taso näkyy nyt määrittämälläsi kuvaustekniikalla.
 
@@ -83,7 +92,7 @@ Saattaa olla, että aineistotasot peittävät toisensa vaikka siten, että polyg
 
 ![](img/harjoitus_5/image15.png)
 
-## Symbolien muuttaminen
+## Symbolien muokkaaminen
 Seuraavaksi muutamme polygonien symboleja. Avaa uudelleen **Naturakohde_ma**-tason **Tason ominaisuudet** -ikkuna. Valitse **Kuvaustekniikka**-välilehdeltä ensin **Simple fill** -rivi oheisen kuvan mukaisesti:
 
 ![](img/harjoitus_5/image16.png)
@@ -108,7 +117,7 @@ Muuta lisätyn symbolitason tyypiksi **Viivakuviointitäyttö** ja määrittele 
 
 ![](img/harjoitus_5/image19.png)
 
-![](img/harjoitus_5/image20.png)
+![](img/harjoitus_5/image20.png){width=50%}
 
 ## Tekstitys eli nimiöinti
 QGIS-käyttöliittymässä paikkatietokohteiden tekstitykseen viitataan termillä “nimiöt” (englanninkielinen termi on “labeling”). Avaa **NaturaKohde_ma-tason Tason ominaisuudet** -ikkuna ja valitse **Nimiöt**-välilehti. Valitse **Yksittäinen nimiö** ja **Nimiöiden perustana** -alasvetovalikosta nimiöinnissä käytettävän sarakkeen nimi. Paina **Käytä**, niin kohteille syntyy nimiöt. Tämä nähdään nyt karttaikkunasta, johon nimiöt ovat päivittyneet.
@@ -118,21 +127,20 @@ QGIS-käyttöliittymässä paikkatietokohteiden tekstitykseen viitataan termill�
 ## Nimiöiden tyyli- ja yleisasetukset
 Nimiöiden tekstien näkymistä kartalla voi määrittää monella eri tavalla. Alla kuvaukset QGISin nimiöiden muokkaamisen alateemoista:
 
-## Teksti
+**Teksti**
 Määritellään tekstin tyyli, väri ja muita yleisiä ominaisuuksia.
-## Muotoilu
+**Muotoilu**
 Voit muodostaa useampirivisiä tekstejä, keskittää tekstiä ja määritellä lukujen muotoa.
-## Vyöhyke
+**Vyöhyke**
 Luodaan tekstiä korostavat puskurit (tekstin reunukset).
-## Tausta
+**Tausta**
 Tekstin taustalle voi piirtää suorakulmion tai muun muodon.
-## Varjo
+**Varjo**
 Teksteille voidaan muodostaa varjo.
-## Sijoittaminen
+**Sijoittaminen**
 Määrittelee tekstien sijoittumista kohteiden suhteen.
-## Piirtäminen
+**Piirtäminen**
 Määrittelee tekstien mittakaavarajoja ja muita tekstien näkyvyyteen liittyviä asioita.
-
 
 ##Nimiön tekstityyli
 
@@ -148,7 +156,9 @@ Avaa vielä **Sijoittaminen**-alateema ja valitse **Using perimeter (käyttäen 
 
 Tulos voi näyttää oudolta, etenkin jos karttaikkunan mittakaavaa on asetettu ison alueen kattavaksi. Lähennä karttaa, jotta nimiöt näkyisivät johdonmukaisemmin ja pohdi, missä tapauksessa tämänkaltainen nimiöinti olisi sopivinta. Etsi vielä **Sijoittaminen > Prioriteett**i ja määritä se **Korkeaksi**. Tällä tavalla annat preferenssin muokkaamasi tason nimiöille suhteessa muiden tasojen nimiöihin ja voit näin järjestää tärkeimpien ja ei niin tärkeiden tasojen nimiöintiä. Paina vielä **OK**.
 
-> Psst! Yksi hyödyllinen tapa rajata nimiöitä on **Piirtäminen > Kohteen valinnat** ja asettaa kohtaan “*Häivytä nimiöinti kohteilta, jotka ovat pienempiä kuin**-kohtaan jokin arvo. Näin QGIS näyttää vain isoimpien kohteiden nimiöinnit.
+:::{.hint-box}
+Psst! Yksi hyödyllinen tapa rajata nimiöitä on **Piirtäminen > Kohteen valinnat** ja asettaa kohtaan **Häivytä nimiöinti kohteilta, jotka ovat pienempiä kuin**-kohtaan jokin arvo. Näin QGIS näyttää vain isoimpien kohteiden nimiöinnit.
+:::
 
 
 ## Nimiöinnit viivatasoilla
@@ -177,19 +187,23 @@ Tehdään nyt nimiö, joka yhdistää tietoa useammasta kentästä. Klikkaa kuva
 Lausekkeen muokkaus on tehokas työkalu, jota voidaan käyttää nimiöiden muokkaamisen lisäksi myös muihin tarkoituksiin. Lauseke-kentässä on tällä hetkellä nimi, sillä valitsimme **Nimi**-kentän aikaisemmin **Nimiöiden perustana** -alasvetovalikosta. Aineistossa on myös kenttä **NaturaTunn**, joka sisältää alueen tunnuksen. Tehdään lauseke, joka yhdistää alueen nimen ja tunnuksen.
 
 Kirjoita Lauseke-kenttään seuraava lauseke:
-> NaturaTunn ||  '\n'  || Nimi
+:::{.code-box}
+NaturaTunn ||  '\n'  || Nimi
+:::
 
 Lausekkeessa esiintyy kentän nimien **NaturaTunn** ja **Nimi** lisäksi myös rivinvaihtosymboli **‘\n'** ja kaksi **||** -merkkiä, jotka yhdistävät merkkijonot yhdeksi tekstiksi.
 
 ![](img/harjoitus_5/image29.png)
 
-> Psst! Voit lisätä rivinvaihtosymbolin lausekkeeseen painamalla **Lauseke**-ikkunan päällä olevaa painiketta. Samalla tavalla voit lisätä aineistossa olevia kenttiä lausekkeeseen laajentamalla kentät ja arvot -valikon ja kaksoisklikkaamalla kentän nimeä.
-
+:::{.hint-box}
+Psst! Voit lisätä rivinvaihtosymbolin lausekkeeseen painamalla **Lauseke**-ikkunan päällä olevaa painiketta. Samalla tavalla voit lisätä aineistossa olevia kenttiä lausekkeeseen laajentamalla kentät ja arvot -valikon ja kaksoisklikkaamalla kentän nimeä.
+:::
 
 Kirjoita edellä mainittu lauseke ja paina **OK**. Klikkaa **Tason ominaisuudet** -valikossa **Käytä** ja katso kartalta, miltä alueiden nimiöinti näyttää. 
 
 Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** tai päävalikosta **Projekti > Tallenna**.
 
->Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!
-
+:::{.hint-box}
+Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!
+:::
 
