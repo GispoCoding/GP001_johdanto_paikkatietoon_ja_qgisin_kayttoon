@@ -1,25 +1,26 @@
 # Harjoitus 4: Koordinaattijärjestelmät
 
-## Harjoituksen sisältö
+**Harjoituksen sisältö**
 
 Harjoituksessa tutustutaan koordinaattijärjestelmien määrittelyyn QGISissä.
 
-## Harjoituksen tavoite
+**Harjoituksen tavoite**
 
 Harjoituksen jälkeen koulutettava osaa määrittää koordinaattijärjestelmän niin kokonaiselle projektille kuin yksittäiselle paikkatietoaineistollekin.
 
-## Arvioitu kesto
+**Arvioitu kesto**
 
 30 minuuttia.
 
+**Valmistautuminen**
 
-## Valmistautuminen
 Avaa uusi QGIS-projekti (Projekti > Uusi) ja tallenna se nimellä “QGIS-harjoitus 4”. Lisää projektiin seuraavat aineistot:
-..kurssihakemisto/MML/YK_1M/TieViiva.shp
-..kurssihakemisto/Natural_Earth/ne_10m_populated_places/ne_10m_populated_places_suomi.shp
+* **..kurssihakemisto/MML/YK_1M/TieViiva.shp**
+* **..kurssihakemisto/Natural_Earth/ne_10m_populated_places/ne_10m_populated_places_suomi.shp**
 
-> Psst! Paikkatietoaineistolla pitäisi aina olla asetettuna jokin koordinaattijärjestelmä!
-
+:::{.note-box}
+**Psst! Paikkatietoaineistolla pitäisi aina olla asetettuna jokin koordinaattijärjestelmä!**
+:::
 
 ## Projektin koordinaattijärjestelmä
 Paikkatietoaineistoja tuotetaan jatkuvasti erilaisiin koordinaattijärjestelmiin, mikä voi tehdä erilaisten aineistojen yhtäaikaisesta tarkastelusta samassa karttaikkunassa haastavaa. QGIS ratkaisee tämän ongelman projektin koordinaattijärjestelmän avulla: kaikki projektiin avatut paikkatietoaineistot projisoidaan “lennossa” projektin koordinaattijärjestelmään, vaikka yksittäisillä aineistoilla olisi todellisuudessa eri koordinaattijärjestelmät. Toisin sanoen, eri koordinaattijärjestelmässä olevien aineistojen koordinaatit lasketaan ”lennossa” projektin koordinaattijärjestelmää vastaaviksi (englannin kielen lyhenne on OTF - on the fly). 
@@ -48,7 +49,7 @@ Vaihda nyt projektin koordinaattijärjestelmä takaisin **ETRS89/TM35FIN-koordin
 
 ![](img/harjoitus_4/image9.png)
 
-Voit huomata, että koordinaattien suuruusluokka on hyvin erilainen. Tämä johtuu siitä, että aineistoilla on eri koordinaattijärjestelmät. ETRS89/TM35FIN-koordinaattijärjestelmän mittasuhteet ovat metreinä (itä ja pohjoinen / x ja y), kun taas WGS 84 -koordinaattijärjestelmässä mittasuhteet ovat asteina (pituus ja leveys). ETRS89/TM35FIN-koordinaattijärjestelmässä on määritetty origo eli piste, jonka koordinaatit ovat (0, 0). ETRS89/TM35FIN-koordinaattijärjestelmässä taas sama piste sijaitsee päiväntasaajalla UTM-kaistalla 35. UTM on maailmanlaajuisesti käytössä oleva projektio, joka jakaa maapallon 6° kaistoihin. Kaista UTM01 sijaitsee Alaskan länsipuolella. Koska koordinaattijärjestelmien arvoja voidaan ilmentää sekä metreinä että asteina, niiden koordinaattiarvoja ei voida suoraan vertailla toisiinsa. Koordinaatit tulee uudelleenprojisoida yhteiseen koordinaattijärjestelmään.
+Voit huomata, että koordinaattien suuruusluokka on hyvin erilainen. Tämä johtuu siitä, että koordinaattijärjestelmät käyttävät eri mittayksiköitä. ETRS89/TM35FIN-koordinaattijärjestelmän yksiköt ovat metrejä (itä ja pohjoinen / x ja y), kun taas WGS 84 -koordinaattijärjestelmässä koordinaatit ovat asteina (pituus ja leveys). ETRS89/TM35FIN-koordinaattijärjestelmässä on määritetty origo eli piste, jonka koordinaatit ovat (0, 0). WGS 84-koordinaattijärjestelmässä tuo piste sijaitsee päiväntasaajalla  UTM-kaistalla 35. UTM on maailmanlaajuisesti käytössä oleva projektio, joka jakaa maapallon 6° leveisiin kaistoihin. Kaista UTM01 sijaitsee Alaskan länsipuolella. Koska koordinaattijärjestelmien arvoja voidaan ilmentää sekä metreinä että asteina, niiden koordinaattiarvoja ei voida suoraan vertailla toisiinsa. Koordinaatit tulee uudelleenprojisoida yhteiseen koordinaattijärjestelmään.
 
 ## Paikkatietoaineiston koordinaattijärjestelmä
 Tarkastele nyt tason **ne_10m_populated_places_suomi** koordinaattijärjestelmää klikkaamalla tasoa hiiren oikealla painikkeella **Tasot**-paneelissa ja valitsemalla **Ominaisuudet…**. QGISiin avautuu **Tason ominaisuudet** -ikkuna, josta löytyy paljon tietoa kyseisestä paikkatietoaineistosta. **Informaatio-välilehdeltä** löydät tietoa mm. paikkatietoaineiston koodauksesta, geometriatyypistä, koordinaattijärjestelmästä ja kohteiden lukumäärästä. Huomaa, että tämän kyseisen tason koordinaattijärjestelmä on todellisuudessa eri kuin **TieViiva-aineiston** tai projektin koordinaattijärjestelmä. Silti QGIS esittää aineiston karttaikkunassa ETRS89/TM35FIN-koordinaattijärjestelmässä, sillä projektin koordinaattijärjestelmä on dominoiva.
@@ -60,7 +61,7 @@ Avaa seuraavaksi **Tason ominaisuudet** -ikkunan vasemmasta palkista **Lähde-v�
 ![](img/harjoitus_4/image11.png)
 
 ## Paikkatietoaineiston uudelleenprojisointi
-Toisinaan on tärkeää, että paikkatietoaineistot ovat samassa koordinaattijärjestelmässä – esimerkiksi osa QGISin prosessityökaluista ei tuota oikeaa tulosta jos aineistot ovat eri koordinaattijärjestelmissä. Näin ollen paikkatietoaineisto on uudelleenprojisoitava ja tallennettava uutena paikkatietoaineistona. Uudelleenprojisoidaan nyt **ne_10m_populated_places_suomi-taso** WGS 84 -koordinaattijärjestelmästä ETRS89/TM35FIN-koordinaattijärjestelmään. 
+Toisinaan on tärkeää, että paikkatietoaineistot ovat samassa koordinaattijärjestelmässä – esimerkiksi osa QGISin prosessointityökaluista ei tuota oikeaa tulosta jos lähtöaineistot ovat keskenään eri koordinaattijärjestelmissä. Näin ollen paikkatietoaineisto on uudelleenprojisoitava ja tallennettava uutena paikkatietoaineistona. Uudelleenprojisoidaan nyt **ne_10m_populated_places_suomi-taso** WGS 84 -koordinaattijärjestelmästä ETRS89/TM35FIN-koordinaattijärjestelmään. 
 
 ### Tapa 1: Projisoi taso -prosessityökalu
 Uudelleenprojisoinnin voi tehdä suoraan QGIS-prosessointityökalun avulla valitsemalla ylävalikosta **Vektori > Tiedonhallinta > Projisoi taso...** Aseta syötetasoksi **ne_10m_populated_places_suomi** ja valitse halutuksi koordinaattijärjestelmäksi **ETRS89/TM35FIN (EPSG: 3067)**. Klikkaa **Projisoitu-** kentän kohdalla … > **Tallenna tiedostoon** ja valitse sijainti, minne haluat tallentaa uudelleenprojisoidun aineiston. Anna tasolle nimeksi **ne_10m_populated_places_suomi_3067** ja tarkista, että aineisto tallentuu **GeoPackage-formaattiin**. Klikkaa lopuksi **Suorita**.
@@ -70,7 +71,7 @@ Uudelleenprojisoinnin voi tehdä suoraan QGIS-prosessointityökalun avulla valit
 QGISin **Tasot-paneeliin** ilmestyy uudelleenprojisoitu paikkatietoaineisto. Voit tarkistaa koordinaattijärjestelmän tason ominaisuuksista.
 
 ### Tapa 2: Tallennus Tasot-paneelissa
-Klikkaa tasoa **Tasot**-paneelissa hiiren oikealla painikkeella ja valitse **Vie > Tallenna kohteet nimellä…** Tällä työkalulla voit tallentaa paikkatietoaineiston uudella nimellä ja samanaikaisesti suorittaa niille erilaisia toimenpiteitä. Voisit esimerkiksi vaihtaa tiedostomuodon ja/tai tallentaa vain osan aineistosta.
+Klikkaa tasoa **Tasot**-paneelissa hiiren oikealla painikkeella ja valitse **Vie > Tallenna kohteet nimellä…** Tällä työkalulla voit tallentaa paikkatietoaineiston uudella nimellä ja samanaikaisesti suorittaa niille erilaisia toimenpiteitä. Voisit esimerkiksi vaihtaa tiedostomuodon ja/tai tallentaa vain valitsemasi osan aineistosta.
 
 ![](img/harjoitus_4/image13.png)
 
@@ -82,6 +83,8 @@ QGISin **Tasot**-paneeliin ilmestyy uudelleenprojisoitu paikkatietoaineisto. Voi
 
 Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** tai päävalikosta **Projekti > Tallenna**.
 
-> Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!
+:::{.hint-box}
+**Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!**
+:::
 
 
