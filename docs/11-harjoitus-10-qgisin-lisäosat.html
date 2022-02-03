@@ -143,15 +143,11 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </ul></li>
 <li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoitus-10-qgisin-lisäosat"><span class="toc-section-number">11</span> Harjoitus 10: QGISin lisäosat</a>
 <ul>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoituksen-sisältö"><span class="toc-section-number">11.1</span> Harjoituksen sisältö</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#harjoituksen-tavoite"><span class="toc-section-number">11.2</span> Harjoituksen tavoite</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#arvioitu-kesto"><span class="toc-section-number">11.3</span> Arvioitu kesto</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#valmistautuminen"><span class="toc-section-number">11.4</span> Valmistautuminen</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#lisäosien-hallinta"><span class="toc-section-number">11.5</span> Lisäosien hallinta</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#quickmapservices"><span class="toc-section-number">11.6</span> QuickMapServices</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#qgis2threejs"><span class="toc-section-number">11.7</span> Qgis2threejs</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#qgis2web"><span class="toc-section-number">11.8</span> Qgis2web</a></li>
-<li><a href="11-harjoitus-10-qgisin-lisäosat.html#prosessointityökalut"><span class="toc-section-number">11.9</span> Prosessointityökalut</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#lisäosien-hallinta"><span class="toc-section-number">11.1</span> Lisäosien hallinta</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#quickmapservices"><span class="toc-section-number">11.2</span> QuickMapServices</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#qgis2threejs"><span class="toc-section-number">11.3</span> Qgis2threejs</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#qgis2web"><span class="toc-section-number">11.4</span> Qgis2web</a></li>
+<li><a href="11-harjoitus-10-qgisin-lisäosat.html#prosessointityökalut"><span class="toc-section-number">11.5</span> Prosessointityökalut</a></li>
 </ul></li>
 </ul>
 </div>
@@ -164,60 +160,54 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <div class="col-sm-12">
 <div id="harjoitus-10-qgisin-lisäosat" class="section level1" number="11">
 <h1><span class="header-section-number">11</span> Harjoitus 10: QGISin lisäosat</h1>
-<div id="harjoituksen-sisältö" class="section level2" number="11.1">
-<h2><span class="header-section-number">11.1</span> Harjoituksen sisältö</h2>
+<p><strong>Harjoituksen sisältö</strong></p>
 <p>Harjoituksessa tutustutaan QGISin monipuolisiin lisäosiin ja opitaan käyttämään muutamaa keskeistä lisäosaa.</p>
-</div>
-<div id="harjoituksen-tavoite" class="section level2" number="11.2">
-<h2><span class="header-section-number">11.2</span> Harjoituksen tavoite</h2>
+<p><strong>Harjoituksen tavoite</strong></p>
 <p>Opiskelijalla tietää perusasiat QGISin lisäosien käytöstä ja osaa myös hyödyntää niitä.</p>
-</div>
-<div id="arvioitu-kesto" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> Arvioitu kesto</h2>
+<p><strong>Arvioitu kesto</strong></p>
 <p>40 minuuttia.</p>
-</div>
-<div id="valmistautuminen" class="section level2" number="11.4">
-<h2><span class="header-section-number">11.4</span> Valmistautuminen</h2>
-<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 10</strong>”. Lataa projektiin seuraavat aineistot:</p>
-<p>..kurssihakemisto/MML/Korkeusmalli_2m/L4133B.asc</p>
-<p>..kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019</p>
-</div>
-<div id="lisäosien-hallinta" class="section level2" number="11.5">
-<h2><span class="header-section-number">11.5</span> Lisäosien hallinta</h2>
+<p><strong>Valmistautuminen</strong></p>
+<p>Avaa uusi QGIS-projekti (<strong>Projekti &gt; Uusi</strong>) ja tallenna se nimellä “<strong>QGIS-harjoitus 10</strong>”. Avaa projektiin seuraavat aineistot:</p>
+<ul>
+<li><p><strong>..kurssihakemisto/MML/Korkeusmalli_2m/L4133B.asc</strong></p></li>
+<li><p><strong>..kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019</strong></p></li>
+</ul>
+<div id="lisäosien-hallinta" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Lisäosien hallinta</h2>
 <p>Lisäosia lisätään käyttöön päävalikosta <strong>Lisäosat &gt; Hallitse ja asenna lisäosia…</strong> -valikon kautta. Valitse <strong>Asennettu</strong>-välilehti ja saat esille kaikki asennetut lisäosat. Huomaa, että suurinta osaa niistä ei ole aktivoitu. Lisäosien aktivointi lisää erilaisia valikkoja ja paneeleja QGISin käyttöliittymään. Siksi on hyödyllistä piilottaa ne joita ei käytetä.</p>
 </div>
-<div id="quickmapservices" class="section level2" number="11.6">
-<h2><span class="header-section-number">11.6</span> QuickMapServices</h2>
+<div id="quickmapservices" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> QuickMapServices</h2>
 <p>QuickMapServices-lisäosan kautta saat QGISin karttaprojektiin verkosta erilaisia kuten OpenStreetMap tai Maanmittauslaitoksen taustakarttasarjat tai ortoilmakuvat. Avaa <strong>Lisäosat &gt; Hallitse ja asenna lisäosia… &gt; Kaikki</strong> ja etsi QuickMapServices tekstillä:</p>
 <p><img src="img/harjoitus_10/image1.png" /></p>
 <p>Paina vielä <strong>Asenna lisäosa</strong> ja paina sen jälkeen <strong>Sulje</strong>. Uusi valikko tulee päävalikon <strong>Verkko</strong> alle. Valitse <strong>Verkko &gt; QuickMapServices &gt; OSM &gt; OSM Standard</strong>. Karttaikkunassa on nyt OpenStreetMap taustakarttana. Järjestä tasot siten, että väestöaineisto on hyvin näkyvissä. Voit myös piilottaa korkeusmalliaineistot, jos ne haittaavat visualisointia. Kokeile lisäksi muita taustakarttoja.</p>
 <p><img src="img/harjoitus_10/image2.png" /></p>
 </div>
-<div id="qgis2threejs" class="section level2" number="11.7">
-<h2><span class="header-section-number">11.7</span> Qgis2threejs</h2>
+<div id="qgis2threejs" class="section level2" number="11.3">
+<h2><span class="header-section-number">11.3</span> Qgis2threejs</h2>
 <p>Lisää samaan tapaan Qgis2threejs-lisäosa. Tämä lisäosa mahdollistaa nopean kolmiulotteisen visualisoinnin luomisen web-selaimelle käyttäen threejs-kirjastoa. Lisäosan valikko tulee myös <strong>Verkko</strong>-valikkoon. Avaa <strong>Qgis2threejs Exporter</strong> ja valitse <strong>DEM Layer</strong> -valikosta <strong>Flat Plane</strong>. Valitse sen jälkeen <strong>Polygon</strong>-kohdan alta <strong>väestötietoruudukkoaineisto</strong> ja tuplaklikkaa sitä avataksesi <strong>asetukset</strong>. Aseta <strong>Z-coordinate</strong> -kohdan <strong>Mode</strong>-asetukseksi <strong>Absolute</strong> ja <strong>Height-arvoksi asukkaita</strong>-kentän arvo.</p>
 <p><img src="img/harjoitus_10/image3.png" /></p>
 <p>Voit esikatsella 3D-mallia lisäosassa ja halutessasi tallentaa sen HTML-muotoon valikosta <strong>File &gt; Export to web</strong>.</p>
 <p><img src="img/harjoitus_10/image4.png" /></p>
 </div>
-<div id="qgis2web" class="section level2" number="11.8">
-<h2><span class="header-section-number">11.8</span> Qgis2web</h2>
+<div id="qgis2web" class="section level2" number="11.4">
+<h2><span class="header-section-number">11.4</span> Qgis2web</h2>
 <p>Qgis2web-lisäosa on helppokäyttöinen lisäosa verkkokartan luomista varten. Sillä voi tuottaa verkkokarttoja hyödyntäen Leaflet- tai OpenLayers-kirjastoja. Qgis2web on hyödyllinen apuväline näiden kirjastojen opetteluun ja verkkokarttajulkaisujen tekemiseen. Asenna Qgis2web-lisäosa ja avaa se valikosta <strong>Verkko &gt; Qgis2web &gt; Create web map</strong>. Valitse <strong>väestötietoruudukko-aineiston</strong> kentille <strong>Popup fields</strong> -kohdan alta <strong>Inline label</strong>, ja klikkaa <strong>Update preview</strong>. Kun kartta on päivittynyt, klikkaa ruudukkoa.</p>
 <p><img src="img/harjoitus_10/image5.png" /></p>
 <p>Vaihda <strong>Appearance-välilehdelle</strong> ja muuta asetukset kuvan mukaisesti:</p>
 <p><img src="img/harjoitus_10/image5.png" /></p>
 <p>Paina lopulta <strong>Export</strong> tallentaaksesi kartan HTML-tiedostoon. Tiedosto aukeaa automaattisesti selaimelle. Kokeile verkkokartassasi etsiä osoitteita ja käyttää mittaustyökalua.</p>
 </div>
-<div id="prosessointityökalut" class="section level2" number="11.9">
-<h2><span class="header-section-number">11.9</span> Prosessointityökalut</h2>
+<div id="prosessointityökalut" class="section level2" number="11.5">
+<h2><span class="header-section-number">11.5</span> Prosessointityökalut</h2>
 <p>Iso joukko työkaluja on saatavilla <strong>Prosessointi</strong>-valikon kautta. Prosessointityökalut on lisäosa, joka on oletuksena aktivoitu QGISiin. Sillä on oma paikka päävalikossa <strong>Prosessointi &gt; Työkalut</strong>. Työkalut tulevat esiin paneelina karttaikkunan oikealle puolelle. Etsi työkalujen joukosta <strong>Vyöhyke-työkalu (= Buffer)</strong>. Voit kirjoittaa <strong>Etsi…</strong>-kenttään sanan “buffer”, jolloin työkalu löytyy helposti. Avaa työkalu, valitse lähtötasoksi <strong>HSY_vaestotietoruudukko_2019</strong> ja aseta <strong>Etäisyys-kenttään -50 metriä</strong>. Pidä puskuroinnin työkalun tulos väliaikaisena tiedostona tai tallenna se pysyväksi.</p>
 <p><img src="img/harjoitus_10/image7.png" /></p>
 <p>Tuloksena on negatiivinen puskuri, eli alkuperäistä pienempi ruudukko. Prosessointityökalujen kautta pääse käyttämään työkaluja monesta muusta ohjelmistoista (niiden ohjelmistokirjastot täytyy tällöin olla asennettu koneeseen). Muun muassa GRASS-, GDAL-, Orfeo Toolbox- ja SAGA-työkalut ovat saatavilla.</p>
 <p>Jos sinulle jää aikaa, käy läpi muita lisäosia ja tarkastele mitä työkaluja sieltä löytyy, jotka voivat auttaa sinua omassa työssäsi.</p>
-<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> (englanninkielisessä QGISissä CTRL + S) tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
-<blockquote>
-<p>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</p>
-</blockquote>
+<p>Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä <strong>CTRL + T</strong> tai päävalikosta <strong>Projekti &gt; Tallenna</strong>.</p>
+<div class="hint-box">
+<p><strong>Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen <a href="mailto:tuki@gispo.fi" class="email">tuki@gispo.fi</a>!</strong></p>
+</div>
 
 </div>
 </div>

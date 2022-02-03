@@ -55,10 +55,6 @@ ominaisuustietojen-lisääminen
 harjoitus-9-paikkatietoanalyysit
 vektorianalyysit
 harjoitus-10-qgisin-lisäosat
-harjoituksen-sisältö
-harjoituksen-tavoite
-arvioitu-kesto
-valmistautuminen
 lisäosien-hallinta
 quickmapservices
 qgis2threejs
