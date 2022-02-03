@@ -1,24 +1,24 @@
 # Harjoitus 10: QGISin lisäosat
 
-## Harjoituksen sisältö
+**Harjoituksen sisältö**
 
 Harjoituksessa tutustutaan QGISin monipuolisiin lisäosiin ja opitaan käyttämään muutamaa keskeistä lisäosaa. 
 
-## Harjoituksen tavoite
+**Harjoituksen tavoite**
 
 Opiskelijalla tietää perusasiat QGISin lisäosien käytöstä ja osaa myös hyödyntää niitä. 
 
-## Arvioitu kesto
+**Arvioitu kesto**
 
 40 minuuttia.
 
+**Valmistautuminen**
 
-## Valmistautuminen
-Avaa uusi QGIS-projekti (**Projekti > Uusi**) ja tallenna se nimellä “**QGIS-harjoitus 10**”. Lataa projektiin seuraavat aineistot:
+Avaa uusi QGIS-projekti (**Projekti > Uusi**) ja tallenna se nimellä “**QGIS-harjoitus 10**”. Avaa projektiin seuraavat aineistot:
 
-..kurssihakemisto/MML/Korkeusmalli_2m/L4133B.asc
+* **..kurssihakemisto/MML/Korkeusmalli_2m/L4133B.asc**
 
-..kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019
+* **..kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019**
 
 ## Lisäosien hallinta
 Lisäosia  lisätään käyttöön päävalikosta **Lisäosat > Hallitse ja asenna lisäosia…** -valikon kautta. Valitse **Asennettu**-välilehti ja saat esille kaikki asennetut lisäosat. Huomaa, että suurinta osaa niistä ei ole aktivoitu. Lisäosien aktivointi lisää erilaisia valikkoja ja paneeleja QGISin käyttöliittymään. Siksi on hyödyllistä piilottaa ne joita ei käytetä.
@@ -61,8 +61,9 @@ Tuloksena on negatiivinen puskuri, eli alkuperäistä pienempi ruudukko. Prosess
 
 Jos sinulle jää aikaa, käy läpi muita lisäosia ja tarkastele mitä työkaluja sieltä löytyy, jotka voivat auttaa sinua omassa työssäsi.
 
-Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** (englanninkielisessä QGISissä CTRL + S) tai päävalikosta **Projekti > Tallenna**.
+Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** tai päävalikosta **Projekti > Tallenna**.
 
-> Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!
-
+:::{.hint-box}
+**Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!**
+:::
 
