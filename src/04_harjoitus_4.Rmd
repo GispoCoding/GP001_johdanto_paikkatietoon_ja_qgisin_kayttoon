@@ -15,6 +15,7 @@ Harjoituksen jälkeen koulutettava osaa määrittää koordinaattijärjestelmän
 **Valmistautuminen**
 
 Avaa uusi QGIS-projekti (Projekti > Uusi) ja tallenna se nimellä “QGIS-harjoitus 4”. Lisää projektiin seuraavat aineistot:
+
 * **..kurssihakemisto/MML/YK_1M/TieViiva.shp**
 * **..kurssihakemisto/Natural_Earth/ne_10m_populated_places/ne_10m_populated_places_suomi.shp**
 
@@ -39,7 +40,7 @@ Vaihda (= uudelleenprojisoi lennossa) projektin koordinaattijärjestelmäksi **W
 
 Koordinaattijärjestelmän muuttamisen jälkeen klikkaa **Zoomaa täydeksi** -työkalua ![](img/harjoitus_4/image5.png) , niin paikkatietoaineistot keskittyvät karttaikkunaan. Voit huomata, että paikkatietoaineistomme ovat nyt uudelleenprojisoituneet lennossa WGS 84 -koordinaattijärjestelmään ja samalla Suomi on vääristynyt muodoltaan.
 
-![](img/harjoitus_4/image6.png) ![](img/harjoitus_4/image7.png)
+![](img/harjoitus_4/image6.png){width=50%} ![](img/harjoitus_4/image7.png){width=50%}
 
 Vie hiiresi Helsingin kohdalle ja tarkastele alapalkin **Koordinaatit-kenttää**. Koordinaatit näyttävät jokseenkin tältä:
 
