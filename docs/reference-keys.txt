@@ -1,4 +1,4 @@
-johdanto-qgisin-käyttöön
+johdanto-paikkatietoon-ja-qgisin-käyttöön
 tervetuloa-qgis-peruskurssille
 qgisin-taustaa
 miksi-qgis
