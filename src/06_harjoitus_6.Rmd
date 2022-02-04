@@ -77,7 +77,7 @@ Luokittele aineisto uudelleen niin, että Pasilasta erottuu tarkempia yksityisko
 ![](img/harjoitus_6/image13.png)
 
 Paina sitten **Käytä** ja lopuksi **Luokittele** arvot uudestaan.
-![](img/harjoitus_6/image14.png) ![](img/harjoitus_6/image15.png)
+![](img/harjoitus_6/image14.png){width=50%} ![](img/harjoitus_6/image15.png){width=50%}
 
 Vasemmanpuoleisessa kuvassa on ratapihan alue pseudoväreillä esitettynä. Oikeanpuoleisessa kuvassa on sama alue sen jälkeen, kun väriliukuma on luokiteltu uudelleen näkyvän karttaikkunan alueen Min/Max-arvojen mukaisesti. Voit myös testata **Tila**-kohdasta eri jaottelumuotoja. Kvanttiili-valinnassa muodot näkyvät yksivärisenäkin vielä voimakkaammin.
 
