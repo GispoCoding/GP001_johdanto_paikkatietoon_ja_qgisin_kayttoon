@@ -15,9 +15,13 @@ Harjoituksen jälkeen opiskelija tuntee eri paikkatietoaineistojen visualisoinni
 **Valmistautuminen**
 
 Avaa uusi QGIS-projekti (**Projekti > Uusi**) ja tallenna se nimellä **“QGIS-harjoitus 5”**. Lisää projektiin seuraavat aineistot:
+
 * **..kurssihakemisto/MML/Yleiskarttarasteri_1milj.png**
+
 * **..kurssihakemisto/MML/YK_1M/TieViiva.shp**
+
 * **..kurssihakemisto/Natural_Earth/ne_10m_populated_places/ne_10m_populated_places_suomi.shp**
+
 * **..kurssihakemisto/SYKE/NaturaKohde_ma.shp**
 
 ## Rasteriaineistojen visualisointi
@@ -204,6 +208,6 @@ Kirjoita edellä mainittu lauseke ja paina **OK**. Klikkaa **Tason ominaisuudet*
 Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** tai päävalikosta **Projekti > Tallenna**.
 
 :::{.hint-box}
-Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!
+**Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!**
 :::
 
