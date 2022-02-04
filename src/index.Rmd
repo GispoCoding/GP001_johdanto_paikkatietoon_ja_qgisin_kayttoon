@@ -19,7 +19,7 @@ documentclass: book
 
 
 <!-- Harjoitukset -->
-# Johdanto QGISin käyttöön
+# Johdanto paikkatietoon ja QGISin käyttöön
 
 ## Tervetuloa QGIS-peruskurssille!
 Tämän kurssin tarkoituksena on opastaa sinut QGIS–ohjelmiston käyttöön. Muiden paikkatieto-ohjelmistojen käyttökokemus ei ole välttämätöntä koulutukseen osallistumisel­le. Toki niistä on paljon hyötyä. Kysy rohkeasti opettajalta lisätietoja, jos käytetty terminologia tai joku muu asia jää epäselväksi.
@@ -131,7 +131,7 @@ While notes look like this:
 
 ## Lisenssi ja oikeudet
 
-Nämä materiaalit on kehitetty "Johdanto paikkatietoon ja QGISin käyttöön"-kurssille Gispo Oy:n toimesta. Materiaalit on lisensoitu
+Nämä materiaalit on "Johdanto paikkatietoon ja QGISin käyttöön"-kurssille kehittänyt Gispo Oy. Materiaalit on lisensoitu
 seuraavalla lisenssillä: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) 
 
 <!--
