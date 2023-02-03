@@ -12,23 +12,23 @@ Harjoituksen jälkeen koulutettava osaa lisätä erilaisia paikkatietopalveluita
 
 30 minuuttia.
 
-**Valmistautuminen**
-Avaa uusi QGIS-projekti (**Projekti > Uusi**) ja tallenna se nimellä “**QGIS-harjoitus 3**”. Tässä harjoituksessa muodostetaan yhteyksiä erilaisiin paikkatietopalveluihin, jonka kautta lisätään rasteri- ja vektoriaineistoja QGIS-projektiin.
+**Valmistautuminen** Avaa uusi QGIS-projekti (**Projekti \> Uusi**) ja tallenna se nimellä "**QGIS-harjoitus 3**". Tässä harjoituksessa muodostetaan yhteyksiä erilaisiin paikkatietopalveluihin, jonka kautta lisätään rasteri- ja vektoriaineistoja QGIS-projektiin.
 
 ## WMS-palvelun lisääminen
+
 Luodaan ensimmäiseksi yhteys WMS (Web Map Service)-paikkatietopalveluun, josta saadaan ensimmäiset rasteriaineistot projektiin. Avaa **Tietolähteiden hallinta** ja valitse **WMS/WMTS-välilehti**.
 
 ![](img/harjoitus_3/image1.png)
 
-Tämä työkalu avaa WMS-palvelujen käyttö- ja määrityslomakkeen. QGISissäsi saattaa olla jo määriteltynä joitakin WMS-palveluja. Saat ne auki alasvetovalikosta. Lisätään uusi WMS-palvelu klikkaamalla **Uusi**. Määrittele avautuvassa **Luo uusi WMS/WMTS-yhteys** -ikkunassa haluamasi nimi WMS-palvelulle. 
+Tämä työkalu avaa WMS-palvelujen käyttö- ja määrityslomakkeen. QGISissäsi saattaa olla jo määriteltynä joitakin WMS-palveluja. Saat ne auki alasvetovalikosta. Lisätään uusi WMS-palvelu klikkaamalla **Uusi**. Määrittele avautuvassa **Luo uusi WMS/WMTS-yhteys** -ikkunassa haluamasi nimi WMS-palvelulle.
 
-:::{.hint-box}
-**Psst! Nimeä paikkatietopalveluyhteydet esimerkiksi aineiston tuottajan (kuten kaupungin) mukaan. Tarkentavana lisätietona voi tarvittaessa olla esimerkiksi aineiston teema.** 
+::: hint-box
+**Psst! Nimeä paikkatietopalveluyhteydet esimerkiksi aineiston tuottajan (kuten kaupungin) mukaan. Tarkentavana lisätietona voi tarvittaessa olla esimerkiksi aineiston teema.**
 :::
 
-Lisää **URL-kenttään** Helsingin kaupungin WMS-palvelun osoite: http://kartta.hel.fi/ws/geoserver/avoindata/wms. Jotkin paikkatietopalvelut voivat vaatia kirjautumisen palveluun, mutta avoimet aineistot eivät – jätä siis **No Authentication** aktiiviseksi.
+Lisää **URL-kenttään** Helsingin kaupungin WMS-palvelun osoite: <http://kartta.hel.fi/ws/geoserver/avoindata/wms>. Jotkin paikkatietopalvelut voivat vaatia kirjautumisen palveluun, mutta avoimet aineistot eivät -- jätä siis **No Authentication** aktiiviseksi.
 
-![](img/harjoitus_3/image2.png)
+![](img/harjoitus_3/image2.png){width="331"}
 
 Kun yhteyden tiedot on määritelty, paina **OK**. Paina vielä **Tietolähteiden hallinta** -ikkunassa **Yhdistä**. Nyt QGIS muodostaa yhteyden määriteltyyn paikkatietopalveluun ja ikkunaan ilmestyy listaus palvelun paikkatietoaineistoista. Huomaa, että listauksessa on alatasoja. Jatkossa QGIS muistaa tallennetut yhteydet.
 
@@ -42,38 +42,42 @@ Huomaa, että voit joutua odottamaan hetken, kun karttatasoa ladataan palvelimel
 
 ![](img/harjoitus_3/image5.png)
 
-Luo nyt muutama WMS-paikkatietopalveluyhteys lisää. Voit käyttää hyväksesi Gispon ylläpitämää listausta avoimista paikkatietopalveluista osoitteessa https://gispohelp.zendesk.com/hc/fi/articles/208159815. Lisää esimerkiksi seuraavat yleishyödylliset WMS-palvelut QGIS-projektiisi:
+Luo nyt muutama WMS-paikkatietopalveluyhteys lisää. Voit käyttää hyväksesi Gispon ylläpitämää listausta avoimista paikkatietopalveluista osoitteessa <https://gispohelp.zendesk.com/hc/fi/articles/208159815>. Lisää esimerkiksi seuraavat yleishyödylliset WMS-palvelut QGIS-projektiisi:
 
-Tilastokeskus (väestöruutuaineisto): http://geo.stat.fi/geoserver/vaestoruutu/wms
-Väylävirasto: https://julkinen.vayla.fi/inspirepalvelu/avoin/wms 
-SYKE: http://paikkatieto.ymparisto.fi/ArcGIS/services/INSPIRE/SYKE_Maanpeite/MapServer/WMSServer
+**Tilastokeskus (väestöruutuaineisto)**: <http://geo.stat.fi/geoserver/vaestoruutu/wms>
+
+**Väylävirasto**: <https://julkinen.vayla.fi/inspirepalvelu/avoin/wms>
+
+**SYKE**: <https://paikkatieto.ymparisto.fi/ArcGIS/services/INSPIRE/SYKE_Maanpeite/MapServer/WMSServer>
 
 Voit navigoida lisäämiesi WMS-paikkatietopalveluiden välillä Tietolähteiden hallinta -ikkunan WMS/WMTS-välilehden ensimmäisen alasvetovalikon avulla.
 
 ![](img/harjoitus_3/image6.png)
 
-Kun olet valinnut haluamasi paikkatietopalvelun, muista klikata **Yhdistä** alasvetovalikon alapuolelta. Paikkatietopalveluiden aineistot eivät tule automaattisesti näkyviin pelkän palveluvalinnan kautta, vaan siihen on erikseen luotava vielä yhteys. 
+Kun olet valinnut haluamasi paikkatietopalvelun, muista klikata **Yhdistä** alasvetovalikon alapuolelta. Paikkatietopalveluiden aineistot eivät tule automaattisesti näkyviin pelkän palveluvalinnan kautta, vaan siihen on erikseen luotava vielä yhteys.
 
 ## WFS-palvelun lisääminen
-Luodaan seuraavaksi yhteys WFS (Web Feature Service)-paikkatietopalveluun, jonka kautta QGIS-projektiin saadaan lisättyä erilaisia vektoriaineistoja. WFS-palveluihin yhdistäminen tapahtuu muuten samalla tavalla kuin WMS-palveluihin yhdistäminen, mutta WMS/WMTS-välilehden sijaan on valittava WFS-välilehti. Avaa siis jälleen **Tietolähteiden hallinta > WFS-välilehti** tai klikkaa suoraan **Tasojen hallinnan työkalupalkista** löytyvää **Lisää WFS-taso** -painiketta ![](img/harjoitus_3/image7.png).
+
+Luodaan seuraavaksi yhteys WFS (Web Feature Service)-paikkatietopalveluun, jonka kautta QGIS-projektiin saadaan lisättyä erilaisia vektoriaineistoja. WFS-palveluihin yhdistäminen tapahtuu muuten samalla tavalla kuin WMS-palveluihin yhdistäminen, mutta WMS/WMTS-välilehden sijaan on valittava WFS-välilehti. Avaa siis jälleen **Tietolähteiden hallinta \> WFS-välilehti** tai klikkaa suoraan **Tasojen hallinnan työkalupalkista** löytyvää **Lisää WFS-taso** -painiketta ![](img/harjoitus_3/image7.png).
 
 ![](img/harjoitus_3/image8.png)
 
-:::{.hint-box}
+::: hint-box
 **Psst! WFS-paikkatietopalvelussa pystyt lataamaan aineiston tai osan aineistosta erilaisten lausekkeiden avulla.**
 :::
 
 Luo uusi yhteys alla listattuihin WFS-paikkatietopalveluihin tai valitse haluamasi palvelut aikaisemmin mainitusta Gispon ylläpitämästä listauksesta.
 
-* **Tilastokeskus (väestöruutuaineisto)**: http://geo.stat.fi/geoserver/vaestoruutu/wfs
+-   **Tilastokeskus (väestöruutuaineisto)**: <http://geo.stat.fi/geoserver/vaestoruutu/wfs>
 
-* **Väylävirasto**: https://julkinen.vayla.fi/inspirepalvelu/avoin/wfs
+-   **Väylävirasto**: <https://julkinen.vayla.fi/inspirepalvelu/avoin/wfs>
 
-* **Jyväskylän yliopisto (liikuntapaikat)**: http://lipas.cc.jyu.fi/geoserver/lipas/ows?
+-   **Jyväskylän yliopisto (liikuntapaikat)**: <http://lipas.cc.jyu.fi/geoserver/lipas/ows>
 
 Kun olet lisännyt WFS-paikkatietopalvelun tiedot QGISiin, voit ottaa siihen yhteyden samalla tavalla kuin WMS-palveluiden yhteydessä. Kun lisäät aineistoja WFS-palveluista QGIS-projektiisi, voit huomata, että aineistot ovat vektorimuotoisia. Jos haluat käsitellä WFS-palvelun kautta lisäämääsi aineistoa (esimerkiksi editoida kohteita), täytyy se tallentaa lokaalisti omalle tietokoneellesi.
 
 ## Paikkatietopalvelujen tallentaminen
+
 QGIS tallentaa automaattisesti siihen lisätyt paikkatietopalvelut käyttämääsi QGIS-profiiliin. Eli kun seuraavan kerran avaat QGISin samalla käyttäjäprofiililla, paikkatietopalvelut löytyvät valmiiksi Tietolähteiden hallinnan WMS/WMTS- ja WFS-välilehdiltä. Paikkatietopalvelut on kuitenkin myös mahdollista tallentaa erilliseksi XML-tiedostoksi, jonka voit ladata toiseen QGIS-käyttäjäprofiiliin tai jakaa eteenpäin muille kollegoille käytettäväksi. Avaa **Tietolähteiden hallinta** ja valitse **WFS-välilehti**. Klikkaa **Tallenna**-painiketta.
 
 ![](img/harjoitus_3/image9.png)
@@ -88,10 +92,8 @@ Tallenna yhteydet haluamaasi sijaintiin omalla tietokoneellasi. Koita tämän j�
 
 Voit valita aukeavassa **Hallitse yhteyksiä** -ikkunassa erikseen yhteydet, jotka haluat lisätä käyttämääsi QGIS-profiiliin ja QGIS-projektiin.
 
-Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** tai päävalikosta **Projekti > Tallenna**.
+Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** (tai **CTRL + S**) tai päävalikosta **Projekti \> Tallenna**.
 
-:::{.hint-box}
-**Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!**
+::: hint-box
+**Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen [tuki\@gispo.fi](mailto:tuki@gispo.fi){.email}!**
 :::
-
-

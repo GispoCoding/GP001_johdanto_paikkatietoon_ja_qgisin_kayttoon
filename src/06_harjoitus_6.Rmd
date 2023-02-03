@@ -13,31 +13,34 @@ Opiskelija osaa luokitella ja visualisoida paikkatietoaineistoja QGISin työkalu
 35 minuuttia.
 
 **Valmistautuminen**
-Avaa uusi QGIS-projekti (**Projekti > Uusi**) ja tallenna se nimellä “**QGIS-harjoitus 6**”. Lisää projektiin seuraavat aineistot:
 
-* **..kurssihakemisto/HSY/HSY_vaestotietoruudukko/HSY_vaestotietoruudukko_2019.gpkg**
-* **..kurssihakemisto/MML/Korkeusmalli_2m/L4133B.asc**
+Avaa uusi QGIS-projekti (**Projekti \> Uusi**) ja tallenna se nimellä **\"QGIS-harjoitus 6\"**. Lisää projektiin seuraavat aineistot:
+
+-   **..kurssihakemisto/6. Harjoitus/HSY_vaestotietoruudukko.gpkg**
+
+-   **..kurssihakemisto/6. Harjoitus/L4133B.asc**
 
 ## Vektoriaineiston luokittelut
-Tarkastellaan aluksi **HSY_vaestotietoruudukko_2019**-vektoriaineistoa, joten piilota muut aineistot näkyvistä. HSY_vaestotietoruudukko_2019-aineisto on GeoPackage-formaatissa. Tutustu aineistoon avaamalla sen attribuuttitaulu (klikkaa hiiren oikeaa painiketta tason päällä ja valitse **Avaa attribuuttitaulu**). QGISiin avautuu attribuuttitauluikkuna, joka esittelee tason ominaisuuksia ja on erittäin tärkeä osa paikkatietoaineistoa. Kaikilla vektoriaineistoilla on attribuuttitaulu.
+
+Tarkastellaan aluksi **HSY_vaestotietoruudukko-vektoriaineistoa**, joten piilota muut aineistot näkyvistä. **HSY_vaestotietoruudukko-aineisto** on **GeoPackage-formaatissa**. Tutustu aineistoon avaamalla sen attribuuttitaulu (klikkaa hiiren oikeaa painiketta tason päällä ja valitse **Avaa attribuuttitaulu**). QGISiin avautuu attribuuttitauluikkuna, joka esittelee tason ominaisuuksia ja on erittäin tärkeä osa paikkatietoaineistoa. Kaikilla vektoriaineistoilla on attribuuttitaulu.
 
 ![](img/harjoitus_6/image1.png)
 
-Attribuuttitietojen ymmärtämiseksi on hyvä tarkastella taulun sisältöä sekä tutustua samalla aineiston metatietoihin. Metatiedot löytyvät usein aineistontuottajan nettisivuilta tai paikkatietojen löytämiseen tarkoitetuista hakemistoista. Metatiedot kertovat mm. kuka aineiston on tuottanut, mihin tarkoitukseen, millä mittakaavalla ja missä koordinaattijärjestelmässä se on tehty.  HSY_vaestotietoruudukko_2019-aineiston on tuottanut Helsingin seudun ympäristöpalvelut ja sen metatiedot löytyvät saman kansion **HSY_vaestotietoruudukko.pdf-tiedostosta**. Avaa tiedosto ja tutustu eri kenttien (= sarakkeiden) kuvauksiin.
+Attribuuttitietojen ymmärtämiseksi on hyvä tarkastella taulun sisältöä sekä tutustua samalla aineiston metatietoihin. Metatiedot löytyvät usein aineistontuottajan nettisivuilta tai paikkatietojen löytämiseen tarkoitetuista hakemistoista. Metatiedot kertovat mm. kuka aineiston on tuottanut, mihin tarkoitukseen, millä mittakaavalla ja missä koordinaattijärjestelmässä se on tehty. HSY_vaestotietoruudukko-aineiston on tuottanut Helsingin seudun ympäristöpalvelut ja sen metatiedot löytyvät saman kansion **HSY_vaestotietoruudukko.pdf-tiedostosta**. Avaa tiedosto ja tutustu eri kenttien (= sarakkeiden) kuvauksiin.
 
-Attribuuttitauluissa sarakkeiden nimet ovat usein lyhennetyssä muodossa, minkä vuoksi sarakkeiden merkitystä on tyypillisesti vaikea päätellä lyhenteistä. HSY_vaestotietoruudukko_2019-aineistossa silmiinpistävää on myös se, että taulukossa toistuu luku 99 useaan otteeseen. Metatietojen avulla voimme kuitenkin selvittää muun muassa sen, miten asukkaita-sarakkeen tiedot on laskettu sekä millä tavalla tiedot on poistettu ruuduissa, joissa asuu 0-4 asukasta. Ika-sarakkeet sisältävät asukkaiden määrät ikäluokittain, mutta niille on annettu arvo 99 aina kun ruudukon asukasmäärä on ollut alle 100. Tarkastele aineistoa myös kartalla. Huomaatko yhden ruudun, joka näyttää sijaitsevan kaukana kaakossa keskellä merta?
+Attribuuttitauluissa sarakkeiden nimet ovat usein lyhennetyssä muodossa, minkä vuoksi sarakkeiden merkitystä on tyypillisesti vaikea päätellä lyhenteistä. **HSY_vaestotietoruudukko**-aineistossa silmiinpistävää on myös se, että taulukossa toistuu luku 99 useaan otteeseen. Metatietojen avulla voimme kuitenkin selvittää muun muassa sen, miten asukkaita-sarakkeen tiedot on laskettu sekä millä tavalla tiedot on poistettu ruuduissa, joissa asuu 0-4 asukasta. **Ika-sarakkeet** sisältävät asukkaiden määrät ikäluokittain, mutta niille on annettu arvo 99 aina kun ruudukon asukasmäärä on ollut alle 100. Tarkastele aineistoa myös kartalla. Huomaatko yhden ruudun, joka näyttää sijaitsevan kaukana kaakossa keskellä merta?
 
 ![](img/harjoitus_6/image2.png)
 
-Irralliseen ruutuun on tässä aineistossa sijoitettu kaikki ne pk-seudun asukkaat, joilla ei ole vakituista kotiosoitetta. **Näytä kohteen tiedot** -työkalulla  [](img/harjoitus_6/image0.png)  nähdään, että tämän ruudun asukasmäärä on kymmenkertaisesti suurempi kuin minkään muun aineiston ruudun. Se siis vääristää luokittelua ja aineistosta laskettuja tilastoja (mm. keskimääräinen asukastiheys ruutua kohti). Suodatetaan tämä ruutu pois aineistosta: klikkaa tason nimeä hiiren oikealla ja valitse **Suodata…** Kirjoita (tai valitse tietokentistä ja operaattoreista klikkaamalla) suodatuslausekkeeksi **"asukkaita" < 5000**. Voit testata suodatuksen toimivuutta klikkaamalla **Testaa**.
+Irralliseen ruutuun on tässä aineistossa sijoitettu kaikki ne pk-seudun asukkaat, joilla ei ole vakituista kotiosoitetta. **Näytä kohteen tiedot** -työkalulla nähdään, että tämän ruudun asukasmäärä on kymmenkertaisesti suurempi kuin minkään muun aineiston ruudun. Se siis vääristää luokittelua ja aineistosta laskettuja tilastoja (mm. keskimääräinen asukastiheys ruutua kohti). Suodatetaan tämä ruutu pois aineistosta: klikkaa tason nimeä hiiren oikealla ja valitse **Suodata...** Kirjoita (tai valitse tietokentistä ja operaattoreista klikkaamalla) suodatuslausekkeeksi **"asukkaita" \< 5000**. Voit testata suodatuksen toimivuutta klikkaamalla **Testaa**.
 
 ![](img/harjoitus_6/image3.png)
 
-Nyt QGIS näyttää aineistostasi vain ne ruudut, jotka täyttävät annetun ehdon eli joiden kokonaisasukasmäärä on alle 5000. 
+Nyt QGIS näyttää aineistostasi vain ne ruudut, jotka täyttävät annetun ehdon eli joiden kokonaisasukasmäärä on alle 5000.
 
-Paikkatietoineiston ymmärtäminen ennen sen käsittelyä on välttämätöntä. Voimme nyt esimerkiksi päättää, että haluamme tuottaa teemakartan asukkaita-sarakkeen tietojen pohjalta. Näin pystymme myös paremmin tulkitsemaan karttaa ja valitsemaan visualisointia varten sopivat asetukset. 
+Paikkatietoineiston ymmärtäminen ennen sen käsittelyä on välttämätöntä. Voimme nyt esimerkiksi päättää, että haluamme tuottaa teemakartan asukkaita-sarakkeen tietojen pohjalta. Näin pystymme myös paremmin tulkitsemaan karttaa ja valitsemaan visualisointia varten sopivat asetukset.
 
-Avaa **Tason ominaisuudet** ja valitse tason kuvaustekniikaksi **Porrastettu**. Valitse seuraavasta pudotusvalikosta, minkä kentän arvoihin luokittelusi perustuu (tässä ‘asukkaita’). Aseta vielä oheisen kuvan mukaiset **Arvo-, Liukuväri-, Tila- ja Luokat-määrittelyt**.
+Avaa **Tason ominaisuudet** ja valitse tason kuvaustekniikaksi **Porrastettu**. Valitse seuraavasta pudotusvalikosta, minkä kentän arvoihin luokittelusi perustuu (tässä 'asukkaita'). Aseta vielä oheisen kuvan mukaiset **Arvo-, Liukuväri-, Tila- ja Luokat-määrittelyt**.
 
 ![](img/harjoitus_6/image4.png)
 
@@ -47,7 +50,7 @@ Kun olet saanut ne asetettua, paina **Luokittele**, ja luokitus tulee näkyviin.
 
 ![](img/harjoitus_6/image6.png)
 
-Jos Tasot-paneelissasi ei näy selitettä, paina tason nimen vasemmalla olevaa pientä nuolta ja selitteet avautuvat tason alle kuvan mukaisesti. Palaa vielä **Kuvaustekniikka**-asetuksiin ja kokeile **Tila > Tasaväli**. Paina uudelleen **Luokittele** jos arvot eivät päivity. Kokeile myös vaihtaa  luokkien lukumäärää, luokitustapoja ja värityksiä, kunnes löydät mielestäsi sopivan tuloksen. Voit vertailla eri luokittelumenetelmiä ja tutkia aineiston jakaumaa histogrammin avulla. **Histogrammi** löytyy omalta välilehdeltään. Paina **Lataa arvot** saadaksesi histogrammin ja luokkien rajat näkyviin.
+Jos Tasot-paneelissasi ei näy selitettä, paina tason nimen vasemmalla olevaa pientä nuolta ja selitteet avautuvat tason alle kuvan mukaisesti. Palaa vielä **Kuvaustekniikka**-asetuksiin ja kokeile **Tila \> Tasaväli**. Paina uudelleen **Luokittele** jos arvot eivät päivity. Kokeile myös vaihtaa luokkien lukumäärää, luokitustapoja ja värityksiä, kunnes löydät mielestäsi sopivan tuloksen. Voit vertailla eri luokittelumenetelmiä ja tutkia aineiston jakaumaa histogrammin avulla. **Histogrammi** löytyy omalta välilehdeltään. Paina **Lataa arvot** saadaksesi histogrammin ja luokkien rajat näkyviin.
 
 ![](img/harjoitus_6/image7.png)
 
@@ -60,11 +63,12 @@ Muuta vielä symbolin tyyliä. Avaa uudelleen tason ominaisuustiedot ja klikkaa 
 ![](img/harjoitus_6/image9.png)
 
 ## Rasteriaineiston luokittelut
-Aseta nyt **L4133B-rasteriaineisto** näkyväksi ja piilota muut aineistot. L4133B.asc on Maanmittauslaitoksen avoin korkeusmalliaineisto, joka sisältää osan  Helsingistä. Jos aineisto avautuu tuntemattomassa koordinaattijärjestelmässä (= virheellisessä projektiossa), aseta tasolle koordinaattijärjestelmäksi **ETRS89/TM35FIN (EPSG:3067)**. Muista tarkistaa myös projektin koordinaattijärjestelmä. Oletuksena korkeusmalli näyttää tällaiselta:
+
+Aseta nyt **L4133B-rasteriaineisto** näkyväksi ja piilota muut aineistot. L4133B.asc on Maanmittauslaitoksen avoin korkeusmalliaineisto, joka sisältää osan Helsingistä. Jos aineisto avautuu tuntemattomassa koordinaattijärjestelmässä (= virheellisessä projektiossa), aseta tasolle koordinaattijärjestelmäksi **ETRS89/TM35FIN (EPSG:3067)**. Muista tarkistaa myös projektin koordinaattijärjestelmä. Oletuksena korkeusmalli näyttää tällaiselta:
 
 ![](img/harjoitus_6/image10.png)
 
-Huomaa, että QGIS on tunnistanut, että aineisto sisältää jatkuvia arvoja ja on visualisoinut ne yksittäisenä harmaana kanavana. Oletusvärityksellä onnistut erottamaan Pasilan ratapihan oikeassa yläkulmassa. 
+Huomaa, että QGIS on tunnistanut, että aineisto sisältää jatkuvia arvoja ja on visualisoinut ne yksittäisenä harmaana kanavana. Oletusvärityksellä onnistut erottamaan Pasilan ratapihan oikeassa yläkulmassa.
 
 ![](img/harjoitus_6/image11.png)
 
@@ -78,15 +82,12 @@ Luokittele aineisto uudelleen niin, että Pasilasta erottuu tarkempia yksityisko
 
 Paina sitten **Käytä** ja lopuksi **Luokittele** arvot uudestaan.
 
-![](img/harjoitus_6/image14.png){width=50%} ![](img/harjoitus_6/image15.png){width=50%}
+![](img/harjoitus_6/image14.png){width="50%"} ![](img/harjoitus_6/image15.png){width="50%"}
 
 Vasemmanpuoleisessa kuvassa on ratapihan alue pseudoväreillä esitettynä. Oikeanpuoleisessa kuvassa on sama alue sen jälkeen, kun väriliukuma on luokiteltu uudelleen näkyvän karttaikkunan alueen Min/Max-arvojen mukaisesti. Voit myös testata **Tila**-kohdasta eri jaottelumuotoja. Kvanttiili-valinnassa muodot näkyvät yksivärisenäkin vielä voimakkaammin.
 
-Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** tai päävalikosta **Projekti > Tallenna**.
+Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä **CTRL + T** tai päävalikosta **Projekti \> Tallenna**.
 
-:::{.hint-box}
-**Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen tuki@gispo.fi!**
+::: hint-box
+**Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen [tuki\@gispo.fi](mailto:tuki@gispo.fi){.email}!**
 :::
-
-
-

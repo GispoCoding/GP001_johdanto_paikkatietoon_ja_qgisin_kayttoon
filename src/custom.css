@@ -212,8 +212,10 @@ h5 { font-size: 100% !important; }
     color: #fbfbfb !important;
     background-color: #7a3884 !important;
     border: none !important;
+    margin: 0.8em 0.8em !important;
     padding: 0.4em 0.8em !important;
     border-radius: 0 !important;
+    display:block
 }
 
 .btn:hover {
