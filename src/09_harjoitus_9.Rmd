@@ -1,6 +1,6 @@
-# Kappale 8
+# Kappale 9
 
-## Luento 8
+## Luento 9
 
 
 ## Harjoitus 9: Paikkatietoanalyysit
