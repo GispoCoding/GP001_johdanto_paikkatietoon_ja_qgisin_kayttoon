@@ -78,4 +78,3 @@ Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä 
 :::
 
 ## Testaa tietosi...
-
