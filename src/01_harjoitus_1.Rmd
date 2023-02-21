@@ -48,5 +48,3 @@ Avaa yllä oleva linkki ja klikkaa **Lataa**. Tämä lataa aineistot kokonaisuud
 Pura kurssimateriaalit omalle tietokoneellesi haluamaasi kansioon niin, että löydät ne helposti harjoituksia tehdessä. Kun kurssimateriaalissa viitataan **../kurssihakemisto/**, tarkoitetaan itse määrittelemääsi kurssihakemiston polkua. Kysy tarvittaessa apua kouluttajalta.
 
 ## Testaa tietosi...
-
-
