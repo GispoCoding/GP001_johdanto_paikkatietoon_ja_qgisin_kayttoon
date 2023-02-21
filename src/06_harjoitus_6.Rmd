@@ -1,4 +1,9 @@
-# Harjoitus 6: Paikkatietoaineiston luokittelu
+# Kappale 6
+
+## Luento 6
+
+
+## Harjoitus 6: Paikkatietoaineiston luokittelu
 
 **Harjoituksen sisältö**
 
@@ -91,3 +96,6 @@ Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä 
 ::: hint-box
 **Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen [tuki\@gispo.fi](mailto:tuki@gispo.fi){.email}!**
 :::
+
+## Testaa tietosi...
+

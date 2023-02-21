@@ -1,4 +1,9 @@
-# Harjoitus 2: Paikkatietoaineistot ja QGISin käyttöliittymä
+# Kappale 2
+
+## Luento 2
+
+
+## Harjoitus 2: Paikkatietoaineistot ja QGISin käyttöliittymä
 
 **Harjoituksen sisältö**
 
@@ -221,3 +226,7 @@ tai päävalikosta **Projekti \> Tallenna**.
 tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen
 [tuki\@gispo.fi](mailto:tuki@gispo.fi){.email} !**
 :::
+
+## Testaa tietosi...
+
+

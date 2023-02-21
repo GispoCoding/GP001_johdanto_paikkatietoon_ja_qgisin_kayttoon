@@ -1,5 +1,5 @@
 ---
-title: "Johdanto paikkatietoon ja QGISin käyttöön - Harjoitukset"
+title: "Johdanto paikkatietoon ja QGISin käyttöön"
 author: "Gispo Ltd."   
 date: "`r Sys.Date()`"
 site: "bookdown::bookdown_site"

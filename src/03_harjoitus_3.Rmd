@@ -1,4 +1,9 @@
-# Harjoitus 3: Paikkatietopalvelut
+# Kappale 3
+
+## Luento 3
+
+
+## Harjoitus 3: Paikkatietopalvelut
 
 **Harjoituksen sisältö**
 
@@ -97,3 +102,6 @@ Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä 
 ::: hint-box
 **Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen [tuki\@gispo.fi](mailto:tuki@gispo.fi){.email}!**
 :::
+
+## Testaa tietosi...
+

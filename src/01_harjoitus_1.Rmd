@@ -1,4 +1,10 @@
-# Harjoitus 1: Koulutusympäristön valmistaminen
+# Kappale 1
+
+## Luento 1
+
+
+
+## Harjoitus 1: Koulutusympäristön valmistaminen
 
 **Harjoituksen sisältö**
 
@@ -40,3 +46,7 @@ Kurssilla tarvittavat paikkatieto-aineistot on ladattavissa Google Drivestä lin
 
 Avaa yllä oleva linkki ja klikkaa **Lataa**. Tämä lataa aineistot kokonaisuudessaan pakattuna zip-tiedostona **Kurssihakemisto.zip**. 
 Pura kurssimateriaalit omalle tietokoneellesi haluamaasi kansioon niin, että löydät ne helposti harjoituksia tehdessä. Kun kurssimateriaalissa viitataan **../kurssihakemisto/**, tarkoitetaan itse määrittelemääsi kurssihakemiston polkua. Kysy tarvittaessa apua kouluttajalta.
+
+## Testaa tietosi...
+
+

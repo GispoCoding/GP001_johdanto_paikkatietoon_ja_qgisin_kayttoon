@@ -1,4 +1,9 @@
-# Harjoitus 10: QGISin lisäosat
+# Kappale 10
+
+## Luento 10
+
+
+## Harjoitus 10: QGISin lisäosat
 
 **Harjoituksen sisältö**
 
@@ -71,3 +76,6 @@ Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä 
 ::: hint-box
 **Psst! Koulutuksen jälkeen saat henkilökohtaista tukea Gispon tukipalvelusta. Lähetä kysymyksesi tai kommenttisi osoitteeseen [tuki\@gispo.fi](mailto:tuki@gispo.fi){.email}!**
 :::
+
+## Testaa tietosi...
+

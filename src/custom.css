@@ -1,9 +1,16 @@
 /* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier:wght@300;400;700&display=swap");
 
 /* Generics */
 body { overflow-x: hidden; }
+
+.slidesframe {
+    width: 70vw;
+    height: 41.65vw;
+    border: none;
+}
 
 p, span, li {
     color: #434662;
@@ -204,6 +211,15 @@ h5 { font-size: 100% !important; }
     margin-top: 2em;
 }
 
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #434662;
+    padding: 0.4em
+  }
+
 /* Buttons */
 
 .btn {
@@ -309,7 +325,7 @@ h5 { font-size: 100% !important; }
 }
 
 .code-box {
-    background: #ffe1cd;
+    background: #B6D7A8;
     padding: 10px;
     border: none;
     margin-bottom: 1rem;
@@ -317,6 +333,7 @@ h5 { font-size: 100% !important; }
 
 .code-box p {
     color: #444444;
+    font-family: 'Courier', sans-serif !important;
     margin: 0 !important;
 }
 
